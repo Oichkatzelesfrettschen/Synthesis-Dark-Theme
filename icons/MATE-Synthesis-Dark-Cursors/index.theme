@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=MATE-Synthesis-Dark-Cursors
 Comment=Synthesis Dark cursor theme for MATE desktop
-Inherits=Dracula-cursors
+Inherits=Adwaita
 
 [Cursor Theme]
-Inherits=Dracula-cursors
+Inherits=Adwaita

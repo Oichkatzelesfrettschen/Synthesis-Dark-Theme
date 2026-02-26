@@ -1,0 +1,37 @@
+post_install() {
+    echo "==> Synthesis-Dark Theme Suite installed."
+    echo "    To apply the GTK theme:"
+    echo "      gsettings set org.gnome.desktop.interface gtk-theme 'Synthesis-Dark'"
+    echo "    To apply the icon theme:"
+    echo "      gsettings set org.gnome.desktop.interface icon-theme 'MATE-Synthesis-Dark'"
+    echo "    For MATE Desktop:"
+    echo "      gsettings set org.mate.interface gtk-theme 'Synthesis-Dark'"
+    echo "      gsettings set org.mate.interface icon-theme 'MATE-Synthesis-Dark'"
+    echo "    For KDE Plasma: use System Settings > Appearance"
+
+    local _gtk_dir="/usr/share/themes/Synthesis-Dark"
+    if [ -d "${_gtk_dir}" ]; then
+        echo "==> GTK theme installed at ${_gtk_dir}"
+    else
+        echo "WARNING: GTK theme directory not found at ${_gtk_dir}"
+    fi
+
+    local _icon_dir="/usr/share/icons/MATE-Synthesis-Dark"
+    if [ -d "${_icon_dir}" ]; then
+        echo "==> Icon theme installed at ${_icon_dir}"
+        if command -v gtk-update-icon-cache >/dev/null 2>&1; then
+            gtk-update-icon-cache -q "${_icon_dir}" || true
+        fi
+    else
+        echo "WARNING: Icon theme directory not found at ${_icon_dir}"
+    fi
+}
+
+post_upgrade() {
+    post_install
+}
+
+pre_remove() {
+    echo "==> Removing Synthesis-Dark Theme Suite."
+    echo "    Remember to switch to another theme before removing."
+}

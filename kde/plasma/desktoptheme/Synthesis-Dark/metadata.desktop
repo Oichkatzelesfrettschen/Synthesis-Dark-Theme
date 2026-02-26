@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Synthesis-Dark
+Comment[es]=Un tema oscuro unificado integrando las esteticas Dracula, Ant y CachyOS.
+Comment=Synthesis-Dark: a unified dark theme integrating Dracula, Ant, and CachyOS aesthetics.
+X-KDE-PluginInfo-Author=Eirikr (Oichkatzelesfrettschen)
+X-KDE-PluginInfo-Email=
+X-KDE-PluginInfo-Name=Synthesis-Dark
+X-KDE-PluginInfo-Version=2.0.0
+X-KDE-PluginInfo-Website=https://github.com/Oichkatzelesfrettschen/Synthesis-Dark-Theme
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-License=GPLv3
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=5.0
+
+[AdaptiveTransparency]
+enabled=true

@@ -11,15 +11,16 @@ pkgdesc="A unified dark theme suite (GTK2/3/4, Marco/Metacity, Icons, Cursors, E
 arch=('any')
 url="https://github.com/Oichkatzelesfrettschen/Synthesis-Dark-Theme"
 license=('GPL-3.0-or-later')
+install=synthesis-dark-suite.install
 
 # Build dependencies - required for rendering SVG to PNG
 makedepends=(
     'git'
-    'inkscape'       # SVG rendering
+    'inkscape'       # SVG rendering (GTK2 assets, WM controls, cursors)
     'optipng'        # PNG optimization
-    'python-pillow'  # Image processing
-    'potrace'        # PNG to SVG vectorization (optional rebuild)
-    'svgo'           # SVG optimization (optional)
+    'python-pillow'  # Image processing (color transformation)
+    'sassc'          # SCSS compilation (gtk-3.20, gtk-4.0, gnome-shell, cinnamon)
+    'xcursorgen'     # Cursor theme building (optional: only needed for 'make cursors')
 )
 
 source=("git+file://${HOME}/Github/Synthesis-Dark-Theme")
@@ -27,10 +28,9 @@ sha256sums=('SKIP')
 
 build() {
     cd "${srcdir}/Synthesis-Dark-Theme"
-    # We do not run 'make build' here by default to save build time in standard installs
-    # unless we want to force re-rendering from source.
-    # We will run the palette harmonizer to ensure consistent colors.
-    make icons
+    # Run full build: compile SCSS and harmonize palette.
+    # GTK2 SVG rendering is skipped if source files are absent (make warns).
+    make build
 }
 
 package_synthesis-dark-gtk-theme() {
@@ -117,8 +117,8 @@ package_synthesis-dark-icons() {
     )
 
     cd "${srcdir}/Synthesis-Dark-Theme"
-    install -d "${pkgdir}/usr/share/icons/Synthesis-Dark-Icons"
-    cp -r icons/MATE-Synthesis-Dark/* "${pkgdir}/usr/share/icons/Synthesis-Dark-Icons/"
+    install -d "${pkgdir}/usr/share/icons/MATE-Synthesis-Dark"
+    cp -r icons/MATE-Synthesis-Dark/* "${pkgdir}/usr/share/icons/MATE-Synthesis-Dark/"
 }
 
 package_synthesis-dark-cursors() {
@@ -127,8 +127,8 @@ package_synthesis-dark-cursors() {
     optdepends=('xcursor-themes: X cursor support')
 
     cd "${srcdir}/Synthesis-Dark-Theme"
-    install -d "${pkgdir}/usr/share/icons/Synthesis-Dark-Cursors"
-    cp -r icons/MATE-Synthesis-Dark-Cursors/* "${pkgdir}/usr/share/icons/Synthesis-Dark-Cursors/"
+    install -d "${pkgdir}/usr/share/icons/MATE-Synthesis-Dark-Cursors"
+    cp -r icons/MATE-Synthesis-Dark-Cursors/* "${pkgdir}/usr/share/icons/MATE-Synthesis-Dark-Cursors/"
 }
 
 package_synthesis-dark-tilix() {
