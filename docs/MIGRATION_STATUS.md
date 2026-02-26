@@ -4,7 +4,7 @@
 **Status:** Phase 4 Complete (Consolidated & Harmonized)
 
 ## 1. Consolidated Infrastructure
-All legacy fragments have been unified into `~/Github/Synthesis-Dark`. 
+All legacy fragments have been unified into `~/Github/Synthesis-Dark-Theme`. 
 - **Upstream Sources:** `Dracula-Backup`, `Ant-Dracula-Bak`, and `Catppuccin` editor fragments are preserved in `upstream/`.
 - **Patches:** GTK4 compatibility patches applied directly to core source.
 
@@ -34,4 +34,4 @@ All legacy fragments have been unified into `~/Github/Synthesis-Dark`.
 - [x] All high-level guides (1_*) are in place for topmost visibility.
 
 ---
-**Next Steps:** Proceed to Phase 5 (QA, Accessibility Audit, and Release).
+**Status:** Phases 0-4 complete. See docs/ROADMAP.md for current project status.

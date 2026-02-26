@@ -44,7 +44,7 @@ Copy the folders to their respective system or user directories:
 
 *   **Ant-Dracula**: Base GTK styling and asset generation scripts.
 *   **Synthesis-Dark**: Original Window Manager and Icon themes.
-*   **Consolidation**: Harmonized by [Your Name/Agent].
+*   **Consolidation**: Harmonized by Eirikr (Oichkatzelesfrettschen).
 
 ## Contributing
 See `requirements.md` for build dependencies.

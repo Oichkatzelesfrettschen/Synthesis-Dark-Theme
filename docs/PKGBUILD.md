@@ -10,6 +10,7 @@ modular installation of theme components.
 | Package | Description | Size |
 |---------|-------------|------|
 | `synthesis-dark-gtk-theme` | GTK2/3/4 and WM themes | ~15MB |
+| `synthesis-dark-marco-theme` | Marco/Metacity window theme (gradient titlebars, CachyOS teal accents) | ~1MB |
 | `synthesis-dark-icons` | Icon theme (MATE-Synthesis-Dark) | ~25MB |
 | `synthesis-dark-cursors` | Cursor theme | ~2MB |
 | `synthesis-dark-tilix` | Tilix terminal color scheme | <1KB |

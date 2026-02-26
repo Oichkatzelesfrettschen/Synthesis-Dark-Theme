@@ -25,14 +25,20 @@ The following directories were removed during release cleanup:
 
 ## Retained Directories
 
-- patches/ - Color transformation patches and diffs
-- pkgbuilds/ - Arch Linux packaging templates
-- dotfiles_config/ - Reference dotfile configurations
-- extras/ - Additional theme components (catppuccin, etc.)
-- local_share/ - Desktop entries and application data
-- local_config/ - Config file templates
-- eggwm/ - Window manager theme
-- plank/ - Dock theme
+| Directory | Status | Purpose |
+|-----------|--------|---------|
+| `patches/` | Reference | Color transformation patches and diffs applied to main tree |
+| `pkgbuilds/` | Reference | Arch Linux PKGBUILD templates (active PKGBUILD is in repo root) |
+| `dotfiles_config/` | Reference | Reference dotfile configurations (btop, fastfetch) |
+| `extras/` | Reference | Additional theme components (catppuccin color references) |
+| `local_share/` | Reference | Desktop entries and application data templates |
+| `local_config/` | Reference | Config file templates for system integration |
+| `eggwm/` | Reference | EggWM window manager theme (upstream reference only) |
+| `plank/` | Reference | Plank dock theme (upstream reference only) |
+
+**Key distinction:**
+- **Merged**: Content was integrated into the main repository tree (e.g., color transforms)
+- **Reference**: Kept for reference only; not part of the main build pipeline
 
 ## Restoration
 

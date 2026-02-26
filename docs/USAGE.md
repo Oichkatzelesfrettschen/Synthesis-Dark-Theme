@@ -23,7 +23,7 @@ gsettings set org.mate.interface cursor-theme 'MATE-Synthesis-Dark-Cursors'
 Link the provided config:
 ```bash
 mkdir -p ~/.config/alacritty
-ln -sf ~/Github/Synthesis-Dark/extras/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+ln -sf ~/Github/Synthesis-Dark-Theme/extras/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 ```
 
 ### **Tilix**
@@ -34,14 +34,14 @@ Import the scheme in Tilix Preferences -> Color Schemes -> Import.
 ### **Micro**
 ```bash
 mkdir -p ~/.config/micro/colorschemes
-ln -sf ~/Github/Synthesis-Dark/extras/micro/synthesis-dark.micro ~/.config/micro/colorschemes/
+ln -sf ~/Github/Synthesis-Dark-Theme/extras/micro/synthesis-dark.micro ~/.config/micro/colorschemes/
 ```
 In micro, press `Ctrl-E` and type `set colorscheme synthesis-dark`.
 
 ## 4. Maintenance
 To rebuild all assets and verify color consistency after an update:
 ```bash
-./src/build.sh
+make all
 ```
 
 ---
