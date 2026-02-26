@@ -15,7 +15,8 @@
     "primary": { "hex": "#f8f8f2", "role": "primary text / headings", "contrast_vs_base": 10.5 },
     "subtext1": { "hex": "#c3c7d1", "role": "secondary text", "contrast_vs_base": 7.1 },
     "subtext0": { "hex": "#9399b2", "role": "disabled / unfocused text", "contrast_vs_base": 4.6 },
-    "overlay2": { "hex": "#bac2de", "role": "comment / muted text", "contrast_vs_base": 6.3 }
+    "overlay2": { "hex": "#bac2de", "role": "comment / muted text", "contrast_vs_base": 6.3 },
+    "comment": { "hex": "#6272a4", "role": "Dracula comment color; used as border and secondary text in SCSS", "contrast_vs_base": 3.1 }
   },
 
   "accent": {
@@ -113,6 +114,19 @@
     "wm_button_bg": {
       "hex": "#17b169",
       "note": "CachyOS teal used for WM buttons in metacity-theme-3.xml. Intentional high-contrast accent."
+    }
+  },
+
+  "ui_derived": {
+    "link_teal": {
+      "hex": "#a0c1b9",
+      "role": "GNOME Shell link color (desaturated teal-green, derived from palette)",
+      "used_in": ["gnome-shell/_colors.scss $link_color"]
+    },
+    "destructive_dark": {
+      "hex": "#c72240",
+      "role": "Destructive action base color (darker red, used in gtk-3.20 and gtk-4.0 $destructive_color via darken())",
+      "used_in": ["gtk-3.20/_colors.scss $destructive_color", "gtk-4.0/_colors.scss $destructive_color"]
     }
   },
 

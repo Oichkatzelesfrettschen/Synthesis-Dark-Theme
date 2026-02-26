@@ -129,12 +129,14 @@ Gap between adjacent luminance values: 0.06-0.15 (sufficient for monochrome dist
 
 ## Colorblind Validation Checklist
 
-- [ ] Error vs Success: L=0.47 vs L=0.55 (0.08 gap + different hue family)
-- [ ] Warning vs Info: L=0.76 vs L=0.60 (0.16 gap + warm vs cool)
-- [ ] Primary vs Secondary: L=0.34 vs L=0.58 (0.24 gap)
-- [ ] All pairs pass deuteranopia simulation
-- [ ] All pairs pass protanopia simulation
-- [ ] Icon shapes provide non-color cues
+Luminance gaps verified by `python3 src/scripts/accessibility_audit.py` (P5.9):
+
+- [x] Error vs Success: L=0.40 vs L=0.66 (gap=0.25 + different hue family)
+- [x] Warning vs Info: L=0.78 vs L=0.63 (gap=0.15 + warm vs cool)
+- [x] Primary vs Secondary: L=0.33 vs L=0.54 (gap=0.21)
+- [ ] All pairs pass deuteranopia simulation (requires external tooling)
+- [ ] All pairs pass protanopia simulation (requires external tooling)
+- [x] Icon shapes provide non-color cues (MATE icon set uses distinct shapes)
 
 ## Files Affected
 
