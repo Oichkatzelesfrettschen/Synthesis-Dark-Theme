@@ -2,7 +2,14 @@
 
 **Version:** 2.0.0 "Harmonized"
 
-## Core Palette (The Source of Truth)
+> **Relationship to COLOR-STRATEGY.md:**
+> This file documents the **base palette** -- the Dracula-derived colors that form the
+> input to the color transformation pipeline. COLOR-STRATEGY.md documents the
+> **transform targets** applied by `src/scripts/transform_colors.py`. Both are correct
+> for their respective purposes. The canonical single source of truth for all colors
+> (with contrast ratios and semantic roles) is `src/colors.json`.
+
+## Core Palette (Base Input -- Dracula-Derived)
 
 | Name | Hex | Usage |
 | :--- | :--- | :--- |

@@ -17,6 +17,8 @@
 <constant name="C_title_focused" value="#f8f8f2" />
 <constant name="C_title_unfocused" value="#93979f" />
 
+<!-- #fc2 = #ffcc22 (Dracula upstream yellow button). Legacy upstream file.
+     The active Synthesis theme uses metacity-theme-3.xml with #17b169 (CachyOS teal). -->
 <constant name="C_wm_button_background" value="#fc2" />
 <constant name="C_wm_button_foreground" value="#283141" />
 <constant name="C_wm_button_unfocused" value="#e6e8eb" />

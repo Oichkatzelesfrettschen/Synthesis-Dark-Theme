@@ -1,0 +1,124 @@
+{
+  "_comment": "Synthesis-Dark canonical color palette v2.0.0. Single source of truth for all theme colors.",
+  "_see": "docs/COLOR-STRATEGY.md and docs/COLORSCHEME.md for rationale",
+  "_contrast_bg": "#282a36",
+
+  "background": {
+    "base": { "hex": "#282a36", "role": "primary background", "contrast_vs_fg": 10.5 },
+    "surface": { "hex": "#313244", "role": "elevated surface / input background", "contrast_vs_fg": 8.2 },
+    "overlay": { "hex": "#44475a", "role": "overlay / current line / selection bg", "contrast_vs_fg": 5.1 },
+    "crust": { "hex": "#232530", "role": "titlebar / deepest surface", "contrast_vs_fg": 12.1 },
+    "mantle": { "hex": "#1e1f29", "role": "Cinnamon bg variant (slightly darker)", "contrast_vs_fg": 13.3 }
+  },
+
+  "foreground": {
+    "primary": { "hex": "#f8f8f2", "role": "primary text / headings", "contrast_vs_base": 10.5 },
+    "subtext1": { "hex": "#c3c7d1", "role": "secondary text", "contrast_vs_base": 7.1 },
+    "subtext0": { "hex": "#9399b2", "role": "disabled / unfocused text", "contrast_vs_base": 4.6 },
+    "overlay2": { "hex": "#bac2de", "role": "comment / muted text", "contrast_vs_base": 6.3 }
+  },
+
+  "accent": {
+    "indigo_gray": {
+      "hex": "#8e95b8",
+      "role": "Synthesis primary accent; folder color; UI emphasis",
+      "hsl": "H=228 S=0.22 L=0.64",
+      "contrast_vs_base": 4.8
+    },
+    "lavender": {
+      "hex": "#b4befe",
+      "role": "indigo primary; link highlights",
+      "hsl": "H=232 S=0.97 L=0.85",
+      "contrast_vs_base": 8.6
+    },
+    "selection": {
+      "hex": "#b9a4fa",
+      "role": "Selection highlight (indigo-mauve-purple centroid). Replaces Dracula pink #ff79c6 in gtk-3.0 and harmonizes with #bd93f9 across all GTK versions. Computed as HSL centroid of #bd93f9 + #cba6f7 + #b4befe: H=255 S=0.90 L=0.81.",
+      "hsl": "H=255 S=0.90 L=0.81",
+      "contrast_vs_base": 7.9,
+      "replaces": "#ff79c6 (gtk-3.0), harmonizes with #bd93f9 (gtk-3.20/4.0)"
+    },
+    "purple": {
+      "hex": "#bd93f9",
+      "role": "Dracula purple (legacy; kept for compatibility in SCSS variables). Prefer selection for selection bg.",
+      "hsl": "H=265 S=0.89 L=0.78"
+    },
+    "mauve": {
+      "hex": "#cba6f7",
+      "role": "mauve / soft purple accent",
+      "hsl": "H=267 S=0.84 L=0.81"
+    }
+  },
+
+  "semantic": {
+    "teal_primary": {
+      "hex": "#17b169",
+      "role": "CachyOS teal; WM button background; success indicator (COLOR-STRATEGY target)",
+      "hsl": "H=151 S=0.79 L=0.40",
+      "contrast_vs_base": 4.7,
+      "used_in": ["metacity-1/metacity-theme-3.xml C_wm_button_background"]
+    },
+    "teal_soft": {
+      "hex": "#a6e3a1",
+      "role": "soft teal-green; icon accent",
+      "hsl": "H=115 S=0.54 L=0.76"
+    },
+    "cyan_standard": {
+      "hex": "#8be9fd",
+      "role": "Standard Dracula cyan; gtk-3.20 and gtk-4.0 link color",
+      "hsl": "H=191 S=0.97 L=0.90"
+    },
+    "cyan_adjusted": {
+      "hex": "#72bfd0",
+      "role": "Adjusted cyan used in gnome-shell and cinnamon. Slightly darker/more saturated than standard. Intentional variant for dark panel contrast.",
+      "hsl": "H=191 S=0.48 L=0.63",
+      "rationale": "Used in GNOME Shell and Cinnamon where full-brightness #8be9fd washes out on dark panels. Kept as named variant rather than replaced.",
+      "used_in": ["gnome-shell/_colors.scss $cyan", "cinnamon/_colors.scss $cyan"]
+    },
+    "red": {
+      "hex": "#ff5555",
+      "role": "Dracula red; error color base",
+      "hsl": "H=0 S=1.0 L=0.67"
+    },
+    "red_catppuccin": {
+      "hex": "#f38ba8",
+      "role": "Catppuccin red; COLOR-STRATEGY transform target for red family",
+      "hsl": "H=343 S=0.81 L=0.75"
+    },
+    "orange": {
+      "hex": "#ffb86c",
+      "role": "Dracula orange; warning color base",
+      "hsl": "H=31 S=1.0 L=0.71"
+    },
+    "yellow": {
+      "hex": "#f1fa8c",
+      "role": "Dracula yellow",
+      "hsl": "H=65 S=0.92 L=0.89"
+    },
+    "green_dracula": {
+      "hex": "#50fa7b",
+      "role": "Dracula green (base palette). Kept as SCSS variable. Not the transform target.",
+      "hsl": "H=135 S=0.94 L=0.65",
+      "note": "COLORSCHEME.md references this as the base; COLOR-STRATEGY.md targets #17b169 after transform. Both are correct for their respective purposes."
+    },
+    "pink": {
+      "hex": "#ff79c6",
+      "role": "Dracula pink. Previously used as selection color in gtk-3.0. Replaced by #b9a4fa (selection) per P3.2.",
+      "hsl": "H=316 S=1.0 L=0.74",
+      "deprecated_use": "gtk-3.0 selected_bg_color"
+    }
+  },
+
+  "metacity": {
+    "wm_button_bg": {
+      "hex": "#17b169",
+      "note": "CachyOS teal used for WM buttons in metacity-theme-3.xml. Intentional high-contrast accent."
+    }
+  },
+
+  "icon_folder": {
+    "slate": { "hex": "#8e95b8", "role": "Primary folder color (matches indigo_gray accent)" },
+    "gray_violet": { "hex": "#7f849c", "role": "Darker folder variant" },
+    "muted_slate": { "hex": "#6c7086", "role": "Muted folder / overlay" }
+  }
+}

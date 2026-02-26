@@ -13,7 +13,9 @@ $red: #ff5555;
 $purple: #bd93f9;
 $cyan: #72BFD0;
 $lime: #50fa7a;
-$teal: #bd93f9;
+// $teal: teal-family adjusted cyan (was wrongly aliased to $purple #bd93f9)
+// See src/colors.json "semantic.cyan_adjusted" for rationale.
+$teal: #72BFD0;
 
 $g1: transparentize($purple, 0.5);
 $g2: transparentize($purple, 0.5);

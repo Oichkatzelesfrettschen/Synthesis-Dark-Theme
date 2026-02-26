@@ -138,8 +138,9 @@ Gap between adjacent luminance values: 0.06-0.15 (sufficient for monochrome dist
 
 ## Files Affected
 
-- `~/.local/share/icons/MATE-Synthesis-Dark/` (all sizes)
-- `~/dotfiles/themes/MATE-Synthesis-Dark/` (source)
+- `icons/MATE-Synthesis-Dark/` (all sizes, repo-relative)
+- `src/scripts/transform_colors.py` (transformation script)
+- `src/colors.json` (canonical color definitions)
 
 ## Version
 

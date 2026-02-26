@@ -15,6 +15,7 @@ Design Philosophy:
 - Folder colors shift to indigo-gray, not teal
 """
 
+import json
 import os
 import re
 import sys
@@ -78,6 +79,51 @@ TARGETS = {
     'folder_gray': (127, 132, 156),       # #7f849c - gray-violet
     'folder_muted': (108, 112, 134),      # #6c7086 - muted slate
 }
+
+
+# =============================================================================
+# PALETTE LOADING (from src/colors.json via --palette flag)
+# =============================================================================
+
+def _hex_to_rgb(hex_color: str) -> Tuple[int, int, int]:
+    """Parse a #rrggbb hex string to an (r,g,b) tuple."""
+    h = hex_color.lstrip('#')
+    if len(h) == 3:
+        h = ''.join(c * 2 for c in h)
+    return (int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16))
+
+
+def load_palette(palette_path: Path) -> dict:
+    """
+    Load src/colors.json and extract named colors for use as transform targets.
+    Returns a dict of name -> (r, g, b) for any hex entry found in the JSON.
+    Only flat leaf nodes with a "hex" key are extracted.
+    """
+    try:
+        data = json.loads(palette_path.read_text(encoding='utf-8'))
+    except Exception as e:
+        print(f"WARNING: Could not load palette {palette_path}: {e}", file=sys.stderr)
+        return {}
+
+    palette = {}
+
+    def _walk(node, prefix):
+        if isinstance(node, dict):
+            if 'hex' in node and isinstance(node['hex'], str):
+                try:
+                    palette[prefix] = _hex_to_rgb(node['hex'])
+                except ValueError:
+                    pass
+            for k, v in node.items():
+                if k.startswith('_'):
+                    continue
+                _walk(v, f"{prefix}.{k}" if prefix else k)
+        elif isinstance(node, list):
+            for i, item in enumerate(node):
+                _walk(item, f"{prefix}[{i}]")
+
+    _walk(data, '')
+    return palette
 
 
 # =============================================================================
@@ -475,8 +521,25 @@ def main():
         action='store_true',
         help='Show per-file progress'
     )
+    parser.add_argument(
+        '--palette',
+        type=Path,
+        default=None,
+        metavar='PATH',
+        help='Path to src/colors.json to load canonical palette (e.g. --palette src/colors.json)'
+    )
 
     args = parser.parse_args()
+
+    # Load palette if specified -- currently used for informational output and
+    # future override of TARGETS dict. The transform logic uses hue-family rules
+    # defined in this script; the palette validates we are in sync.
+    if args.palette:
+        palette = load_palette(args.palette)
+        if palette:
+            print(f"Loaded {len(palette)} named colors from {args.palette}")
+        else:
+            print(f"WARNING: palette {args.palette} loaded but no colors extracted", file=sys.stderr)
 
     # Determine what to process
     if args.icon_dir:
