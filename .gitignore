@@ -1,0 +1,37 @@
+# Node.js (dead pipeline - Gulpfile.js removed in Phase 1)
+node_modules/
+
+# Python
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# SCSS compilation cache
+.sass-cache/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+pkg/
+src/*.tar.*
+*.pkg.tar.*
+.SRCINFO
+
+# Theme caches (generated at install time)
+icon-theme.cache

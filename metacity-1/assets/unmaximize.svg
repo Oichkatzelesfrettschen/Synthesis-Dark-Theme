@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="8" cy="8" r="6" fill="#232530" filter="url(#glow)"/>
+  <circle cx="8" cy="8" r="5.5" fill="#2d2f3d"/>
+
+  <!-- Inner highlight -->
+  <circle cx="7" cy="7" r="4" fill="none" stroke="#383a4a" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Unmaximize: two overlapping rectangles with CachyOS teal -->
+  <g stroke="#17b169" stroke-width="1.2" fill="none" filter="url(#glow)">
+    <!-- Back rectangle (offset) -->
+    <rect x="6" y="3.5" width="5.5" height="5.5" rx="0.5"/>
+    <!-- Front rectangle -->
+    <rect x="4" y="5.5" width="5.5" height="5.5" rx="0.5" fill="#2d2f3d"/>
+  </g>
+</svg>

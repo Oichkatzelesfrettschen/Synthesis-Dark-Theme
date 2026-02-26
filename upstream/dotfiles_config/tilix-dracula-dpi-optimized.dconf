@@ -1,0 +1,50 @@
+# Tilix Dracula Theme - High DPI Optimized
+# Font: Spline Sans Mono 15 (larger default for high-DPI readability)
+# Colors: Official Dracula specification
+# Date: 2024-12-10
+
+[/]
+app-title='${appName}: ${directory}'
+background-color='#282A36'
+background-image=''
+background-transparency-percent=8
+badge-color='#BD93F9'
+bold-color='#6E46A4'
+bold-color-same-as-fg=false
+bold-is-bright=true
+cell-height-scale=1.1
+cell-width-scale=1.0
+copy-on-select=true
+cursor-background-color='#F8F8F2'
+cursor-blink-mode='on'
+cursor-colors-set=true
+cursor-foreground-color='#282A36'
+cursor-shape='ibeam'
+default-size-columns=120
+default-size-rows=32
+enable-sixel=true
+focus-follow-mouse=true
+font='Spline Sans Mono 15'
+foreground-color='#F8F8F2'
+highlight-background-color='#44475A'
+highlight-colors-set=true
+highlight-foreground-color='#F8F8F2'
+login-shell=true
+palette=['#21222C', '#FF5555', '#50FA7B', '#F1FA8C', '#BD93F9', '#FF79C6', '#8BE9FD', '#F8F8F2', '#6272A4', '#FF6E6E', '#69FF94', '#FFFFA5', '#D6ACFF', '#FF92DF', '#A4FFFF', '#FFFFFF']
+pretty=true
+prompt-on-close-process=true
+quake-height-percent=40
+quake-specific-monitor=0
+quake-width-percent=100
+rewrap-on-resize=true
+scroll-on-keystroke=true
+scroll-on-output=false
+scrollback-lines=10000
+show-scrollbar=false
+tab-position='top'
+terminal-title='${title}'
+theme-variant='dark'
+use-system-font=false
+use-tabs=true
+warn-vte-config-issue=false
+window-style='normal'

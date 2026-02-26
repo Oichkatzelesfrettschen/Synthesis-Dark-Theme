@@ -1,0 +1,86 @@
+{
+  /* WindowMaker Configuration - Dracula Theme */
+
+  /* Workspace Background */
+  SmoothWorkspaceBack = YES;
+  WorkspaceBack = (
+    spixmap,
+    "~/GNUstep/Library/WindowMaker/Backgrounds/dracula-arch.png",
+    "#282a36"
+  );
+
+  /* Window Focus Mode */
+  FocusMode = click;
+
+  /* Workspace Settings */
+  WorkspaceNames = (
+    "Main",
+    "Code",
+    "Web",
+    "Media"
+  );
+
+  /* Window Cycling */
+  CirculateRaise = YES;
+
+  /* Icon Settings */
+  IconPosition = blh;
+  IconSize = 64;
+
+  /* Animation Settings */
+  Superfluous = YES;
+  AppIconBounce = YES;
+  MiniwindowTitleBalloons = YES;
+
+  /* Dialog Settings */
+  NaturalAlphabeticOrder = YES;
+
+  /* Double Click Titlebar */
+  DoubleClickTitleAction = Maximize;
+
+  /* Mouse Buttons */
+  MenuOnRootClick = YES;
+  WindowListOnRootClick = YES;
+  ApplicationMenuOnRootClick = NO;
+
+  /* Dock and Clip */
+  DockPosition = right;
+  ClipPosition = left;
+
+  /* Edge Resistance */
+  EdgeResistance = 30;
+
+  /* Window Snapping */
+  Attraction = YES;
+
+  /* Opaque Move/Resize */
+  OpaqueMove = YES;
+  OpaqueResize = NO;
+
+  /* Modifier Keys */
+  ModifierKey = Mod4;
+
+  /* Keyboard Navigation */
+  FocusNextKey = "Mod4+Tab";
+  FocusPrevKey = "Mod4+Shift+Tab";
+  RaiseKey = "Mod4+Up";
+  LowerKey = "Mod4+Down";
+  MaximizeKey = "Mod4+m";
+  MiniaturizeKey = "Mod4+h";
+  CloseKey = "Mod4+q";
+
+  /* Workspace Switching */
+  NextWorkspaceKey = "Mod4+Right";
+  PrevWorkspaceKey = "Mod4+Left";
+
+  /* Run Dialog */
+  RootMenuKey = "Mod4+space";
+  WindowListKey = "Mod4+w";
+
+  /* Clip Settings */
+  AutoExpandClip = YES;
+
+  /* Smooth Animation */
+  ShadeSpeed = fast;
+  MiniaturizeSpeed = fast;
+}

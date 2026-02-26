@@ -1,0 +1,62 @@
+// Synthesis Dark Fastfetch Config
+// Save as config/shell/fastfetch-synthesis.jsonc
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "arch",
+        "color": {
+            "1": "magenta",
+            "2": "white"
+        },
+        "padding": {
+            "top": 2,
+            "right": 4
+        }
+    },
+    "display": {
+        "separator": "  ",
+        "color": "cyan"
+    },
+    "modules": [
+        "title",
+        "separator",
+        {
+            "type": "os",
+            "key": "OS   ",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "host",
+            "key": "Host ",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "kernel",
+            "key": "Kernel",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "uptime",
+            "key": "Uptime",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "packages",
+            "key": "Pkgs ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "memory",
+            "key": "Mem  ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "display",
+            "key": "Disp ",
+            "keyColor": "blue"
+        },
+        "break",
+        "colors"
+    ]
+}

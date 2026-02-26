@@ -1,0 +1,11 @@
+--- a/gtk-4.0/gtk.css
++++ b/gtk-4.0/gtk.css
+@@ -5680,7 +5680,7 @@
+       color: rgba(189, 147, 249, 0.4); }
+ .nautilus-window .path-buttons-box, .nautilus-window #NautilusPathBar {
+   background: transparent;
+-  height: 20px;
++  min-height: 20px;
+   margin-top: 7px;
+   margin-bottom: 7px; }
+   .nautilus-window .path-buttons-box .dim-label, .nautilus-window .path-buttons-box label.separator, .nautilus-window .path-buttons-box .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box .subtitle,

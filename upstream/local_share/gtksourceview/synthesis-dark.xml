@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Synthesis Dark - Hybrid Color Scheme for GtkSourceView
+
+  A carefully synthesized color scheme combining:
+  - Dracula: Rich dark background, high-contrast accents
+  - Catppuccin Mocha: Warm pastel tones, comfortable reading
+  - CachyOS: Teal accent (system identity)
+  - Colorblind-safe: Paul Tol principles, no red-green conflicts
+  - Cognitive-load optimized: 7 semantic colors, typography emphasis
+
+  WHY: Maximize readability for extended coding sessions while
+       maintaining accessibility for all types of color vision.
+
+  WHAT: Complete syntax highlighting for gedit, pluma, and any
+        GtkSourceView-based editor.
+
+  HOW: Install to ~/.local/share/gtksourceview-{3,4}/styles/
+
+  Author: dotfiles synthesis (2025-12-24)
+  License: MIT
+-->
+<style-scheme id="synthesis-dark" _name="Synthesis Dark" version="1.0" kind="dark">
+  <_description>Dracula + Catppuccin + CachyOS + Accessibility hybrid</_description>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       BASE PALETTE - Synthesized from Dracula + Catppuccin Mocha
+       ═══════════════════════════════════════════════════════════════ -->
+
+  <!-- Backgrounds: Blend of Dracula #282a36 and Catppuccin #1e1e2e -->
+  <color name="bg-base"        value="#232530"/>  <!-- Primary background -->
+  <color name="bg-elevated"    value="#2d2f3d"/>  <!-- Slightly elevated surfaces -->
+  <color name="bg-selection"   value="#44475a"/>  <!-- Dracula selection -->
+  <color name="bg-highlight"   value="#383a4a"/>  <!-- Current line, subtle -->
+  <color name="bg-visual"      value="#45475a"/>  <!-- Catppuccin surface1 -->
+
+  <!-- Foregrounds: High contrast for readability -->
+  <color name="fg-primary"     value="#f4f4f5"/>  <!-- Main text (WCAG AAA) -->
+  <color name="fg-secondary"   value="#bac2de"/>  <!-- Catppuccin subtext1 -->
+  <color name="fg-muted"       value="#9399b2"/>  <!-- Comments, disabled -->
+  <color name="fg-invisible"   value="#585b70"/>  <!-- Whitespace markers -->
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SEMANTIC ACCENT COLORS - Colorblind-Safe Selection
+       Using Paul Tol's qualitative palette principles + theme accents
+       ═══════════════════════════════════════════════════════════════ -->
+
+  <!-- CachyOS Teal: Primary accent, distinctive for all vision types -->
+  <color name="accent-teal"    value="#17b169"/>  <!-- CachyOS identity -->
+  <color name="accent-cyan"    value="#89dceb"/>  <!-- Catppuccin sky -->
+
+  <!-- Dracula Purple: Keywords, control flow (high visibility) -->
+  <color name="accent-purple"  value="#cba6f7"/>  <!-- Catppuccin mauve -->
+  <color name="accent-violet"  value="#b4befe"/>  <!-- Catppuccin lavender -->
+
+  <!-- Warm accents: Strings, values (distinguishable from cyan/purple) -->
+  <color name="accent-yellow"  value="#f9e2af"/>  <!-- Catppuccin yellow -->
+  <color name="accent-peach"   value="#fab387"/>  <!-- Catppuccin peach -->
+
+  <!-- Alert colors: Errors/warnings (brightness-differentiated) -->
+  <color name="accent-red"     value="#f38ba8"/>  <!-- Catppuccin red (softer) -->
+  <color name="accent-green"   value="#a6e3a1"/>  <!-- Catppuccin green (muted) -->
+
+  <!-- Supplementary accents -->
+  <color name="accent-pink"    value="#f5c2e7"/>  <!-- Catppuccin pink -->
+  <color name="accent-blue"    value="#89b4fa"/>  <!-- Catppuccin blue -->
+  <color name="accent-sapphire" value="#74c7ec"/> <!-- Catppuccin sapphire -->
+  <color name="accent-flamingo" value="#f2cdcd"/> <!-- Catppuccin flamingo -->
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GLOBAL EDITOR STYLES
+       ═══════════════════════════════════════════════════════════════ -->
+
+  <!-- Base editor appearance -->
+  <style name="text"                    foreground="fg-primary" background="bg-base"/>
+  <style name="cursor"                  foreground="fg-primary"/>
+  <style name="selection"               background="bg-selection"/>
+  <style name="current-line"            background="bg-highlight"/>
+  <style name="current-line-number"     foreground="accent-teal" background="bg-highlight" bold="true"/>
+  <style name="line-numbers"            foreground="fg-muted" background="bg-base"/>
+  <style name="draw-spaces"             foreground="fg-invisible"/>
+  <style name="right-margin"            foreground="fg-invisible" background="bg-elevated"/>
+  <style name="background-pattern"      background="#rgba(68,71,90,0.1)"/>
+
+  <!-- Search and matching -->
+  <style name="search-match"            foreground="bg-base" background="accent-yellow" bold="true"/>
+  <style name="bracket-match"           foreground="fg-primary" background="accent-purple" bold="true"/>
+  <style name="bracket-mismatch"        foreground="fg-primary" background="accent-red" bold="true" underline="true"/>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SYNTAX HIGHLIGHTING - Semantic Categories
+
+       Design principles for reduced cognitive load:
+       1. Keywords use BOLD for emphasis (reduces color dependency)
+       2. Comments use ITALIC for de-emphasis
+       3. Strings use warm color (yellow) - universally distinguishable
+       4. Types use cool color (cyan/blue) - semantically distinct
+       5. Functions use green/teal - action-oriented
+       6. Errors use brightness, not just hue
+       ═══════════════════════════════════════════════════════════════ -->
+
+  <!-- COMMENTS: Muted, italic (cognitive: background information) -->
+  <style name="def:comment"             foreground="fg-muted" italic="true"/>
+  <style name="def:shebang"             foreground="fg-muted" italic="true" bold="true"/>
+  <style name="def:doc-comment"         foreground="fg-secondary" italic="true"/>
+  <style name="def:doc-comment-element" foreground="accent-sapphire" italic="true"/>
+  <style name="def:note"                foreground="accent-yellow" background="bg-elevated" bold="true"/>
+
+  <!-- KEYWORDS: Purple with bold (cognitive: control flow, important) -->
+  <style name="def:keyword"             foreground="accent-purple" bold="true"/>
+  <style name="def:statement"           foreground="accent-purple" bold="true"/>
+  <style name="def:builtin"             foreground="accent-violet"/>
+  <style name="def:reserved"            foreground="accent-purple" italic="true"/>
+
+  <!-- CONSTANTS: Yellow/Peach family (cognitive: literal values) -->
+  <style name="def:constant"            foreground="accent-peach"/>
+  <style name="def:string"              foreground="accent-yellow"/>
+  <style name="def:character"           foreground="accent-yellow"/>
+  <style name="def:number"              foreground="accent-peach"/>
+  <style name="def:floating-point"      foreground="accent-peach"/>
+  <style name="def:decimal"             foreground="accent-peach"/>
+  <style name="def:base-n-integer"      foreground="accent-peach"/>
+  <style name="def:complex"             foreground="accent-peach"/>
+  <style name="def:boolean"             foreground="accent-peach" bold="true"/>
+  <style name="def:special-constant"    foreground="accent-flamingo" bold="true"/>
+  <style name="def:special-char"        foreground="accent-pink"/>
+
+  <!-- TYPES: Cyan/Blue family (cognitive: structural, descriptive) -->
+  <style name="def:type"                foreground="accent-cyan"/>
+  <style name="def:class"               foreground="accent-cyan" bold="true"/>
+  <style name="def:identifier"          foreground="accent-sapphire"/>
+  <style name="def:namespace"           foreground="accent-blue"/>
+
+  <!-- FUNCTIONS: Teal/Green (cognitive: actions, callable) -->
+  <style name="def:function"            foreground="accent-teal"/>
+  <style name="def:preprocessor"        foreground="accent-pink"/>
+  <style name="def:macro"               foreground="accent-pink" bold="true"/>
+
+  <!-- OPERATORS: Pink (cognitive: operations, transformations) -->
+  <style name="def:operator"            foreground="accent-pink"/>
+
+  <!-- ERRORS & ALERTS: Brightness + underline (colorblind-safe) -->
+  <style name="def:error"               foreground="accent-red" underline="true"/>
+  <style name="def:warning"             foreground="accent-yellow" underline="true"/>
+  <style name="def:deprecated"          foreground="fg-muted" strikethrough="true"/>
+  <style name="def:net-address"         foreground="accent-blue" underline="true"/>
+
+  <!-- SPECIAL: Emphasis and highlighting -->
+  <style name="def:emphasis"            italic="true"/>
+  <style name="def:strong-emphasis"     bold="true"/>
+  <style name="def:underlined"          underline="true"/>
+  <style name="def:deletion"            foreground="accent-red" strikethrough="true"/>
+  <style name="def:insertion"           foreground="accent-green"/>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       LANGUAGE-SPECIFIC OVERRIDES
+       ═══════════════════════════════════════════════════════════════ -->
+
+  <!-- Markdown -->
+  <style name="markdown:header"         foreground="accent-purple" bold="true"/>
+  <style name="markdown:emphasis"       foreground="accent-yellow" italic="true"/>
+  <style name="markdown:strong-emphasis" foreground="accent-peach" bold="true"/>
+  <style name="markdown:link-text"      foreground="accent-cyan"/>
+  <style name="markdown:url"            foreground="accent-blue" underline="true"/>
+  <style name="markdown:code"           foreground="accent-teal" background="bg-elevated"/>
+  <style name="markdown:blockquote"     foreground="fg-secondary" italic="true"/>
+  <style name="markdown:horizontal-rule" foreground="fg-invisible"/>
+
+  <!-- HTML/XML -->
+  <style name="html:tag"                foreground="accent-pink"/>
+  <style name="html:attrib-name"        foreground="accent-teal"/>
+  <style name="html:attrib-value"       foreground="accent-yellow"/>
+  <style name="xml:element-name"        foreground="accent-pink"/>
+  <style name="xml:attribute-name"      foreground="accent-teal"/>
+  <style name="xml:attribute-value"     foreground="accent-yellow"/>
+  <style name="xml:namespace"           foreground="accent-purple"/>
+  <style name="xml:doctype"             foreground="fg-muted" italic="true"/>
+  <style name="xml:cdata-delim"         foreground="accent-violet"/>
+
+  <!-- CSS -->
+  <style name="css:selector-id"         foreground="accent-blue"/>
+  <style name="css:selector-class"      foreground="accent-teal"/>
+  <style name="css:property-name"       foreground="accent-cyan"/>
+  <style name="css:property-value"      foreground="accent-peach"/>
+  <style name="css:color"               foreground="accent-pink"/>
+  <style name="css:function"            foreground="accent-teal"/>
+
+  <!-- JavaScript/TypeScript -->
+  <style name="js:function-expression"  foreground="accent-teal"/>
+  <style name="js:template-literal"     foreground="accent-yellow"/>
+  <style name="js:regex"                foreground="accent-pink"/>
+
+  <!-- Python -->
+  <style name="python:builtin-function" foreground="accent-teal"/>
+  <style name="python:decorator"        foreground="accent-pink" italic="true"/>
+  <style name="python:module-handler"   foreground="accent-purple"/>
+  <style name="python:class-name"       foreground="accent-cyan" bold="true"/>
+  <style name="python:function-name"    foreground="accent-teal"/>
+  <style name="python:string-conversion" foreground="accent-peach"/>
+  <style name="python:f-string-curly-braces" foreground="accent-pink"/>
+
+  <!-- Shell -->
+  <style name="sh:variable"             foreground="accent-cyan"/>
+  <style name="sh:variable-definition"  foreground="accent-teal"/>
+  <style name="sh:function"             foreground="accent-teal" bold="true"/>
+  <style name="sh:here-doc-bound"       foreground="accent-pink"/>
+
+  <!-- C/C++ -->
+  <style name="c:preprocessor"          foreground="accent-pink"/>
+  <style name="c:included-file"         foreground="accent-yellow"/>
+  <style name="c:common-defines"        foreground="accent-peach"/>
+  <style name="c:type"                  foreground="accent-cyan"/>
+  <style name="c:storage-class"         foreground="accent-purple" bold="true"/>
+
+  <!-- Rust -->
+  <style name="rust:lifetime"           foreground="accent-flamingo" italic="true"/>
+  <style name="rust:macro"              foreground="accent-pink" bold="true"/>
+  <style name="rust:attribute"          foreground="accent-violet"/>
+  <style name="rust:scope"              foreground="accent-blue"/>
+
+  <!-- Go -->
+  <style name="go:printf"               foreground="accent-cyan"/>
+
+  <!-- Diff -->
+  <style name="diff:added-line"         foreground="accent-green"/>
+  <style name="diff:removed-line"       foreground="accent-red"/>
+  <style name="diff:changed-line"       foreground="accent-yellow"/>
+  <style name="diff:diff-file"          foreground="accent-purple" bold="true"/>
+  <style name="diff:location"           foreground="accent-cyan"/>
+  <style name="diff:special-case"       foreground="accent-pink"/>
+
+  <!-- JSON -->
+  <style name="json:keyname"            foreground="accent-cyan"/>
+  <style name="json:string"             foreground="accent-yellow"/>
+  <style name="json:number"             foreground="accent-peach"/>
+  <style name="json:boolean"            foreground="accent-peach" bold="true"/>
+  <style name="json:null"               foreground="accent-flamingo" bold="true"/>
+
+  <!-- YAML -->
+  <style name="yaml:anchor"             foreground="accent-pink"/>
+  <style name="yaml:tag-handle"         foreground="accent-purple"/>
+  <style name="yaml:alias"              foreground="accent-pink" italic="true"/>
+
+  <!-- LaTeX -->
+  <style name="latex:command"           foreground="accent-pink"/>
+  <style name="latex:display-math"      foreground="accent-peach"/>
+  <style name="latex:include"           foreground="accent-teal"/>
+  <style name="latex:special-char"      foreground="accent-violet"/>
+
+</style-scheme>

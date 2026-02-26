@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=WindowMaker (GNUstep)
+Comment=Lightweight NeXTSTEP-inspired window manager with Dracula theme
+Exec=/usr/bin/wmaker
+TryExec=/usr/bin/wmaker
+Type=Application
+DesktopNames=WindowMaker

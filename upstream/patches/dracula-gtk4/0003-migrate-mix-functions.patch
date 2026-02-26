@@ -1,0 +1,18 @@
+--- a/gtk-4.0/gtk.css
++++ b/gtk-4.0/gtk.css
+@@ -5024,13 +5024,13 @@
+ 
+ .floating-bar {
+   background-color: #282a36;
+   border-bottom: 1px solid mix(@theme_base_color, #000000, 0.35); }
++  border-bottom: 1px solid color-mix(in srgb, @theme_base_color 35%, #000000); }
+   .floating-bar.left {
+     border-right: 1px solid #1e1f29; }
+   .floating-bar.right {
+     border-left: 1px solid #1e1f29; }
+   .floating-bar.top {
+-    border-top: 1px solid mix(@theme_base_color, #000000, 0.35); }
++    border-top: 1px solid color-mix(in srgb, @theme_base_color 35%, #000000); }
+ 
+ /* Keyboard */
+ .keyboard-popover {

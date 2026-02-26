@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Super-Pluma Synthesis - Premium Color Scheme for GtkSourceView
+  ==============================================================
+
+  A meticulously crafted color scheme synthesizing:
+  - Dracula: Rich dark backgrounds, high-contrast accents
+  - Catppuccin Mocha: Warm pastels, comfortable extended reading
+  - CachyOS Teal: System identity accent (#17b169)
+  - Paul Tol: Colorblind-safe palette principles
+  - Semantic Typography: Bold keywords, italic comments, underlined links
+
+  Design Principles:
+  1. WCAG AAA contrast ratios for primary text
+  2. Semantic color groupings (warm=values, cool=types, bold=control)
+  3. Reduced cognitive load via consistent visual language
+  4. Colorblind accessibility (no red-green-only distinctions)
+  5. Extended language support with nuanced per-element styling
+
+  Installation:
+    ~/.local/share/gtksourceview-4/styles/
+    ~/.local/share/gtksourceview-3/styles/
+
+  Part of Super-Pluma: Memory-optimized Pluma plugin distribution
+  License: GPL-3.0-or-later
+-->
+<style-scheme id="super-pluma-synthesis" _name="Super-Pluma Synthesis" version="1.0" kind="dark">
+  <author>Super-Pluma Project</author>
+  <_description>Premium dark theme: Dracula + Catppuccin + CachyOS synthesis with full language support</_description>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       CORE PALETTE - Foundational Colors
+       ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- Background Hierarchy (darkest to lightest) -->
+  <color name="bg-void"         value="#1a1b26"/>  <!-- Deepest: popups, tooltips -->
+  <color name="bg-base"         value="#232530"/>  <!-- Primary editor background -->
+  <color name="bg-surface"      value="#2a2c3a"/>  <!-- Cards, panels -->
+  <color name="bg-elevated"     value="#2d2f3d"/>  <!-- Raised elements -->
+  <color name="bg-overlay"      value="#313347"/>  <!-- Overlays, modals -->
+  <color name="bg-highlight"    value="#383a4a"/>  <!-- Current line -->
+  <color name="bg-selection"    value="#44475a"/>  <!-- Selection (Dracula) -->
+  <color name="bg-hover"        value="#4a4d5e"/>  <!-- Hover states -->
+  <color name="bg-active"       value="#525569"/>  <!-- Active/pressed -->
+
+  <!-- Foreground Hierarchy (brightest to dimmest) -->
+  <color name="fg-bright"       value="#ffffff"/>  <!-- Maximum contrast -->
+  <color name="fg-primary"      value="#f4f4f5"/>  <!-- Main text (WCAG AAA) -->
+  <color name="fg-secondary"    value="#cdd6f4"/>  <!-- Catppuccin text -->
+  <color name="fg-tertiary"     value="#bac2de"/>  <!-- Subtext1 -->
+  <color name="fg-muted"        value="#9399b2"/>  <!-- Comments, disabled -->
+  <color name="fg-subtle"       value="#7f849c"/>  <!-- Overlay1 -->
+  <color name="fg-faint"        value="#6c7086"/>  <!-- Overlay0 -->
+  <color name="fg-invisible"    value="#585b70"/>  <!-- Whitespace, guides -->
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       ACCENT PALETTE - Semantic Colors (Colorblind-Safe)
+       ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- Primary Accents -->
+  <color name="teal"            value="#17b169"/>  <!-- CachyOS identity -->
+  <color name="teal-dim"        value="#14996b"/>  <!-- Teal variant -->
+  <color name="teal-bright"     value="#1cc97a"/>  <!-- Teal highlight -->
+
+  <!-- Cool Spectrum (Types, Structure) -->
+  <color name="cyan"            value="#89dceb"/>  <!-- Sky -->
+  <color name="cyan-dim"        value="#74c7ec"/>  <!-- Sapphire -->
+  <color name="cyan-bright"     value="#94e2f2"/>  <!-- Sky bright -->
+  <color name="blue"            value="#89b4fa"/>  <!-- Blue -->
+  <color name="blue-dim"        value="#7ba3e8"/>  <!-- Blue muted -->
+  <color name="blue-bright"     value="#a6c8ff"/>  <!-- Blue highlight -->
+  <color name="lavender"        value="#b4befe"/>  <!-- Lavender -->
+
+  <!-- Warm Spectrum (Values, Literals) -->
+  <color name="yellow"          value="#f9e2af"/>  <!-- Yellow -->
+  <color name="yellow-dim"      value="#e8d19e"/>  <!-- Yellow muted -->
+  <color name="yellow-bright"   value="#fff3c4"/>  <!-- Yellow highlight -->
+  <color name="peach"           value="#fab387"/>  <!-- Peach -->
+  <color name="peach-dim"       value="#e9a276"/>  <!-- Peach muted -->
+  <color name="peach-bright"    value="#ffbe98"/>  <!-- Peach highlight -->
+  <color name="flamingo"        value="#f2cdcd"/>  <!-- Flamingo -->
+
+  <!-- Purple Spectrum (Keywords, Control Flow) -->
+  <color name="mauve"           value="#cba6f7"/>  <!-- Mauve (primary keyword) -->
+  <color name="mauve-dim"       value="#b995e6"/>  <!-- Mauve muted -->
+  <color name="mauve-bright"    value="#ddb7ff"/>  <!-- Mauve highlight -->
+  <color name="violet"          value="#b4befe"/>  <!-- Lavender -->
+
+  <!-- Pink Spectrum (Operators, Special) -->
+  <color name="pink"            value="#f5c2e7"/>  <!-- Pink -->
+  <color name="pink-dim"        value="#e4b1d6"/>  <!-- Pink muted -->
+  <color name="pink-bright"     value="#ffd3f8"/>  <!-- Pink highlight -->
+  <color name="maroon"          value="#eba0ac"/>  <!-- Maroon -->
+
+  <!-- Status Colors -->
+  <color name="green"           value="#a6e3a1"/>  <!-- Success, additions -->
+  <color name="green-dim"       value="#95d290"/>  <!-- Green muted -->
+  <color name="green-bright"    value="#b7f4b2"/>  <!-- Green highlight -->
+  <color name="red"             value="#f38ba8"/>  <!-- Error, deletions -->
+  <color name="red-dim"         value="#e27a97"/>  <!-- Red muted -->
+  <color name="red-bright"      value="#ff9cb9"/>  <!-- Red highlight -->
+  <color name="orange"          value="#fab387"/>  <!-- Warning -->
+
+  <!-- Rainbow Brackets (6-color cycle) -->
+  <color name="rainbow-1"       value="#f38ba8"/>  <!-- Red/Maroon -->
+  <color name="rainbow-2"       value="#fab387"/>  <!-- Peach -->
+  <color name="rainbow-3"       value="#f9e2af"/>  <!-- Yellow -->
+  <color name="rainbow-4"       value="#a6e3a1"/>  <!-- Green -->
+  <color name="rainbow-5"       value="#89b4fa"/>  <!-- Blue -->
+  <color name="rainbow-6"       value="#cba6f7"/>  <!-- Mauve -->
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       EDITOR CHROME - UI Elements
+       ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- Base Editor -->
+  <style name="text"                      foreground="fg-primary" background="bg-base"/>
+  <style name="cursor"                    foreground="fg-bright"/>
+  <style name="selection"                 background="bg-selection"/>
+  <style name="selection-unfocused"       background="bg-overlay"/>
+  <style name="current-line"              background="bg-highlight"/>
+  <style name="current-line-number"       foreground="teal" background="bg-highlight" bold="true"/>
+  <style name="line-numbers"              foreground="fg-faint" background="bg-base"/>
+  <style name="line-numbers-border"       foreground="fg-invisible" background="bg-surface"/>
+
+  <!-- Whitespace and Guides -->
+  <style name="draw-spaces"               foreground="fg-invisible"/>
+  <style name="right-margin"              foreground="fg-invisible" background="bg-surface"/>
+  <style name="background-pattern"        background="#rgba(68,71,90,0.08)"/>
+
+  <!-- Search and Matching -->
+  <style name="search-match"              foreground="bg-void" background="yellow" bold="true"/>
+  <style name="quick-highlight-match"     background="#rgba(249,226,175,0.25)"/>
+  <style name="bracket-match"             foreground="fg-bright" background="mauve" bold="true"/>
+  <style name="bracket-mismatch"          foreground="fg-bright" background="red" bold="true" underline="error"/>
+
+  <!-- Snippets -->
+  <style name="snippet-focus"             foreground="fg-bright" background="bg-active"/>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SYNTAX HIGHLIGHTING - Core Definitions
+       ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- === COMMENTS (Muted, Italic - Background Information) === -->
+  <style name="def:comment"               foreground="fg-muted" italic="true"/>
+  <style name="def:shebang"               foreground="fg-subtle" italic="true" bold="true"/>
+  <style name="def:doc-comment"           foreground="fg-tertiary" italic="true"/>
+  <style name="def:doc-comment-element"   foreground="cyan-dim" italic="true"/>
+
+  <!-- Special Comment Tags -->
+  <style name="def:note"                  foreground="yellow" background="bg-elevated" bold="true"/>
+  <style name="def:attention"             foreground="orange" background="bg-elevated" bold="true"/>
+
+  <!-- === KEYWORDS (Purple + Bold - Control Flow, Important) === -->
+  <style name="def:keyword"               foreground="mauve" bold="true"/>
+  <style name="def:statement"             foreground="mauve" bold="true"/>
+  <style name="def:builtin"               foreground="violet"/>
+  <style name="def:reserved"              foreground="mauve-dim" italic="true"/>
+  <style name="def:special-keyword"       foreground="mauve-bright" bold="true"/>
+
+  <!-- === CONSTANTS (Yellow/Peach - Literal Values) === -->
+  <style name="def:constant"              foreground="peach"/>
+  <style name="def:string"                foreground="yellow"/>
+  <style name="def:character"             foreground="yellow-bright"/>
+  <style name="def:number"                foreground="peach"/>
+  <style name="def:floating-point"        foreground="peach"/>
+  <style name="def:decimal"               foreground="peach"/>
+  <style name="def:base-n-integer"        foreground="peach-dim"/>
+  <style name="def:complex"               foreground="peach-bright"/>
+  <style name="def:boolean"               foreground="peach" bold="true"/>
+  <style name="def:special-constant"      foreground="flamingo" bold="true"/>
+  <style name="def:special-char"          foreground="pink"/>
+  <style name="def:escape"                foreground="pink" bold="true"/>
+
+  <!-- === TYPES (Cyan/Blue - Structural, Descriptive) === -->
+  <style name="def:type"                  foreground="cyan"/>
+  <style name="def:class"                 foreground="cyan" bold="true"/>
+  <style name="def:struct"                foreground="cyan"/>
+  <style name="def:enum"                  foreground="cyan"/>
+  <style name="def:union"                 foreground="cyan-dim"/>
+  <style name="def:trait"                 foreground="cyan-bright" italic="true"/>
+  <style name="def:interface"             foreground="cyan-bright" italic="true"/>
+  <style name="def:identifier"            foreground="cyan-dim"/>
+  <style name="def:namespace"             foreground="blue"/>
+  <style name="def:property"              foreground="lavender"/>
+
+  <!-- === FUNCTIONS (Teal/Green - Actions, Callable) === -->
+  <style name="def:function"              foreground="teal"/>
+  <style name="def:method"                foreground="teal"/>
+  <style name="def:builtin-function"      foreground="teal-bright"/>
+  <style name="def:preprocessor"          foreground="pink"/>
+  <style name="def:macro"                 foreground="pink" bold="true"/>
+  <style name="def:include"               foreground="pink"/>
+
+  <!-- === OPERATORS (Pink - Operations, Transformations) === -->
+  <style name="def:operator"              foreground="pink"/>
+  <style name="def:punctuation"           foreground="fg-secondary"/>
+
+  <!-- === VARIABLES === -->
+  <style name="def:variable"              foreground="fg-primary"/>
+  <style name="def:parameter"             foreground="maroon" italic="true"/>
+  <style name="def:placeholder"           foreground="pink" background="bg-elevated"/>
+
+  <!-- === ERRORS & ALERTS (Brightness + Style, Colorblind-Safe) === -->
+  <style name="def:error"                 foreground="red" underline="error"/>
+  <style name="def:warning"               foreground="yellow" underline="true"/>
+  <style name="def:deprecated"            foreground="fg-muted" strikethrough="true"/>
+  <style name="def:net-address"           foreground="blue" underline="single"/>
+  <style name="def:link"                  foreground="blue" underline="single"/>
+
+  <!-- === TEXT EMPHASIS === -->
+  <style name="def:emphasis"              italic="true"/>
+  <style name="def:strong-emphasis"       bold="true"/>
+  <style name="def:underlined"            underline="single"/>
+  <style name="def:deletion"              foreground="red" strikethrough="true"/>
+  <style name="def:insertion"             foreground="green"/>
+  <style name="def:inline-code"           foreground="teal" background="bg-elevated"/>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       LANGUAGE-SPECIFIC STYLES - Extended Coverage
+       ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- === MARKDOWN === -->
+  <style name="markdown:header"               foreground="mauve" bold="true"/>
+  <style name="markdown:header-1"             foreground="mauve-bright" bold="true" scale="1.4"/>
+  <style name="markdown:header-2"             foreground="mauve" bold="true" scale="1.2"/>
+  <style name="markdown:header-3"             foreground="mauve-dim" bold="true" scale="1.1"/>
+  <style name="markdown:header-4"             foreground="violet" bold="true"/>
+  <style name="markdown:header-5"             foreground="lavender" bold="true"/>
+  <style name="markdown:header-6"             foreground="lavender" italic="true"/>
+  <style name="markdown:emphasis"             foreground="yellow" italic="true"/>
+  <style name="markdown:strong-emphasis"      foreground="peach" bold="true"/>
+  <style name="markdown:strikethrough"        foreground="fg-muted" strikethrough="true"/>
+  <style name="markdown:link-text"            foreground="cyan"/>
+  <style name="markdown:url"                  foreground="blue" underline="single"/>
+  <style name="markdown:image"                foreground="green"/>
+  <style name="markdown:code"                 foreground="teal" background="bg-elevated"/>
+  <style name="markdown:code-block"           foreground="teal" background="bg-surface"/>
+  <style name="markdown:blockquote"           foreground="fg-tertiary" italic="true" background="bg-surface"/>
+  <style name="markdown:horizontal-rule"      foreground="fg-invisible"/>
+  <style name="markdown:list-marker"          foreground="pink" bold="true"/>
+  <style name="markdown:table"                foreground="cyan-dim"/>
+
+  <!-- === HTML/XML === -->
+  <style name="html:tag"                  foreground="pink"/>
+  <style name="html:attrib-name"          foreground="teal"/>
+  <style name="html:attrib-value"         foreground="yellow"/>
+  <style name="html:dtd"                  foreground="fg-muted" italic="true"/>
+  <style name="html:entity"               foreground="peach"/>
+  <style name="xml:element-name"          foreground="pink"/>
+  <style name="xml:attribute-name"        foreground="teal"/>
+  <style name="xml:attribute-value"       foreground="yellow"/>
+  <style name="xml:namespace"             foreground="mauve"/>
+  <style name="xml:doctype"               foreground="fg-muted" italic="true"/>
+  <style name="xml:cdata-delim"           foreground="violet"/>
+  <style name="xml:processing-instruction" foreground="pink-dim"/>
+  <style name="xml:comment"               foreground="fg-muted" italic="true"/>
+
+  <!-- === CSS === -->
+  <style name="css:selector-id"           foreground="blue"/>
+  <style name="css:selector-class"        foreground="teal"/>
+  <style name="css:selector-tagname"      foreground="pink"/>
+  <style name="css:pseudo-selector"       foreground="mauve"/>
+  <style name="css:property-name"         foreground="cyan"/>
+  <style name="css:property-value"        foreground="peach"/>
+  <style name="css:at-rule"               foreground="mauve" bold="true"/>
+  <style name="css:color"                 foreground="pink-bright"/>
+  <style name="css:function"              foreground="teal"/>
+  <style name="css:number"                foreground="peach"/>
+  <style name="css:unit"                  foreground="peach-dim"/>
+  <style name="css:string"                foreground="yellow"/>
+  <style name="css:keyword"               foreground="mauve"/>
+  <style name="css:url"                   foreground="blue" underline="single"/>
+  <style name="css:comment"               foreground="fg-muted" italic="true"/>
+
+  <!-- === JAVASCRIPT/TYPESCRIPT === -->
+  <style name="js:keyword"                foreground="mauve" bold="true"/>
+  <style name="js:function"               foreground="teal"/>
+  <style name="js:function-expression"    foreground="teal"/>
+  <style name="js:object-method"          foreground="teal"/>
+  <style name="js:built-in-object"        foreground="cyan"/>
+  <style name="js:built-in-function"      foreground="teal-bright"/>
+  <style name="js:constructor"            foreground="cyan" bold="true"/>
+  <style name="js:template-literal"       foreground="yellow"/>
+  <style name="js:template-expression"    foreground="pink"/>
+  <style name="js:regex"                  foreground="pink"/>
+  <style name="js:json-property"          foreground="cyan"/>
+  <style name="js:import-export"          foreground="mauve"/>
+  <style name="js:module"                 foreground="blue"/>
+  <style name="js:class"                  foreground="cyan" bold="true"/>
+  <style name="js:this"                   foreground="maroon" italic="true"/>
+  <style name="js:console"                foreground="cyan-dim"/>
+  <style name="js:promise"                foreground="violet"/>
+  <style name="js:async-await"            foreground="mauve-bright" bold="true"/>
+
+  <!-- === PYTHON === -->
+  <style name="python:keyword"            foreground="mauve" bold="true"/>
+  <style name="python:builtin-function"   foreground="teal-bright"/>
+  <style name="python:builtin-object"     foreground="cyan"/>
+  <style name="python:builtin-constant"   foreground="peach" bold="true"/>
+  <style name="python:decorator"          foreground="pink" italic="true"/>
+  <style name="python:module-handler"     foreground="mauve"/>
+  <style name="python:class-name"         foreground="cyan" bold="true"/>
+  <style name="python:function-name"      foreground="teal"/>
+  <style name="python:special-variable"   foreground="maroon" italic="true"/>
+  <style name="python:string-conversion"  foreground="peach"/>
+  <style name="python:f-string"           foreground="yellow"/>
+  <style name="python:f-string-curly-braces" foreground="pink"/>
+  <style name="python:format-string"      foreground="yellow"/>
+  <style name="python:multiline-string"   foreground="yellow" background="bg-surface"/>
+  <style name="python:docstring"          foreground="fg-tertiary" italic="true"/>
+
+  <!-- === SHELL (Bash/Zsh/POSIX) === -->
+  <style name="sh:keyword"                foreground="mauve" bold="true"/>
+  <style name="sh:variable"               foreground="cyan"/>
+  <style name="sh:variable-definition"    foreground="teal"/>
+  <style name="sh:built-in-command"       foreground="teal-bright"/>
+  <style name="sh:common-command"         foreground="teal"/>
+  <style name="sh:function"               foreground="teal" bold="true"/>
+  <style name="sh:subshell"               foreground="pink"/>
+  <style name="sh:here-doc"               foreground="yellow" background="bg-surface"/>
+  <style name="sh:here-doc-bound"         foreground="pink" bold="true"/>
+  <style name="sh:string"                 foreground="yellow"/>
+  <style name="sh:single-quoted-string"   foreground="yellow"/>
+  <style name="sh:double-quoted-string"   foreground="yellow"/>
+  <style name="sh:backtick"               foreground="pink"/>
+  <style name="sh:redirection"            foreground="pink"/>
+  <style name="sh:operator"               foreground="pink"/>
+  <style name="sh:test-operator"          foreground="mauve"/>
+  <style name="sh:glob"                   foreground="peach"/>
+
+  <!-- === C/C++ === -->
+  <style name="c:keyword"                 foreground="mauve" bold="true"/>
+  <style name="c:type"                    foreground="cyan"/>
+  <style name="c:storage-class"           foreground="mauve-dim" bold="true"/>
+  <style name="c:preprocessor"            foreground="pink"/>
+  <style name="c:macro"                   foreground="pink" bold="true"/>
+  <style name="c:included-file"           foreground="yellow"/>
+  <style name="c:common-defines"          foreground="peach"/>
+  <style name="c:printf"                  foreground="cyan"/>
+  <style name="c:std-function"            foreground="teal-bright"/>
+  <style name="c:signal-name"             foreground="peach"/>
+  <style name="c:enum-value"              foreground="peach"/>
+
+  <!-- === RUST === -->
+  <style name="rust:keyword"              foreground="mauve" bold="true"/>
+  <style name="rust:type"                 foreground="cyan"/>
+  <style name="rust:lifetime"             foreground="flamingo" italic="true"/>
+  <style name="rust:macro"                foreground="pink" bold="true"/>
+  <style name="rust:attribute"            foreground="violet"/>
+  <style name="rust:scope"                foreground="blue"/>
+  <style name="rust:self"                 foreground="maroon" italic="true"/>
+  <style name="rust:trait"                foreground="cyan-bright" italic="true"/>
+  <style name="rust:enum"                 foreground="cyan"/>
+  <style name="rust:crate"                foreground="blue"/>
+  <style name="rust:module"               foreground="blue"/>
+  <style name="rust:unsafe"               foreground="red" bold="true"/>
+  <style name="rust:async-await"          foreground="mauve-bright" bold="true"/>
+
+  <!-- === GO === -->
+  <style name="go:keyword"                foreground="mauve" bold="true"/>
+  <style name="go:type"                   foreground="cyan"/>
+  <style name="go:built-in-type"          foreground="cyan-bright"/>
+  <style name="go:built-in-function"      foreground="teal-bright"/>
+  <style name="go:printf"                 foreground="cyan"/>
+  <style name="go:package"                foreground="blue"/>
+  <style name="go:import"                 foreground="mauve"/>
+  <style name="go:func"                   foreground="teal"/>
+  <style name="go:interface"              foreground="cyan" italic="true"/>
+  <style name="go:struct"                 foreground="cyan"/>
+  <style name="go:goroutine"              foreground="mauve-bright" bold="true"/>
+  <style name="go:channel"                foreground="violet"/>
+
+  <!-- === JAVA === -->
+  <style name="java:keyword"              foreground="mauve" bold="true"/>
+  <style name="java:type"                 foreground="cyan"/>
+  <style name="java:modifier"             foreground="mauve-dim"/>
+  <style name="java:annotation"           foreground="violet" italic="true"/>
+  <style name="java:import"               foreground="mauve"/>
+  <style name="java:package"              foreground="blue"/>
+  <style name="java:class"                foreground="cyan" bold="true"/>
+  <style name="java:interface"            foreground="cyan" italic="true"/>
+  <style name="java:method"               foreground="teal"/>
+
+  <!-- === LUA === -->
+  <style name="lua:keyword"               foreground="mauve" bold="true"/>
+  <style name="lua:function"              foreground="teal"/>
+  <style name="lua:built-in-function"     foreground="teal-bright"/>
+  <style name="lua:reserved-constant"     foreground="peach" bold="true"/>
+  <style name="lua:self"                  foreground="maroon" italic="true"/>
+  <style name="lua:table"                 foreground="cyan"/>
+  <style name="lua:metamethod"            foreground="pink"/>
+  <style name="lua:label"                 foreground="violet"/>
+
+  <!-- === SQL === -->
+  <style name="sql:keyword"               foreground="mauve" bold="true"/>
+  <style name="sql:statement"             foreground="mauve" bold="true"/>
+  <style name="sql:data-type"             foreground="cyan"/>
+  <style name="sql:function"              foreground="teal"/>
+  <style name="sql:identifier"            foreground="cyan-dim"/>
+  <style name="sql:string"                foreground="yellow"/>
+  <style name="sql:number"                foreground="peach"/>
+  <style name="sql:null"                  foreground="flamingo" bold="true"/>
+  <style name="sql:boolean"               foreground="peach" bold="true"/>
+  <style name="sql:operator"              foreground="pink"/>
+  <style name="sql:placeholder"           foreground="maroon"/>
+
+  <!-- === RUBY === -->
+  <style name="ruby:keyword"              foreground="mauve" bold="true"/>
+  <style name="ruby:builtin"              foreground="teal-bright"/>
+  <style name="ruby:module-handler"       foreground="mauve"/>
+  <style name="ruby:class-name"           foreground="cyan" bold="true"/>
+  <style name="ruby:method-name"          foreground="teal"/>
+  <style name="ruby:symbol"               foreground="pink"/>
+  <style name="ruby:regex"                foreground="pink"/>
+  <style name="ruby:global-variable"      foreground="maroon"/>
+  <style name="ruby:instance-variable"    foreground="maroon" italic="true"/>
+  <style name="ruby:class-variable"       foreground="maroon" bold="true"/>
+  <style name="ruby:heredoc"              foreground="yellow" background="bg-surface"/>
+  <style name="ruby:block-parameter"      foreground="peach"/>
+
+  <!-- === PHP === -->
+  <style name="php:keyword"               foreground="mauve" bold="true"/>
+  <style name="php:type"                  foreground="cyan"/>
+  <style name="php:variable"              foreground="cyan"/>
+  <style name="php:identifier"            foreground="fg-primary"/>
+  <style name="php:string"                foreground="yellow"/>
+  <style name="php:here-doc"              foreground="yellow" background="bg-surface"/>
+
+  <!-- === PERL === -->
+  <style name="perl:keyword"              foreground="mauve" bold="true"/>
+  <style name="perl:builtin"              foreground="teal-bright"/>
+  <style name="perl:variable"             foreground="cyan"/>
+  <style name="perl:special-variable"     foreground="maroon"/>
+  <style name="perl:regex"                foreground="pink"/>
+
+  <!-- === MAKEFILE === -->
+  <style name="makefile:target"           foreground="teal" bold="true"/>
+  <style name="makefile:prereq"           foreground="cyan"/>
+  <style name="makefile:variable"         foreground="cyan"/>
+  <style name="makefile:variable-ref"     foreground="cyan"/>
+  <style name="makefile:assignment"       foreground="pink"/>
+  <style name="makefile:command"          foreground="fg-primary"/>
+  <style name="makefile:phony"            foreground="violet" italic="true"/>
+
+  <!-- === CMAKE === -->
+  <style name="cmake:keyword"             foreground="mauve" bold="true"/>
+  <style name="cmake:command"             foreground="teal"/>
+  <style name="cmake:variable"            foreground="cyan"/>
+  <style name="cmake:property"            foreground="lavender"/>
+  <style name="cmake:builtin-variable"    foreground="cyan-bright"/>
+
+  <!-- === DIFF/PATCH === -->
+  <style name="diff:added-line"           foreground="green" background="#rgba(166,227,161,0.1)"/>
+  <style name="diff:removed-line"         foreground="red" background="#rgba(243,139,168,0.1)"/>
+  <style name="diff:changed-line"         foreground="yellow" background="#rgba(249,226,175,0.1)"/>
+  <style name="diff:diff-file"            foreground="mauve" bold="true"/>
+  <style name="diff:location"             foreground="cyan"/>
+  <style name="diff:index"                foreground="blue"/>
+  <style name="diff:special-case"         foreground="pink"/>
+  <style name="diff:context"              foreground="fg-muted"/>
+
+  <!-- === JSON === -->
+  <style name="json:keyname"              foreground="cyan"/>
+  <style name="json:string"               foreground="yellow"/>
+  <style name="json:number"               foreground="peach"/>
+  <style name="json:boolean"              foreground="peach" bold="true"/>
+  <style name="json:null"                 foreground="flamingo" bold="true"/>
+  <style name="json:array"                foreground="fg-secondary"/>
+  <style name="json:object"               foreground="fg-secondary"/>
+
+  <!-- === YAML === -->
+  <style name="yaml:map-key"              foreground="cyan"/>
+  <style name="yaml:anchor"               foreground="pink"/>
+  <style name="yaml:alias"                foreground="pink" italic="true"/>
+  <style name="yaml:tag-handle"           foreground="mauve"/>
+  <style name="yaml:tag-prefix"           foreground="violet"/>
+  <style name="yaml:string"               foreground="yellow"/>
+  <style name="yaml:block-literal"        foreground="yellow" background="bg-surface"/>
+  <style name="yaml:boolean"              foreground="peach" bold="true"/>
+  <style name="yaml:null"                 foreground="flamingo" bold="true"/>
+
+  <!-- === TOML === -->
+  <style name="toml:table"                foreground="mauve" bold="true"/>
+  <style name="toml:table-array"          foreground="mauve" bold="true"/>
+  <style name="toml:key"                  foreground="cyan"/>
+  <style name="toml:string"               foreground="yellow"/>
+  <style name="toml:number"               foreground="peach"/>
+  <style name="toml:boolean"              foreground="peach" bold="true"/>
+  <style name="toml:datetime"             foreground="green"/>
+
+  <!-- === INI/DESKTOP === -->
+  <style name="ini:section"               foreground="mauve" bold="true"/>
+  <style name="ini:key"                   foreground="cyan"/>
+  <style name="ini:value"                 foreground="yellow"/>
+  <style name="desktop:group"             foreground="mauve" bold="true"/>
+  <style name="desktop:key"               foreground="cyan"/>
+  <style name="desktop:value"             foreground="yellow"/>
+
+  <!-- === LATEX === -->
+  <style name="latex:command"             foreground="pink"/>
+  <style name="latex:command-with-braces" foreground="pink"/>
+  <style name="latex:display-math"        foreground="peach"/>
+  <style name="latex:inline-math"         foreground="peach"/>
+  <style name="latex:include"             foreground="teal"/>
+  <style name="latex:special-char"        foreground="violet"/>
+  <style name="latex:environment"         foreground="teal"/>
+  <style name="latex:section"             foreground="mauve" bold="true"/>
+
+  <!-- === REGEX === -->
+  <style name="regex:escape"              foreground="pink" bold="true"/>
+  <style name="regex:anchor"              foreground="mauve"/>
+  <style name="regex:character-class"     foreground="cyan"/>
+  <style name="regex:quantifier"          foreground="peach"/>
+  <style name="regex:alternation"         foreground="pink"/>
+  <style name="regex:group"               foreground="violet"/>
+  <style name="regex:special"             foreground="pink"/>
+
+  <!-- === DOCKER === -->
+  <style name="dockerfile:keyword"        foreground="mauve" bold="true"/>
+  <style name="dockerfile:maintainer"     foreground="fg-muted" italic="true"/>
+  <style name="dockerfile:image"          foreground="cyan"/>
+  <style name="dockerfile:variable"       foreground="cyan"/>
+
+  <!-- === MESON === -->
+  <style name="meson:keyword"             foreground="mauve" bold="true"/>
+  <style name="meson:function"            foreground="teal"/>
+  <style name="meson:builtin"             foreground="teal-bright"/>
+  <style name="meson:method"              foreground="teal"/>
+
+  <!-- === VALA === -->
+  <style name="vala:keyword"              foreground="mauve" bold="true"/>
+  <style name="vala:type"                 foreground="cyan"/>
+  <style name="vala:attribute"            foreground="violet"/>
+  <style name="vala:signal"               foreground="pink"/>
+
+  <!-- === GIT REBASE/COMMIT === -->
+  <style name="git-rebase:action"         foreground="mauve" bold="true"/>
+  <style name="git-rebase:comment"        foreground="fg-muted" italic="true"/>
+  <style name="git-rebase:commit"         foreground="yellow"/>
+
+  <!-- === LOG FILES === -->
+  <style name="log:timestamp"             foreground="fg-subtle"/>
+  <style name="log:level-debug"           foreground="blue"/>
+  <style name="log:level-info"            foreground="green"/>
+  <style name="log:level-warning"         foreground="yellow"/>
+  <style name="log:level-error"           foreground="red" bold="true"/>
+  <style name="log:level-critical"        foreground="red" bold="true" background="bg-elevated"/>
+
+</style-scheme>

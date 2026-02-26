@@ -1,0 +1,55 @@
+(
+  "Window Maker Dracula Menu",
+  (
+    "Quick Launch",
+    ("Alacritty", EXEC, "alacritty"),
+    ("Firefox", EXEC, "firefox"),
+    ("Caja", EXEC, "caja"),
+    ("Pluma", EXEC, "pluma"),
+    ("VS Code", EXEC, "code")
+  ),
+  (
+    "Applications",
+    OPEN_MENU,
+    "| xdg_menu --format WindowMaker --fullmenu"
+  ),
+  (
+    "Run...",
+    EXEC, "dmenu_run -fn 'Spline Sans-11' -nb '#282a36' -nf '#f8f8f2' -sb '#bd93f9' -sf '#282a36'"
+  ),
+  (
+    "Appearance",
+    (
+      "Themes",
+      OPEN_MENU, "~/GNUstep/Library/WindowMaker/Styles WITH setstyle"
+    ),
+    (
+      "Backgrounds",
+      OPEN_MENU, "~/GNUstep/Library/WindowMaker/Backgrounds WITH wmsetbg -u -s"
+    ),
+    ("Preferences", EXEC, "WPrefs")
+  ),
+  (
+    "Workspaces",
+    WORKSPACE_MENU
+  ),
+  (
+    "Windows",
+    ("Focus Next", FOCUS_NEXT),
+    ("Focus Prev", FOCUS_PREV),
+    ("Hide Others", HIDE_OTHERS),
+    ("Show All", SHOW_ALL),
+    ("Arrange Icons", ARRANGE_ICONS)
+  ),
+  (
+    "Utilities",
+    ("Refresh XDG Menu", EXEC, "notify-send 'WindowMaker' 'XDG menu refreshed' -i dialog-information"),
+    ("Regenerate Full Menu", EXEC, "wmgenmenu > ~/GNUstep/Defaults/WMRootMenu.generated && notify-send 'WindowMaker' 'Menu regenerated'"),
+    ("Terminal (xterm)", EXEC, "xterm"),
+    ("Htop", EXEC, "alacritty -e htop"),
+    ("NVIDIA Settings", EXEC, "nvidia-settings")
+  ),
+  ("Info Panel", INFO_PANEL),
+  ("Restart", RESTART),
+  ("Exit", EXIT)
+)

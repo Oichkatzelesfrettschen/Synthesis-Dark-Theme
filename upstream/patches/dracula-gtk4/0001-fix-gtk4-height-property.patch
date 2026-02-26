@@ -1,0 +1,11 @@
+--- /usr/share/themes/Dracula/gtk-4.0/gtk.css	2025-11-08 17:23:22.000000000 -0800
++++ /home/eirikr/dotfiles/patches/dracula-gtk4/gtk.css.fixed	2025-11-12 17:58:23.501088858 -0800
+@@ -5680,7 +5680,7 @@
+       color: rgba(189, 147, 249, 0.4); }
+ .nautilus-window .path-buttons-box, .nautilus-window #NautilusPathBar {
+   background: transparent;
+-  height: 20px;
++  min-height: 20px;
+   margin-top: 7px;
+   margin-bottom: 7px; }
+   .nautilus-window .path-buttons-box .dim-label, .nautilus-window .path-buttons-box label.separator, .nautilus-window .path-buttons-box .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box .subtitle,

@@ -1,0 +1,212 @@
+# Tint2 Panel Configuration for eggwm Qt4 Desktop
+# Dracula Theme with Taskbar, Systray, and XDG Menu
+#
+# Panel items: L=launcher, T=taskbar, S=systray, C=clock, B=battery, E=executor
+
+#-------------------------------------
+# Backgrounds
+#-------------------------------------
+
+# Background 1: Panel (Dracula Dark)
+rounded = 0
+border_width = 0
+border_sides = TBLR
+background_color = #282a36 95
+border_color = #44475a 100
+
+# Background 2: Active Task (Purple accent)
+rounded = 6
+border_width = 2
+border_sides = TBLR
+background_color = #44475a 100
+border_color = #bd93f9 100
+background_color_hover = #6272a4 100
+border_color_hover = #ff79c6 100
+background_color_pressed = #282a36 100
+border_color_pressed = #ff5555 100
+
+# Background 3: Inactive Task
+rounded = 6
+border_width = 1
+background_color = #282a36 80
+border_color = #44475a 60
+background_color_hover = #44475a 90
+border_color_hover = #6272a4 80
+
+# Background 4: Tooltip
+rounded = 6
+border_width = 1
+background_color = #44475a 98
+border_color = #bd93f9 100
+
+# Background 5: Clock/Systray
+rounded = 6
+border_width = 1
+background_color = #44475a 70
+border_color = #6272a4 80
+
+# Background 6: Launcher
+rounded = 6
+border_width = 0
+background_color = #282a36 0
+border_color = #44475a 50
+background_color_hover = #bd93f9 80
+border_color_hover = #ff79c6 100
+
+#-------------------------------------
+# Panel
+#-------------------------------------
+panel_items = LTSBC
+panel_size = 100% 36
+panel_margin = 0 0
+panel_padding = 4 2 6
+panel_background_id = 1
+wm_menu = 1
+panel_dock = 0
+panel_pivot_struts = 0
+panel_position = bottom center horizontal
+panel_layer = top
+panel_monitor = all
+panel_shrink = 0
+autohide = 0
+autohide_show_timeout = 0.1
+autohide_hide_timeout = 0.5
+autohide_height = 2
+strut_policy = follow_size
+panel_window_name = tint2-eggwm
+disable_transparency = 0
+mouse_effects = 1
+font_shadow = 0
+mouse_hover_icon_asb = 100 0 15
+mouse_pressed_icon_asb = 100 0 0
+
+#-------------------------------------
+# Launcher (XDG Menu via jgmenu)
+#-------------------------------------
+launcher_padding = 4 4 4
+launcher_background_id = 0
+launcher_icon_background_id = 6
+launcher_icon_size = 24
+launcher_icon_asb = 100 0 0
+launcher_icon_theme = Dracula
+launcher_icon_theme_override = 0
+startup_notifications = 1
+launcher_tooltip = 1
+
+# Launcher items
+launcher_item_app = /usr/share/applications/jgmenu.desktop
+launcher_item_app = /usr/share/applications/rofi.desktop
+launcher_item_app = /usr/share/applications/alacritty.desktop
+launcher_item_app = /usr/share/applications/org.gnome.Nautilus.desktop
+launcher_item_app = /usr/share/applications/firefox.desktop
+
+#-------------------------------------
+# Taskbar
+#-------------------------------------
+taskbar_mode = single_desktop
+taskbar_hide_if_empty = 0
+taskbar_padding = 4 2 4
+taskbar_background_id = 0
+taskbar_active_background_id = 0
+taskbar_name = 1
+taskbar_hide_inactive_tasks = 0
+taskbar_hide_different_monitor = 0
+taskbar_hide_different_desktop = 0
+taskbar_always_show_all_desktop_tasks = 0
+taskbar_name_padding = 6 4
+taskbar_name_background_id = 0
+taskbar_name_active_background_id = 0
+taskbar_name_font = Spline Sans Bold 11
+taskbar_name_font_color = #6272a4 100
+taskbar_name_active_font_color = #bd93f9 100
+taskbar_distribute_size = 0
+taskbar_sort_order = none
+task_align = left
+
+#-------------------------------------
+# Task
+#-------------------------------------
+task_text = 1
+task_icon = 1
+task_centered = 0
+urgent_nb_of_blink = 10
+task_maximum_size = 200 32
+task_padding = 6 4 6
+task_font = Spline Sans 11
+task_tooltip = 1
+task_thumbnail = 1
+task_thumbnail_size = 210
+
+task_font_color = #f8f8f2 90
+task_background_id = 3
+task_icon_asb = 100 0 0
+
+task_active_font_color = #f8f8f2 100
+task_active_background_id = 2
+task_active_icon_asb = 100 0 0
+
+task_urgent_font_color = #ff5555 100
+task_urgent_background_id = 2
+
+task_iconified_font_color = #6272a4 80
+task_iconified_icon_asb = 80 0 -20
+
+#-------------------------------------
+# System Tray
+#-------------------------------------
+systray_padding = 4 2 4
+systray_background_id = 5
+systray_sort = ascending
+systray_icon_size = 20
+systray_icon_asb = 100 0 0
+systray_monitor = primary
+
+#-------------------------------------
+# Battery
+#-------------------------------------
+battery_tooltip = 1
+battery_low_status = 15
+battery_low_cmd = notify-send "Battery Low"
+battery_full_cmd =
+battery_hide = 100
+bat1_font = Spline Sans 10
+battery_font_color = #50fa7b 100
+battery_padding = 4 4
+battery_background_id = 5
+battery_lclick_command =
+battery_rclick_command =
+
+#-------------------------------------
+# Clock
+#-------------------------------------
+time1_format = %H:%M
+time2_format = %a %d %b
+time1_font = Spline Sans Bold 12
+time2_font = Spline Sans 9
+time1_timezone =
+time2_timezone =
+clock_font_color = #ff79c6 100
+clock_padding = 8 4
+clock_background_id = 5
+clock_tooltip = %A, %d %B %Y - Week %V
+clock_lclick_command = gsimplecal 2>/dev/null || notify-send "$(date '+%A, %B %d, %Y')"
+clock_rclick_command = jgmenu_run
+
+#-------------------------------------
+# Tooltip
+#-------------------------------------
+tooltip_show_timeout = 0.3
+tooltip_hide_timeout = 0.1
+tooltip_padding = 8 6
+tooltip_background_id = 4
+tooltip_font_color = #f8f8f2 100
+tooltip_font = Spline Sans 11
+
+#-------------------------------------
+# Mouse actions
+#-------------------------------------
+mouse_left = toggle_iconify
+mouse_middle = close
+mouse_right = close
+mouse_scroll_up = prev_task
+mouse_scroll_down = next_task

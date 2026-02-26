@@ -1,0 +1,16 @@
+{
+  /* Global settings for all WINGS applications */
+
+  /* Font settings - Spline Sans for consistency with CachyOS Dracula */
+  SystemFont = "Spline Sans:size=11";
+  BoldSystemFont = "Spline Sans:bold:size=11";
+
+  /* Default font size - adjust for HiDPI if needed */
+  DefaultFontSize = 11;
+
+  /* Colors matching Dracula palette */
+  SelectionColor = "#bd93f9";
+
+  /* Smooth fonts */
+  AntialiasedText = Yes;
+}

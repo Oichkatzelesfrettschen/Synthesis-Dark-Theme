@@ -1,0 +1,22 @@
+# Synthesis-Dark Micro Theme v2.0.0
+# Harmonized with Master Palette
+
+color-link default "#f8f8f2,#282a36"
+color-link comment "#6272a4"
+color-link identifier "#8be9fd"
+color-link constant "#bd93f9"
+color-link statement "#ff79c6"
+color-link symbol "#ff79c6"
+color-link preproc "#ff79c6"
+color-link type "#8be9fd"
+color-link special "#ffb86c"
+color-link underlined "#8be9fd"
+color-link error "bold #ff5555"
+color-link todo "bold #f1fa8c"
+color-link statusline "#f8f8f2,#44475a"
+color-link indent-char "#6272a4"
+color-link line-number "#6272a4"
+color-link current-line-number "#f8f8f2,#44475a"
+color-link cursor-line "#44475a"
+color-link color-column "#44475a"
+color-link selection "#f8f8f2,#44475a"

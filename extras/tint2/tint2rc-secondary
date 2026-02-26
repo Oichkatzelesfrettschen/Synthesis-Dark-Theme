@@ -1,0 +1,216 @@
+# Tint2 Panel Configuration - Secondary Monitor (DP-0 Portrait)
+# Dracula-themed system monitoring panel
+# Monitor: Samsung LC27G7xT 1440x2560 (rotated left/portrait)
+
+#-------------------------------------
+# Backgrounds
+#-------------------------------------
+
+# Background 1: Panel (Dracula Dark)
+rounded = 0
+border_width = 0
+border_sides = TBLR
+background_color = #282a36 95
+border_color = #44475a 100
+
+# Background 2: Active Task (Purple accent)
+rounded = 6
+border_width = 2
+border_sides = TBLR
+background_color = #44475a 90
+border_color = #bd93f9 100
+background_color_hover = #44475a 100
+border_color_hover = #ff79c6 100
+
+# Background 3: Inactive Task
+rounded = 6
+border_width = 0
+background_color = #282a36 0
+border_color = #44475a 50
+
+# Background 4: Tooltip
+rounded = 4
+border_width = 1
+background_color = #44475a 95
+border_color = #bd93f9 100
+
+# Background 5: Executor Background
+rounded = 4
+border_width = 1
+background_color = #44475a 70
+border_color = #6272a4 80
+background_color_hover = #6272a4 90
+border_color_hover = #bd93f9 100
+
+#-------------------------------------
+# Panel - Vertical for Portrait Monitor
+#-------------------------------------
+panel_items = CEEEEEEC
+panel_size = 100% 42
+panel_margin = 0 0
+panel_padding = 6 4 6
+panel_background_id = 1
+wm_menu = 1
+panel_dock = 0
+panel_pivot_struts = 0
+panel_position = top center horizontal
+panel_layer = top
+panel_monitor = 2
+panel_shrink = 0
+autohide = 0
+autohide_show_timeout = 0
+autohide_hide_timeout = 0.5
+autohide_height = 2
+strut_policy = follow_size
+panel_window_name = tint2-secondary
+disable_transparency = 0
+mouse_effects = 1
+font_shadow = 0
+mouse_hover_icon_asb = 100 0 10
+mouse_pressed_icon_asb = 100 0 0
+
+#-------------------------------------
+# Clock
+#-------------------------------------
+time1_format = %H:%M:%S
+time2_format = %A, %d %B
+time1_font = Spline Sans Bold 13
+time1_timezone =
+time2_timezone =
+time2_font = Spline Sans 10
+clock_font_color = #ff79c6 100
+clock_padding = 10 6
+clock_background_id = 0
+clock_tooltip = %A, %d %B %Y - Week %V
+clock_lclick_command = gsimplecal
+clock_rclick_command =
+
+#-------------------------------------
+# Executor 1: CPU Usage with cores
+#-------------------------------------
+execp = new
+execp_command = ~/.config/tint2/executors/cpu.sh
+execp_interval = 2
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 1
+execp_monitor = 2
+execp_tooltip = CPU Usage - Click for htop
+execp_lclick_command = alacritty -e htop
+execp_rclick_command =
+execp_font = Spline Sans Bold 11
+execp_font_color = #50fa7b 100
+execp_padding = 8 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Executor 2: Memory Usage
+#-------------------------------------
+execp = new
+execp_command = ~/.config/tint2/executors/mem.sh
+execp_interval = 3
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 1
+execp_monitor = 2
+execp_tooltip = Memory Usage - Click for details
+execp_lclick_command = alacritty -e htop -s PERCENT_MEM
+execp_rclick_command =
+execp_font = Spline Sans Bold 11
+execp_font_color = #8e95b8 100
+execp_padding = 8 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Executor 3: GPU (NVIDIA RTX 4070 Ti)
+#-------------------------------------
+execp = new
+execp_command = ~/.config/tint2/executors/gpu.sh
+execp_interval = 3
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 1
+execp_monitor = 2
+execp_tooltip = GPU Stats - Click for nvidia-settings
+execp_lclick_command = nvidia-settings
+execp_rclick_command =
+execp_font = Spline Sans Bold 11
+execp_font_color = #ffb86c 100
+execp_padding = 8 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Executor 4: CPU Temperature
+#-------------------------------------
+execp = new
+execp_command = ~/.config/tint2/executors/cpu-temp.sh
+execp_interval = 5
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 1
+execp_monitor = 2
+execp_tooltip = CPU Temperature
+execp_lclick_command = alacritty -e sensors -f
+execp_rclick_command =
+execp_font = Spline Sans Bold 11
+execp_font_color = #ff5555 100
+execp_padding = 8 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Executor 5: Network Speed
+#-------------------------------------
+execp = new
+execp_command = ~/.config/tint2/executors/network.sh
+execp_interval = 2
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 1
+execp_monitor = 2
+execp_tooltip = Network Speed - Click for nethogs
+execp_lclick_command = alacritty -e sudo nethogs
+execp_rclick_command =
+execp_font = Spline Sans Bold 11
+execp_font_color = #f1fa8c 100
+execp_padding = 8 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Executor 6: Disk Usage
+#-------------------------------------
+execp = new
+execp_command = ~/.config/tint2/executors/disk.sh
+execp_interval = 30
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 1
+execp_monitor = 2
+execp_tooltip = Disk Usage
+execp_lclick_command = nemo /
+execp_rclick_command =
+execp_font = Spline Sans Bold 11
+execp_font_color = #bd93f9 100
+execp_padding = 8 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Tooltip
+#-------------------------------------
+tooltip_show_timeout = 0.3
+tooltip_hide_timeout = 0.1
+tooltip_padding = 8 6
+tooltip_background_id = 4
+tooltip_font_color = #f8f8f2 100
+tooltip_font = Spline Sans 11

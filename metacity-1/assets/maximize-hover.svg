@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-strong" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="icon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle - teal glow on hover -->
+  <circle cx="8" cy="8" r="6" fill="#17b169" opacity="0.2" filter="url(#glow-strong)"/>
+  <circle cx="8" cy="8" r="5.5" fill="#2d2f3d"/>
+
+  <!-- Border highlight -->
+  <circle cx="8" cy="8" r="5" fill="none" stroke="#17b169" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Maximize square with glow -->
+  <rect x="4.5" y="4.5" width="7" height="7" rx="1" fill="none" stroke="#17b169" stroke-width="1.8" filter="url(#icon-glow)"/>
+</svg>

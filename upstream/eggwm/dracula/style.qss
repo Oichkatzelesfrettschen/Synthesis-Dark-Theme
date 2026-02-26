@@ -1,0 +1,115 @@
+/*
+ * Dracula Theme for eggwm
+ * Dracula colors:
+ * Background: #282a36
+ * Current Line: #44475a
+ * Foreground: #f8f8f2
+ * Comment: #6272a4
+ * Cyan: #8be9fd
+ * Green: #50fa7b
+ * Orange: #ffb86c
+ * Pink: #ff79c6
+ * Purple: #bd93f9
+ * Red: #ff5555
+ * Yellow: #f1fa8c
+ *
+ * Use %theme_path% to refer to the path of the theme.
+ */
+
+#title {
+    color: #f8f8f2;
+    font-weight: bold;
+}
+
+#titlebar {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #44475a, stop:1 #282a36);
+}
+
+#topBorder {
+    background-color: #6272a4;
+}
+#topLeftBorder {
+    background-color: #6272a4;
+}
+#topRightBorder {
+    background-color: #6272a4;
+}
+
+#bottomBorder {
+    background-color: #44475a;
+}
+
+#bottomLeftBorder {
+    background-color: #44475a;
+}
+
+#bottomRightBorder {
+    background-color: #44475a;
+}
+
+#leftBorder {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #6272a4, stop:1 #44475a);
+}
+#leftTopBorder {
+    background-color: #6272a4;
+}
+#leftBottomBorder {
+    background-color: #44475a;
+}
+
+#rightBorder {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #6272a4, stop:1 #44475a);
+}
+#rightTopBorder {
+    background-color: #6272a4;
+}
+#rightBottomBorder {
+    background-color: #44475a;
+}
+
+/***************************************************************************/
+
+#minimizeButton {
+    border: none;
+    background-color: #f1fa8c;
+    border-radius: 6px;
+    min-width: 12px;
+    min-height: 12px;
+    max-width: 12px;
+    max-height: 12px;
+}
+
+#minimizeButton:hover {
+    border: none;
+    background-color: #ffb86c;
+}
+
+#maximizeButton {
+    border: none;
+    background-color: #50fa7b;
+    border-radius: 6px;
+    min-width: 12px;
+    min-height: 12px;
+    max-width: 12px;
+    max-height: 12px;
+}
+
+#maximizeButton:hover {
+    border: none;
+    background-color: #8be9fd;
+}
+
+#exitButton {
+    border: none;
+    background-color: #ff5555;
+    border-radius: 6px;
+    min-width: 12px;
+    min-height: 12px;
+    max-width: 12px;
+    max-height: 12px;
+}
+
+#exitButton:hover {
+    border: none;
+    background-color: #ff79c6;
+}

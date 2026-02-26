@@ -1,0 +1,159 @@
+# Tilix Complete Dracula Configuration with Spline Sans Mono
+# Version: 1.0
+# Theme: Dracula (Official)
+# Font: Spline Sans Mono
+# Load with: dconf load /com/gexperts/Tilix/ < tilix-dracula-complete.dconf
+
+[/]
+# Mouse and Focus Behavior
+auto-hide-mouse=true
+focus-follow-mouse=true
+middle-click-close=true
+
+# Window and UI Settings
+window-style='normal'
+terminal-title-style='small'
+terminal-title-show-when-single=false
+use-tabs=true
+tab-position='top'
+sidebar-on-right=false
+use-overlay-scrollbar=true
+theme-variant='dark'
+
+# Transparency
+enable-transparency=true
+
+# Copy/Paste Behavior
+copy-on-select=true
+control-scroll-zoom=true
+
+# Notifications and Prompts
+notify-on-process-complete=true
+prompt-on-close=true
+prompt-on-close-process=true
+prompt-on-delete-profile=true
+
+# Quake Mode Settings (for dropdown terminal)
+quake-specific-monitor=0
+quake-height-percent=40
+quake-width-percent=100
+quake-alignment='center'
+quake-window-position='top'
+quake-tab-position='top'
+quake-hide-headerbar=false
+quake-keep-on-top=true
+quake-show-on-all-workspaces=true
+
+# Advanced Features
+enable-wide-handle=false
+warn-vte-config-issue=false
+unsafe-paste-alert=true
+
+[keybindings]
+# Application Control
+app-new-session='<Primary><Shift>t'
+app-new-window='<Primary><Shift>n'
+app-preferences='<Primary>comma'
+
+# Session/Tab Management
+session-close='<Primary><Shift>w'
+win-switch-to-next-session='<Primary>Tab'
+win-switch-to-previous-session='<Primary><Shift>Tab'
+
+# Split Pane Creation
+session-add-down='<Primary><Shift>o'
+session-add-right='<Primary><Shift>e'
+
+# Pane Navigation (Vim-like)
+session-switch-to-terminal-down='<Primary><Shift>j'
+session-switch-to-terminal-left='<Primary><Shift>h'
+session-switch-to-terminal-right='<Primary><Shift>l'
+session-switch-to-terminal-up='<Primary><Shift>k'
+
+# Pane Resizing (Vim-like)
+session-resize-terminal-down='<Alt><Shift>j'
+session-resize-terminal-left='<Alt><Shift>h'
+session-resize-terminal-right='<Alt><Shift>l'
+session-resize-terminal-up='<Alt><Shift>k'
+
+# Copy/Paste
+terminal-copy='<Primary><Shift>c'
+terminal-paste='<Primary><Shift>v'
+
+# Search
+terminal-find='<Primary><Shift>f'
+terminal-find-next='<Primary>g'
+terminal-find-previous='<Primary><Shift>g'
+
+# Zoom
+terminal-zoom-in='<Primary>plus'
+terminal-zoom-normal='<Primary>0'
+terminal-zoom-out='<Primary>minus'
+
+# Advanced Features
+terminal-maximize='<Primary><Shift>m'
+session-synchronize-input='<Primary><Shift>s'
+win-view-sidebar='F12'
+win-fullscreen='F11'
+
+[profiles]
+default='2b7c4080-0ddd-46c5-8f23-563fd3ba789d'
+list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+# Profile Name
+visible-name='Dracula'
+
+# Dracula Color Scheme
+background-color='#282936'
+foreground-color='#F8F8F2'
+
+# Cursor Colors
+cursor-background-color='#F8F8F2'
+cursor-foreground-color='#282936'
+cursor-colors-set=true
+cursor-blink-mode='on'
+cursor-shape='block'
+
+# Selection/Highlight Colors
+highlight-background-color='#44475A'
+highlight-foreground-color='#F8F8F2'
+highlight-colors-set=true
+
+# Badge and Bold
+badge-color='#BD93F9'
+badge-color-set=true
+bold-color='#FFFFFF'
+bold-color-set=true
+bold-is-bright=true
+
+# Dracula 16-Color Palette
+palette=['#000000', '#FF5454', '#50FA7B', '#F1FA8C', '#BD93F9', '#FF79C6', '#8BE8FD', '#BFBFBF', '#4D4D4D', '#FF6E67', '#5AF78D', '#F4F99D', '#CAA8FA', '#FF92D0', '#9AEDFE', '#E6E6E6']
+
+# Transparency
+background-transparency-percent=10
+
+# Font Configuration
+font='Spline Sans Mono 11'
+use-system-font=false
+use-theme-colors=false
+
+# Terminal Behavior
+backspace-binding='ascii-delete'
+delete-binding='delete-sequence'
+login-shell=true
+exit-action='close'
+use-custom-command=false
+
+# Scrolling
+scroll-on-output=false
+scrollback-lines=100000
+scrollback-unlimited=false
+show-scrollbar=true
+
+# Selection and Bell
+select-by-word-chars='-,./?%&#:_=+@~'
+terminal-bell='icon'
+
+# Terminal Title
+terminal-title='${activeTerminalTitle}'

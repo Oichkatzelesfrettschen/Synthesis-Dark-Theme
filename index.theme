@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Synthesis-Dark
+Comment=A hybrid theme combining Ant-Dracula GTK with Synthesis-Dark WM and Icons
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Synthesis-Dark
+MetacityTheme=Synthesis-Dark
+IconTheme=MATE-Synthesis-Dark
+CursorTheme=MATE-Synthesis-Dark-Cursors
+ButtonLayout=menu:minimize,maximize,close

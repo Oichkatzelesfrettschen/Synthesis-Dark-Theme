@@ -1,0 +1,27 @@
+# Dracula GTK4 Patch Series
+# Apply in order to fix GTK4 compatibility issues
+
+# Phase 1: Critical fixes (production-ready)
+0001-fix-gtk4-height-property.patch
+
+# Phase 2: Deprecated color function migration (for GTK5 forward compatibility)
+# These patches migrate away from deprecated GTK functions to standard CSS.
+# Status: ACTIVE (implemented via sed in PKGBUILD prepare(), tested and validated)
+#
+# Architecture: Consolidated sed-based migrations in PKGBUILD instead of separate patch files.
+# This approach was chosen for:
+# - Context-independence (no path/line number conflicts)
+# - Maintainability (single canonical location)
+# - Debuggability (sed commands visible in prepare() function)
+#
+# Applied migrations (12 total sed commands):
+# - 6 shade() → hsl(from ... calc(...)) migrations
+# - 4 alpha() → rgba() migrations
+# - 2 mix() → color-mix() migrations
+#
+# Build result: dracula-gtk-theme-gtk4-compat 4.0.0-2
+# Testing: Phase 2 validation complete - 4/4 tests passed
+# Deployment status: READY
+#
+# Reference patch file (for historical/rollback purposes):
+0002-migrate-all-phase2-functions.patch

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Outer glow filter using feGaussianBlur -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Stronger glow for hover state -->
+    <filter id="glow-strong" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle with subtle shadow -->
+  <circle cx="8" cy="8" r="6" fill="#232530" filter="url(#glow)"/>
+  <circle cx="8" cy="8" r="5.5" fill="#2d2f3d"/>
+
+  <!-- Inner highlight (neumorphic top-left light) -->
+  <circle cx="7" cy="7" r="4" fill="none" stroke="#383a4a" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- X mark with Synthesis red accent -->
+  <g stroke="#f38ba8" stroke-width="1.5" stroke-linecap="round" filter="url(#glow)">
+    <line x1="5" y1="5" x2="11" y2="11"/>
+    <line x1="11" y1="5" x2="5" y2="11"/>
+  </g>
+</svg>

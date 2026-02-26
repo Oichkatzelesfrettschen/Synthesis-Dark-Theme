@@ -1,0 +1,128 @@
+{
+  Dock = {
+    AutoRaiseLower = No;
+    Lowered = No;
+    Position = "4816,0";
+    Applications = (
+      {
+        Name = Logo.WMDock;
+        Command = "-";
+        Position = "0,0";
+        Lock = Yes;
+        Forced = No;
+        BuggyApplication = No;
+        AutoLaunch = No;
+      },
+      {
+        Name = wmcpuload.WMCPULoad;
+        Command = wmcpuload;
+        Position = "0,1";
+        Lock = Yes;
+        Forced = No;
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+      },
+      {
+        Name = wmsysmon.WMSysMon;
+        Command = wmsysmon;
+        Position = "0,2";
+        Lock = Yes;
+        Forced = No;
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+      },
+      {
+        Name = wmclock.WMClock;
+        Command = wmclock;
+        Position = "0,3";
+        Lock = Yes;
+        Forced = No;
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+      },
+      {
+        Name = alacritty.Alacritty;
+        Command = alacritty;
+        Position = "0,4";
+        Lock = Yes;
+        Forced = No;
+        BuggyApplication = No;
+        AutoLaunch = No;
+      },
+      {
+        Name = firefox.firefox;
+        Command = firefox;
+        Position = "0,5";
+        Lock = Yes;
+        Forced = No;
+        BuggyApplication = No;
+        AutoLaunch = No;
+      },
+      {
+        Name = caja.Caja;
+        Command = caja;
+        Position = "0,6";
+        Lock = Yes;
+        Forced = No;
+        BuggyApplication = No;
+        AutoLaunch = No;
+      }
+    );
+  };
+  Clip = {
+    Name = Logo.WMClip;
+    Command = "-";
+    Position = "0,0";
+    Lock = Yes;
+    Forced = No;
+    BuggyApplication = No;
+    AutoLaunch = No;
+  };
+  Drawers = ();
+  Workspaces = (
+    {
+      Name = "Main";
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = No;
+        Applications = ();
+      };
+    },
+    {
+      Name = "Code";
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = No;
+        Applications = ();
+      };
+    },
+    {
+      Name = "Web";
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = No;
+        Applications = ();
+      };
+    },
+    {
+      Name = "Media";
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = No;
+        Applications = ();
+      };
+    }
+  );
+}

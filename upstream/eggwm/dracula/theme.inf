@@ -1,0 +1,32 @@
+[about]
+name=Dracula
+author=Dracula Theme
+copyright=MIT
+
+[theme]
+
+; Set to "true" if the window will display the icon in the title bar, otherwise set to "false".
+show_icon=true
+
+; Size of the window elements in pixels.
+; Negative values are invalid.
+titlebar_width=24
+top_border_width=3
+bottom_border_width=3
+left_border_width=3
+right_border_width=3
+icon_size=16
+
+; Position of the window buttons, the window icon and the window title.
+; Options: [left/right/center]:[Index 1..n]
+minimize_button_pos=right:3
+maximize_button_pos=right:2
+exit_button_pos=right:1
+icon_pos=left:1
+title_pos=left:2
+
+; Vertical align of icons
+; Options: [top/bottom/center]
+minimize_button_aling=center
+maximize_button_aling=center
+exit_button_aling=center

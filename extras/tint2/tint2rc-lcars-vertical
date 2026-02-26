@@ -1,0 +1,229 @@
+# Tint2 LCARS Vertical Sidebar - Left Side of Portrait Monitor
+# Dracula-themed with LCARS styling
+# Monitor: Samsung LC27G7xT 1440x2560 (rotated left/portrait)
+# WHY: Provide quick system stats in LCARS-inspired vertical bar
+# WHAT: CPU, MEM, GPU, Temp, Network in compact vertical format
+# HOW: Positioned on left edge of DP-0 (portrait monitor)
+
+#-------------------------------------
+# Backgrounds - LCARS Style with Dracula
+#-------------------------------------
+
+# Background 1: Panel (Dracula Dark with LCARS rounded top/bottom)
+rounded = 0
+border_width = 0
+border_sides = R
+background_color = #282a36 98
+border_color = #bd93f9 100
+
+# Background 2: LCARS Header Block (Purple)
+rounded = 8
+border_width = 0
+background_color = #bd93f9 100
+border_color = #bd93f9 100
+
+# Background 3: LCARS Accent Block (Cyan)
+rounded = 6
+border_width = 0
+background_color = #8e95b8 90
+border_color = #8e95b8 100
+
+# Background 4: LCARS Accent Block (Pink)
+rounded = 6
+border_width = 0
+background_color = #ff79c6 90
+border_color = #ff79c6 100
+
+# Background 5: Executor Background (Dark translucent)
+rounded = 4
+border_width = 1
+background_color = #44475a 60
+border_color = #6272a4 70
+background_color_hover = #6272a4 80
+border_color_hover = #bd93f9 100
+
+# Background 6: LCARS Orange Block
+rounded = 6
+border_width = 0
+background_color = #ffb86c 90
+border_color = #ffb86c 100
+
+# Background 7: Tooltip
+rounded = 4
+border_width = 1
+background_color = #282a36 98
+border_color = #bd93f9 100
+
+#-------------------------------------
+# Panel - Vertical Left Sidebar
+#-------------------------------------
+panel_items = BSEEEEEEES
+panel_size = 64 100%
+panel_margin = 0 0
+panel_padding = 4 8 4
+panel_background_id = 1
+wm_menu = 1
+panel_dock = 0
+panel_pivot_struts = 0
+panel_position = center left vertical
+panel_layer = normal
+panel_monitor = DP-0
+panel_shrink = 0
+autohide = 0
+autohide_show_timeout = 0
+autohide_hide_timeout = 0.5
+autohide_height = 4
+strut_policy = follow_size
+panel_window_name = tint2-lcars-vertical
+disable_transparency = 0
+mouse_effects = 1
+font_shadow = 0
+mouse_hover_icon_asb = 100 0 15
+mouse_pressed_icon_asb = 100 0 0
+scale_relative_to_dpi = 0
+scale_relative_to_screen_height = 0
+
+#-------------------------------------
+# Separator (LCARS divider)
+#-------------------------------------
+separator = new
+separator_background_id = 0
+separator_color = #6272a4 80
+separator_style = line
+separator_size = 2
+separator_padding = 4 8
+
+#-------------------------------------
+# Button: LCARS Header (decorative top block)
+#-------------------------------------
+button = new
+button_icon =
+button_text = LCARS
+button_font = Spline Sans Bold 8
+button_font_color = #282a36 100
+button_padding = 4 12
+button_background_id = 2
+button_centered = 1
+button_max_icon_size = 0
+
+#-------------------------------------
+# Executor 1: Time/Date (LCARS style)
+#-------------------------------------
+execp = new
+execp_command = date '+%H:%M'
+execp_interval = 30
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_monitor = 2
+execp_tooltip =
+execp_font = Spline Sans Bold 14
+execp_font_color = #f8f8f2 100
+execp_padding = 4 6
+execp_background_id = 0
+execp_centered = 1
+
+#-------------------------------------
+# Executor 2: CPU Usage
+#-------------------------------------
+execp = new
+execp_command = echo "CPU" && top -bn1 | grep "Cpu(s)" | awk '{printf "%.0f%%", $2}'
+execp_interval = 3
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_monitor = 2
+execp_tooltip = CPU Usage - Click for htop
+execp_lclick_command = alacritty -e htop
+execp_font = Spline Sans Bold 9
+execp_font_color = #50fa7b 100
+execp_padding = 4 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Executor 3: Memory Usage
+#-------------------------------------
+execp = new
+execp_command = echo "MEM" && free | awk '/Mem:/ {printf "%.0f%%", $3/$2 * 100}'
+execp_interval = 5
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_monitor = 2
+execp_tooltip = Memory Usage
+execp_lclick_command = alacritty -e htop -s PERCENT_MEM
+execp_font = Spline Sans Bold 9
+execp_font_color = #8e95b8 100
+execp_padding = 4 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Executor 4: GPU Usage (NVIDIA)
+#-------------------------------------
+execp = new
+execp_command = echo "GPU" && nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{printf "%s%%", $1}'
+execp_interval = 3
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_monitor = 2
+execp_tooltip = GPU Usage - Click for nvidia-settings
+execp_lclick_command = nvidia-settings
+execp_font = Spline Sans Bold 9
+execp_font_color = #ffb86c 100
+execp_padding = 4 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Executor 5: CPU Temp
+#-------------------------------------
+execp = new
+execp_command = echo "TMP" && sensors | grep -m1 "Tctl\|Core 0\|Package" | awk '{print $2}' | tr -d '+'
+execp_interval = 5
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_monitor = 2
+execp_tooltip = CPU Temperature
+execp_font = Spline Sans Bold 9
+execp_font_color = #ff5555 100
+execp_padding = 4 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Executor 6: Network (compact)
+#-------------------------------------
+execp = new
+execp_command = ~/.config/tint2/executors/net-compact.sh
+execp_interval = 2
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_monitor = 2
+execp_tooltip = Network - Click for nethogs
+execp_lclick_command = alacritty -e sudo nethogs
+execp_font = Spline Sans Bold 8
+execp_font_color = #f1fa8c 100
+execp_padding = 4 4
+execp_background_id = 5
+execp_centered = 1
+
+#-------------------------------------
+# Tooltip
+#-------------------------------------
+tooltip_show_timeout = 0.3
+tooltip_hide_timeout = 0.1
+tooltip_padding = 8 6
+tooltip_background_id = 7
+tooltip_font_color = #f8f8f2 100
+tooltip_font = Spline Sans 10

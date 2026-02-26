@@ -1,0 +1,96 @@
+# Maintainer: Eirikr <eirikr@localhost>
+# Based on: official dracula-gtk-theme
+
+pkgname=dracula-gtk-theme-gtk4-compat
+_pkgname=dracula-gtk-theme
+pkgver=4.0.0
+pkgrel=2  # Bumped for future Phase 2 patches
+pkgdesc="Dracula GTK theme with GTK4 CSS compatibility patches"
+arch=('any')
+url="https://github.com/dracula/gtk"
+license=('GPL3')
+depends=()
+makedepends=('git')
+optdepends=(
+    'gtk-engine-murrine: for GTK2 theme support'
+    'gtk3: for GTK3 theme support'
+    'gtk4: for GTK4/libadwaita theme support'
+    'gnome-tweaks: GUI for theme management'
+)
+source=(
+    "git+https://github.com/dracula/gtk.git#tag=v${pkgver}"
+    "0001-fix-gtk4-height-property.patch"
+    "0002-migrate-all-phase2-functions.patch"
+)
+sha256sums=(
+    'SKIP'
+    'SKIP'
+    'SKIP'
+)
+
+prepare() {
+    cd "gtk"
+
+    # Apply patches in order
+    echo "[*] Applying GTK4 compatibility patches..."
+
+    # Phase 1: Critical fixes (production-ready)
+    patch -p1 < "${srcdir}/0001-fix-gtk4-height-property.patch"
+
+    # Phase 2: Deprecated color function migration (TESTING - Q1 2026 release candidate)
+    # Consolidates migration of 21 deprecated color functions (alpha, shade, mix)
+    # Status: ACTIVE TESTING (see PHASE-2-README.md for test procedures)
+    echo "[*] Applying Phase 2 migrations (21 deprecated color functions)..."
+
+    # Migrate shade() functions to HSL calc()
+    sed -i 's/shade(#f8f8f2, 1\.8)/hsl(from #f8f8f2 h s calc(l * 1.8))/g' gtk-4.0/gtk.css
+    sed -i 's/shade(#1e1f29, 1\.2)/hsl(from #1e1f29 h s calc(l * 1.2))/g' gtk-4.0/gtk.css
+    sed -i 's/shade(#1e1f29, 1\.3)/hsl(from #1e1f29 h s calc(l * 1.3))/g' gtk-4.0/gtk.css
+    sed -i 's/shade(#1e1f29, 0\.85)/hsl(from #1e1f29 h s calc(l * 0.85))/g' gtk-4.0/gtk.css
+    sed -i 's/shade(#1e1f29, 0\.89)/hsl(from #1e1f29 h s calc(l * 0.89))/g' gtk-4.0/gtk.css
+    sed -i 's/shade(#1e1f29, 0\.9)/hsl(from #1e1f29 h s calc(l * 0.9))/g' gtk-4.0/gtk.css
+
+    # Migrate alpha() functions to rgba()
+    sed -i 's/alpha(black, 0\.35)/rgba(0, 0, 0, 0.35)/g' gtk-4.0/gtk.css
+    sed -i 's/alpha(black, 0\.18)/rgba(0, 0, 0, 0.18)/g' gtk-4.0/gtk.css
+    sed -i 's/alpha(black, 0\.12)/rgba(0, 0, 0, 0.12)/g' gtk-4.0/gtk.css
+    sed -i 's/alpha(currentColor,0\.55)/rgba(255, 255, 255, 0.55)/g' gtk-4.0/gtk.css
+
+    # Migrate mix() functions to color-mix()
+    sed -i 's/mix(@theme_base_color, #000000, 0\.35)/color-mix(in srgb, @theme_base_color 35%, #000000)/g' gtk-4.0/gtk.css
+    sed -i 's/mix(@theme_fg_color, #ffffff, 0\.1)/color-mix(in srgb, @theme_fg_color 90%, #ffffff)/g' gtk-4.0/gtk.css
+
+    echo "[✓] Phase 1 + Phase 2 patches applied successfully"
+    echo "[ℹ] Phase 2 testing active: 21 deprecated functions migrated to standard CSS"
+}
+
+build() {
+    # Theme packages don't have build steps
+    cd "gtk"
+    echo "[*] GTK4-compatible Dracula theme prepared"
+}
+
+package() {
+    cd "gtk"
+    
+    # Install all theme variants
+    install -d "${pkgdir}/usr/share/themes/Dracula"
+    
+    # Copy GTK2, GTK3, GTK4 themes
+    cp -r gtk-2.0 "${pkgdir}/usr/share/themes/Dracula/"
+    cp -r gtk-3.0 "${pkgdir}/usr/share/themes/Dracula/"
+    cp -r gtk-3.20 "${pkgdir}/usr/share/themes/Dracula/"
+    cp -r gtk-4.0 "${pkgdir}/usr/share/themes/Dracula/"
+    
+    # Copy desktop environment themes
+    cp -r cinnamon "${pkgdir}/usr/share/themes/Dracula/"
+    cp -r gnome-shell "${pkgdir}/usr/share/themes/Dracula/"
+    cp -r metacity-1 "${pkgdir}/usr/share/themes/Dracula/"
+    cp -r unity "${pkgdir}/usr/share/themes/Dracula/"
+    cp -r xfwm4 "${pkgdir}/usr/share/themes/Dracula/"
+    
+    # Copy theme metadata
+    install -m 644 index.theme "${pkgdir}/usr/share/themes/Dracula/"
+    install -m 644 LICENSE "${pkgdir}/usr/share/themes/Dracula/"
+    install -m 644 README.md "${pkgdir}/usr/share/themes/Dracula/"
+}

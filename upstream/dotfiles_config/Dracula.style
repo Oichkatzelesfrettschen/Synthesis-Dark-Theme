@@ -1,0 +1,86 @@
+{
+  /* =====================================================
+   * WindowMaker Dracula Theme - Enhanced Edition
+   * Based on https://draculatheme.com/contribute
+   *
+   * Dracula Palette:
+   * Background:  #282a36
+   * Current:     #44475a
+   * Foreground:  #f8f8f2
+   * Comment:     #6272a4
+   * Cyan:        #8be9fd
+   * Green:       #50fa7b
+   * Orange:      #ffb86c
+   * Pink:        #ff79c6
+   * Purple:      #bd93f9
+   * Red:         #ff5555
+   * Yellow:      #f1fa8c
+   * ===================================================== */
+
+  /* Focused Window Title Bars - Purple gradient */
+  FTitleColor = "#f8f8f2";
+  FTitleBack = "(hgradient, \"#bd93f9\", \"#6272a4\")";
+
+  /* Unfocused Window Title Bars - Subtle gray */
+  UTitleColor = "#6272a4";
+  UTitleBack = "(hgradient, \"#44475a\", \"#282a36\")";
+
+  /* Parent/Owner Window Title Bars */
+  PTitleColor = "#f8f8f2";
+  PTitleBack = "(hgradient, \"#6272a4\", \"#44475a\")";
+
+  /* Menu Title - Pink accent */
+  MenuTitleColor = "#f8f8f2";
+  MenuTitleBack = "(hgradient, \"#ff79c6\", \"#bd93f9\")";
+
+  /* Menu Text - Dark background */
+  MenuTextColor = "#f8f8f2";
+  MenuTextBack = "(vgradient, \"#282a36\", \"#1e1f29\")";
+
+  MenuDisabledColor = "#6272a4";
+
+  /* Highlighted menu items - Cyan/Pink */
+  HighlightColor = "#ff79c6";
+  HighlightTextColor = "#282a36";
+
+  /* Clip (Workspace Dock) */
+  ClipTitleColor = "#f8f8f2";
+  CClipTitleColor = "#6272a4";
+  ClipTitleFont = "Spline Sans:bold:size=10";
+
+  /* Icon Labels */
+  IconTitleColor = "#f8f8f2";
+  IconTitleBack = "#282a36";
+  IconTitleFont = "Spline Sans:size=9";
+
+  /* Icon Background - Gradient */
+  IconBack = "(dgradient, \"#44475a\", \"#282a36\")";
+
+  /* Resize Bar */
+  ResizebarBack = "(hgradient, \"#44475a\", \"#282a36\")";
+
+  /* Workspace Background */
+  WorkspaceBack = "(solid, \"#282a36\")";
+
+  /* Fonts - Spline Sans family */
+  WindowTitleFont = "Spline Sans:bold:size=11";
+  MenuTitleFont = "Spline Sans:bold:size=11";
+  MenuTextFont = "Spline Sans:size=11";
+  LargeDisplayFont = "Spline Sans:bold:size=24";
+  DisplayFont = "Spline Sans Mono:size=48";
+
+  /* Frame borders */
+  FrameBorderWidth = 1;
+  FrameBorderColor = "#44475a";
+  FrameSelectedBorderColor = "#bd93f9";
+
+  /* Modern NewStyle look */
+  NewStyle = Yes;
+  WidgetColor = "(solid, \"#44475a\")";
+
+  /* Title Justification */
+  TitleJustify = center;
+
+  /* Selection color for dialogs */
+  SelectColor = "#bd93f9";
+}

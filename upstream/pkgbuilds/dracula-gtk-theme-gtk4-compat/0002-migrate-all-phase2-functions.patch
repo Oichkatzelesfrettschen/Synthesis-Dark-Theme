@@ -1,0 +1,74 @@
+--- gtk-4.0/gtk.css	2025-11-12 18:11:42.000000000 -0800
++++ gtk.css.phase2	2025-11-12 18:32:40.916325821 -0800
+@@ -53,19 +53,19 @@
+ @define-color unfocused_selected_fg_color #f8f8f2;
+ /* these colors are exported for the window manager and shouldn't be used in applications,
+ read if you used those and something break with a version upgrade you're on your own... */
+-@define-color wm_title shade(#f8f8f2, 1.8);
++@define-color wm_title hsl(from #f8f8f2 h s calc(l * 1.8));
+ @define-color wm_unfocused_title #8b8c8e;
+ @define-color wm_highlight rgba(0, 0, 0, 0);
+ @define-color wm_borders_edge rgba(255, 255, 255, 0.1);
+-@define-color wm_bg_a shade(#1e1f29, 1.2);
++@define-color wm_bg_a hsl(from #1e1f29 h s calc(l * 1.2));
+ @define-color wm_bg_b #1e1f29;
+-@define-color wm_shadow alpha(black, 0.35);
+-@define-color wm_border alpha(black, 0.18);
+-@define-color wm_button_hover_color_a shade(#1e1f29, 1.3);
++@define-color wm_shadow rgba(0, 0, 0, 0.35);
++@define-color wm_border rgba(0, 0, 0, 0.18);
++@define-color wm_button_hover_color_a hsl(from #1e1f29 h s calc(l * 1.3));
+ @define-color wm_button_hover_color_b #1e1f29;
+-@define-color wm_button_active_color_a shade(#1e1f29, 0.85);
+-@define-color wm_button_active_color_b shade(#1e1f29, 0.89);
+-@define-color wm_button_active_color_c shade(#1e1f29, 0.9);
++@define-color wm_button_active_color_a hsl(from #1e1f29 h s calc(l * 0.85));
++@define-color wm_button_active_color_b hsl(from #1e1f29 h s calc(l * 0.89));
++@define-color wm_button_active_color_c hsl(from #1e1f29 h s calc(l * 0.9));
+ @define-color content_view_bg #282a36;
+ @define-color budgie_tasklist_indicator_color rgba(189, 147, 249, 0.5);
+ @define-color budgie_tasklist_indicator_color_active rgba(189, 147, 249, 0.5);
+@@ -1089,7 +1089,7 @@
+     calendar.button:disabled {
+       color: rgba(139, 140, 142, 0.45); }
+   calendar:indeterminate, calendar:indeterminate:backdrop {
+-    color: alpha(currentColor,0.55); }
++    color: rgba(255, 255, 255, 0.55); }
+   calendar.highlight, calendar.highlight:backdrop {
+     font-size: smaller;
+     color: #f8f8f2; }
+@@ -3014,7 +3014,7 @@
+       border-color: transparent; }
+
+ menuitem accelerator {
+-  color: alpha(currentColor,0.55); }
++  color: rgba(255, 255, 255, 0.55); }
+ menuitem check,
+ menuitem radio {
+   min-height: 16px;
+@@ -3399,7 +3399,7 @@
+   popover.menu.background separator {
+     margin: 6px 0; }
+   popover.menu accelerator {
+-    color: alpha(currentColor,0.55); }
++    color: rgba(255, 255, 255, 0.55); }
+     popover.menu accelerator:dir(ltr) {
+       margin-left: 12px; }
+     popover.menu accelerator:dir(rtl) {
+@@ -5024,14 +5024,14 @@
+ .night-light-indicator .view-header {
+   font-size: 14px;
+   padding: 10px;
+-  border-bottom: 1px solid mix(@theme_base_color, #000000, 0.35);
++  border-bottom: 1px solid color-mix(in srgb, @theme_base_color 35%, #000000);
+   box-shadow: 0px 1px 1px alpha(@theme_fg_color, 0.04); }
+ .night-light-indicator .display-settings-button {
+   border-top-left-radius: 0px;
+   border-top-right-radius: 0px;
+   border: none;
+   padding: 3px;
+-  border-top: 1px solid mix(@theme_base_color, #000000, 0.35);
++  border-top: 1px solid color-mix(in srgb, @theme_base_color 35%, #000000);
+   box-shadow: inset 0px 1px 1px alpha(@theme_fg_color, 0.04); }
+
+ .budgie-panel {
