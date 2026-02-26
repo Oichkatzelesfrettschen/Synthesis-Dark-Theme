@@ -6,7 +6,7 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
-## [2.0.0] - 2026-02
+## [2.0.0] - 2026-02-26
 
 ### Summary
 
@@ -21,8 +21,15 @@ system, canonical color definitions, and automated testing infrastructure.
 - `src/scripts/render_wm_controls.sh`: POSIX sh replacement for removed Fish script
 - `.gitignore` and `.editorconfig` for project hygiene
 - `CHANGELOG.md` (this file)
-- `Makefile` targets: `scss`, `xfwm4`, `cursors`, `wm-assets`, `check-deps`, `lint`
+- `Makefile` targets: `scss`, `xfwm4`, `cursors`, `wm-assets`, `check-deps`, `lint`, `audit`
 - `--palette` flag for `src/scripts/transform_colors.py` to load from `src/colors.json`
+- Test infrastructure: `tests/` with unit tests (transform_colors), CSS/SVG validation,
+  color consistency checks, PKGBUILD lint, and reproducibility tests (557 tests total)
+- `.pre-commit-config.yaml` with ruff, shellcheck, trailing-whitespace hooks
+- `.github/workflows/ci.yml` with lint, test, pkgbuild, and accessibility audit jobs
+- `synthesis-dark-suite.install` with post-install/upgrade/pre-remove hooks
+- Full KDE suite: Aurorae, color-schemes, cursors, SDDM, Plasma desktop, Kvantum themes
+  renamed from Dracula to Synthesis-Dark across all ~325 files
 
 ### Changed
 
