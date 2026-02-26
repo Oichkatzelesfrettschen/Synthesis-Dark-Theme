@@ -3,8 +3,6 @@
 INKSCAPE="/usr/bin/inkscape"
 OPTIPNG="/usr/bin/optipng"
 
-BRANCH=$(basename $(git symbolic-ref HEAD 2>/dev/null))
-
 LINK_NAMES=("bottom-inactive.png"
             "bottom-left-inactive.png"
             "bottom-right-active.png"
@@ -26,11 +24,7 @@ LINK_TARGETS=("bottom-active.png"
             "right-active.png")
 
 
-if [ "$BRANCH" != "master" ]; then
-    THEME_NAME="Dracula-${BRANCH}"
-elif [ "$BRANCH" == "master" ]; then
-    THEME_NAME="Dracula"
-fi
+THEME_NAME="Synthesis-Dark"
 
 for  screen in '' '-hdpi' '-xhdpi'; do
 
