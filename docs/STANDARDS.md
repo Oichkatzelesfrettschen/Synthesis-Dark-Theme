@@ -10,5 +10,5 @@
 *   **Transformation:** Never edit raw assets manually. Use `src/scripts/transform_colors.py` to ensure reproducibility.
 
 ## Documentation
-*   All high-level guides must start with `1_` to remain at the top of directory listings.
 *   Changelogs must be semantic and granular.
+*   Use descriptive filenames in all-caps for docs (e.g., CHANGELOG.md, CONTRIBUTING.md).

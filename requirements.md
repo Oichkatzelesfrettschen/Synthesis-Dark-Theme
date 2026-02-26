@@ -13,6 +13,7 @@
 If you intend to modify and rebuild the assets from source:
 *   **Inkscape**: For rendering SVG assets.
 *   **Optipng**: For optimizing generated PNGs.
-*   **Node.js & npm**: For Gulp-based build workflows (inherited from Ant-Dracula).
-*   **Sass/SCSS**: For compiling stylesheets.
+*   **sassc**: For compiling SCSS stylesheets.
 *   **Python 3**: For execution of rendering scripts.
+*   **python-pillow**: Python Pillow library for PNG color transformation.
+*   **xcursorgen**: For building cursor themes.
