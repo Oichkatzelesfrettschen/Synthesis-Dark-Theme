@@ -1,0 +1,28 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: '^(upstream/|tests/test_reproducibility\.sh)'
+      - id: end-of-file-fixer
+        exclude: '^upstream/'
+      - id: check-yaml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+        exclude: '^upstream/'
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.10
+    hooks:
+      - id: ruff
+        args: ['--select=E,F,W,B,I', '--ignore=E501']
+        files: '^src/.*\.py$|^tests/.*\.py$'
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.10.0.1
+    hooks:
+      - id: shellcheck
+        args: ['-S', 'error']
+        files: '\.(sh|bash)$'

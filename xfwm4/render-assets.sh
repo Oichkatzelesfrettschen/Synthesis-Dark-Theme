@@ -41,26 +41,25 @@ for  screen in '' '-hdpi' '-xhdpi'; do
     esac
 
     ASSETS_DIR="${THEME_NAME}${screen}/xfwm4"
-    mkdir -p $ASSETS_DIR
-    
-    for i in assets/*; do  
+    mkdir -p "${ASSETS_DIR}"
 
-        BASE_FILE_NAME=`basename -s .svg $i`
+    for i in assets/*; do
+        BASE_FILE_NAME=$(basename -s .svg "${i}")
 
-        if [ -f $ASSETS_DIR/$BASE_FILE_NAME.png ]; then
-            echo $ASSETS_DIR/$BASE_FILE_NAME.png exists.
+        if [ -f "${ASSETS_DIR}/${BASE_FILE_NAME}.png" ]; then
+            echo "${ASSETS_DIR}/${BASE_FILE_NAME}.png exists."
         else
             echo
-            echo Rendering $ASSETS_DIR/$BASE_FILE_NAME.png
-            $INKSCAPE --export-dpi=$DPI \
-                    --export-filename=$ASSETS_DIR/$BASE_FILE_NAME.png $i \
-            && $OPTIPNG -o7 --quiet $ASSETS_DIR/$BASE_FILE_NAME.png
+            echo "Rendering ${ASSETS_DIR}/${BASE_FILE_NAME}.png"
+            "${INKSCAPE}" --export-dpi="${DPI}" \
+                    --export-filename="${ASSETS_DIR}/${BASE_FILE_NAME}.png" "${i}" \
+            && "${OPTIPNG}" -o7 --quiet "${ASSETS_DIR}/${BASE_FILE_NAME}.png"
         fi
     done
 
-    for i in ${!LINK_NAMES[@]}; do
-        ln -sf ${LINK_TARGETS[$i]} $ASSETS_DIR/${LINK_NAMES[$i]} 
+    for i in "${!LINK_NAMES[@]}"; do
+        ln -sf "${LINK_TARGETS[$i]}" "${ASSETS_DIR}/${LINK_NAMES[$i]}"
     done
-    cp themerc $ASSETS_DIR/
+    cp themerc "${ASSETS_DIR}/"
 done
 exit 0

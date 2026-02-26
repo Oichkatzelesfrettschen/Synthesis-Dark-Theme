@@ -1,0 +1,88 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python lint tools
+        run: pip install ruff
+
+      - name: Lint Python (ruff)
+        run: ruff check --ignore=E501 src/scripts/ tests/
+
+      - name: Install shellcheck
+        run: sudo apt-get install -y shellcheck
+
+      - name: Lint shell scripts
+        run: |
+          shellcheck -S error xfwm4/render-assets.sh
+          shellcheck -S error kde/cursors/build.sh
+          shellcheck -S error src/scripts/render_wm_controls.sh
+
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install test dependencies
+        run: pip install Pillow pytest
+
+      - name: Run tests
+        run: pytest tests/ -v --tb=short
+
+  pkgbuild:
+    name: PKGBUILD Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check PKGBUILD syntax
+        run: |
+          # Validate PKGBUILD structure: required fields present
+          grep -q '^pkgbase=' PKGBUILD || (echo "FAIL: pkgbase missing" && exit 1)
+          grep -q '^pkgver=' PKGBUILD || (echo "FAIL: pkgver missing" && exit 1)
+          grep -q '^pkgrel=' PKGBUILD || (echo "FAIL: pkgrel missing" && exit 1)
+          grep -q '^arch=' PKGBUILD || (echo "FAIL: arch missing" && exit 1)
+          grep -q '^license=' PKGBUILD || (echo "FAIL: license missing" && exit 1)
+          echo "PKGBUILD basic structure OK"
+          # Verify no legacy makedepends remain
+          grep -v '^#' PKGBUILD | grep 'makedepends' | grep -qv 'potrace\|svgo' \
+            || (echo "FAIL: legacy makedepend found" && exit 1)
+          echo "PKGBUILD makedepends OK"
+
+  accessibility:
+    name: Accessibility Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install Pillow
+
+      - name: WCAG AA Accessibility Audit
+        run: python3 src/scripts/accessibility_audit.py --fail-below 4.5 --palette src/colors.json

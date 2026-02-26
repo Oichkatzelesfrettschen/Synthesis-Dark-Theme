@@ -14,12 +14,12 @@ Requirements:
     - svgo (SVG optimization, optional)
 """
 
-import os
-import sys
-import subprocess
 import argparse
-from pathlib import Path
+import os
+import subprocess
+import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+from pathlib import Path
 
 
 def preprocess_png(input_png: Path, temp_pbm: Path) -> bool:
@@ -124,7 +124,7 @@ def main():
     png_files = list(input_dir.glob('*.png'))
     base_files = [f for f in png_files if '@2' not in f.name]
 
-    print(f"=== Synthesis-Dark Asset Vectorization ===")
+    print("=== Synthesis-Dark Asset Vectorization ===")
     print(f"Input:  {input_dir} ({len(base_files)} base assets, {len(png_files)} total)")
     print(f"Output: {output_dir}")
     print()
@@ -159,7 +159,7 @@ def main():
                 failed += 1
 
     print()
-    print(f"=== Complete ===")
+    print("=== Complete ===")
     print(f"Success: {success}, Skipped: {skipped}, Failed: {failed}")
 
 

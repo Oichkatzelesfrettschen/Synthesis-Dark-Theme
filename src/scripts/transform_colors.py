@@ -15,15 +15,15 @@ Design Philosophy:
 - Folder colors shift to indigo-gray, not teal
 """
 
+import argparse
+import colorsys
 import json
 import os
 import re
 import sys
-import colorsys
-import argparse
-from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from typing import Tuple, Optional
+from pathlib import Path
+from typing import Optional, Tuple
 
 try:
     from PIL import Image
@@ -132,13 +132,14 @@ def load_palette(palette_path: Path) -> dict:
 
 def rgb_to_hsl(r: int, g: int, b: int) -> Tuple[float, float, float]:
     """Convert RGB (0-255) to HSL (H: 0-360, S: 0-1, L: 0-1)."""
-    h, l, s = colorsys.rgb_to_hls(r / 255.0, g / 255.0, b / 255.0)
-    return h * 360, s, l
+    # colorsys uses HLS order (hue, lightness, saturation)
+    hue, lit, sat = colorsys.rgb_to_hls(r / 255.0, g / 255.0, b / 255.0)
+    return hue * 360, sat, lit
 
 
-def hsl_to_rgb(h: float, s: float, l: float) -> Tuple[int, int, int]:
+def hsl_to_rgb(h: float, s: float, lit: float) -> Tuple[int, int, int]:
     """Convert HSL (H: 0-360, S: 0-1, L: 0-1) to RGB (0-255)."""
-    r, g, b = colorsys.hls_to_rgb(h / 360.0, l, s)
+    r, g, b = colorsys.hls_to_rgb(h / 360.0, lit, s)
     return int(round(r * 255)), int(round(g * 255)), int(round(b * 255))
 
 
@@ -168,8 +169,8 @@ def is_folder_color(r: int, g: int, b: int) -> bool:
     Detect if this is a MATE folder color (ultra-desaturated yellow-green).
     MATE folders are typically around H:65, S:0.15, pale olive/khaki tones.
     """
-    h, s, l = rgb_to_hsl(r, g, b)
-    return 40 <= h <= 90 and s < 0.3 and l > 0.6
+    hue, sat, lit = rgb_to_hsl(r, g, b)
+    return 40 <= hue <= 90 and sat < 0.3 and lit > 0.6
 
 
 def transform_color(r: int, g: int, b: int) -> Tuple[int, int, int]:
@@ -183,72 +184,72 @@ def transform_color(r: int, g: int, b: int) -> Tuple[int, int, int]:
     if r > 235 and g > 235 and b > 235:
         return (r, g, b)
 
-    h, s, l = rgb_to_hsl(r, g, b)
+    hue, sat, lit = rgb_to_hsl(r, g, b)
 
     # Folder colors (desaturated yellow-green) -> indigo-gray
     if is_folder_color(r, g, b):
         new_h = 228  # Indigo hue; target #8e95b8
-        new_s = max(0.15, min(0.25, s + 0.05))
-        new_l = max(0.45, min(0.60, l * 0.75))
-        return hsl_to_rgb(new_h, new_s, new_l)
+        new_s = max(0.15, min(0.25, sat + 0.05))
+        new_lit = max(0.45, min(0.60, lit * 0.75))
+        return hsl_to_rgb(new_h, new_s, new_lit)
 
     # Desaturated colors -> shift toward indigo
-    if s < 0.3:
+    if sat < 0.3:
         new_h = 240
-        new_s = max(0.15, min(0.25, s + 0.10))
-        new_l = max(0.45, min(0.60, l * 0.80))
-        return hsl_to_rgb(new_h, new_s, new_l)
+        new_s = max(0.15, min(0.25, sat + 0.10))
+        new_lit = max(0.45, min(0.60, lit * 0.80))
+        return hsl_to_rgb(new_h, new_s, new_lit)
 
     # Saturated colors: map by hue family
-    family = get_hue_family(h)
+    family = get_hue_family(hue)
 
     if family == 'blue':
-        new_h = max(235, min(260, 240 + (h - 230) * 0.5))
-        new_s = min(1.0, s * 1.15)
-        new_l = max(0.35, min(0.75, l))
+        new_h = max(235, min(260, 240 + (hue - 230) * 0.5))
+        new_s = min(1.0, sat * 1.15)
+        new_lit = max(0.35, min(0.75, lit))
 
     elif family == 'green':
-        new_h = max(150, min(170, 155 + (h - 120) * 0.3))
-        new_s = min(1.0, s * 1.10)
-        new_l = max(0.30, min(0.65, l))
+        new_h = max(150, min(170, 155 + (hue - 120) * 0.3))
+        new_s = min(1.0, sat * 1.10)
+        new_lit = max(0.30, min(0.65, lit))
 
     elif family == 'cyan':
-        new_h = max(170, min(195, 175 + (h - 175) * 0.8))
-        new_s = min(1.0, s * 1.05)
-        new_l = max(0.35, min(0.70, l))
+        new_h = max(170, min(195, 175 + (hue - 175) * 0.8))
+        new_s = min(1.0, sat * 1.05)
+        new_lit = max(0.35, min(0.70, lit))
 
     elif family == 'yellow':
-        new_h = max(40, min(55, 45 + (h - 62) * 0.5))
-        new_s = min(1.0, s * 1.10)
-        new_l = max(0.55, min(0.80, l))
+        new_h = max(40, min(55, 45 + (hue - 62) * 0.5))
+        new_s = min(1.0, sat * 1.10)
+        new_lit = max(0.55, min(0.80, lit))
 
     elif family == 'orange':
-        new_h = max(20, min(35, 25 + (h - 32) * 0.8))
-        new_s = min(1.0, s * 1.05)
-        new_l = max(0.45, min(0.75, l))
+        new_h = max(20, min(35, 25 + (hue - 32) * 0.8))
+        new_s = min(1.0, sat * 1.05)
+        new_lit = max(0.45, min(0.75, lit))
 
     elif family == 'red':
-        if h > 340:
-            new_h = max(350, 350 + (h - 350) * 0.5)
+        if hue > 340:
+            new_h = max(350, 350 + (hue - 350) * 0.5)
         else:
-            new_h = min(15, 5 + (h - 10) * 0.5)
-        new_s = min(0.85, s * 0.95)
-        new_l = max(0.45, min(0.65, l))
+            new_h = min(15, 5 + (hue - 10) * 0.5)
+        new_s = min(0.85, sat * 0.95)
+        new_lit = max(0.45, min(0.65, lit))
 
     elif family == 'purple':
-        new_h = max(265, min(285, 270 + (h - 280) * 0.6))
-        new_s = min(1.0, s * 1.10)
-        new_l = max(0.40, min(0.70, l))
+        new_h = max(265, min(285, 270 + (hue - 280) * 0.6))
+        new_s = min(1.0, sat * 1.10)
+        new_lit = max(0.40, min(0.70, lit))
 
     elif family == 'magenta':
-        new_h = max(300, min(330, 310 + (h - 320) * 0.7))
-        new_s = min(0.90, s * 0.95)
-        new_l = max(0.50, min(0.75, l))
+        new_h = max(300, min(330, 310 + (hue - 320) * 0.7))
+        new_s = min(0.90, sat * 0.95)
+        new_lit = max(0.50, min(0.75, lit))
 
     else:
-        new_h, new_s, new_l = h, s, l
+        new_h, new_s, new_lit = hue, sat, lit
 
-    return hsl_to_rgb(new_h, new_s, new_l)
+    return hsl_to_rgb(new_h, new_s, new_lit)
 
 
 # =============================================================================

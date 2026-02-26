@@ -12,8 +12,8 @@ PREFIX ?= /usr
 DESTDIR ?=
 THEME_NAME = Synthesis-Dark
 THEME_DIR = $(DESTDIR)$(PREFIX)/share/themes/$(THEME_NAME)
-ICON_DIR = $(DESTDIR)$(PREFIX)/share/icons/$(THEME_NAME)-Icons
-CURSOR_DIR = $(DESTDIR)$(PREFIX)/share/icons/$(THEME_NAME)-Cursors
+ICON_DIR = $(DESTDIR)$(PREFIX)/share/icons/MATE-$(THEME_NAME)
+CURSOR_DIR = $(DESTDIR)$(PREFIX)/share/icons/MATE-$(THEME_NAME)-Cursors
 TILIX_DIR = $(DESTDIR)$(PREFIX)/share/tilix/schemes
 
 PYTHON = python3
@@ -125,8 +125,8 @@ harmonize:
 	$(PYTHON) $(TRANSFORMER)
 
 audit:
-	@echo "--- WCAG 2.1 Accessibility Audit ---"
-	@$(PYTHON) $(ACCESSIBILITY_AUDIT)
+	@echo "--- WCAG 2.1 Accessibility Audit (enforcing AA >= 4.5:1) ---"
+	@$(PYTHON) $(ACCESSIBILITY_AUDIT) --fail-below 4.5 --palette src/colors.json
 
 # -----------------------------------------------------------------------------
 # Lint (P2 / P7.2)
@@ -134,10 +134,11 @@ audit:
 # -----------------------------------------------------------------------------
 lint:
 	@echo "--- Linting Python ---"
-	@ruff check src/scripts/ || true
+	@ruff check --ignore=E501 src/scripts/
 	@echo "--- Linting Shell Scripts ---"
 	@shellcheck -S error xfwm4/render-assets.sh kde/cursors/build.sh \
-		src/scripts/render_wm_controls.sh || true
+		src/scripts/render_wm_controls.sh
+	@echo "--- Lint passed ---"
 
 # -----------------------------------------------------------------------------
 # Dependency Check (P2.6)
