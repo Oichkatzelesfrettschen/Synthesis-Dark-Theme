@@ -7,6 +7,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Synthesis-Dark
 MetacityTheme=Synthesis-Dark
-IconTheme=MATE-Synthesis-Dark
-CursorTheme=MATE-Synthesis-Dark-Cursors
+IconTheme=Synthesis-Dark-Icons
+CursorTheme=Synthesis-Dark-Cursors
 ButtonLayout=menu:minimize,maximize,close

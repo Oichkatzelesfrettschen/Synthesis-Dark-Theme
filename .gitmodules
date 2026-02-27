@@ -1,0 +1,3 @@
+[submodule "upstream/tela-circle"]
+	path = upstream/tela-circle
+	url = https://github.com/vinceliuice/Tela-circle-icon-theme

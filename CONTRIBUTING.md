@@ -100,7 +100,7 @@ The build system is organized as:
 - `src/scripts/` -- Python and shell tools
 - `gtk-3.20/`, `gtk-4.0/`, `gnome-shell/`, `cinnamon/` -- SCSS source
 - `gtk-3.0/gtk.css` -- hand-authored (no SCSS compilation)
-- `icons/` -- MATE-Synthesis-Dark icon and cursor themes
+- `icons/` -- Synthesis-Dark-Icons icon and cursor themes
 - `kde/` -- KDE Plasma, Aurorae, Kvantum, SDDM, color-scheme files
 
 ## Upstream Attribution

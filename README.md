@@ -13,8 +13,8 @@ Cinnamon, and other GTK environments.
 - **GNOME Shell / Cinnamon**: SCSS-compiled shell themes
 - **XFWM4**: Rendered theme assets at standard, HiDPI, and XHiDPI resolutions
 - **KDE Plasma**: Aurorae, color-scheme, Kvantum, SDDM, and desktop themes
-- **Icons**: MATE-Synthesis-Dark icon set
-- **Cursors**: Matching MATE-Synthesis-Dark-Cursors
+- **Icons**: Synthesis-Dark-Icons icon set
+- **Cursors**: Matching Synthesis-Dark-Cursors
 - **Extras**: Tilix terminal color scheme, Alacritty config, btop theme, WindowMaker
 
 ## Installation
@@ -47,8 +47,8 @@ Copy directories to their respective locations:
 
 - **Themes**: `gtk-2.0`, `gtk-3.0`, `gtk-4.0`, `metacity-1`, `gnome-shell`, `cinnamon`, `xfwm4`
   -> `~/.themes/Synthesis-Dark/` or `/usr/share/themes/Synthesis-Dark/`
-- **Icons**: `icons/MATE-Synthesis-Dark` -> `~/.icons/` or `/usr/share/icons/`
-- **Cursors**: `icons/MATE-Synthesis-Dark-Cursors` -> `~/.icons/` or `/usr/share/icons/`
+- **Icons**: `icons/Synthesis-Dark-Icons` -> `~/.icons/` or `/usr/share/icons/`
+- **Cursors**: `icons/Synthesis-Dark-Cursors` -> `~/.icons/` or `/usr/share/icons/`
 - **Tilix**: `extras/tilix/Synthesis-Dark.json` -> `~/.config/tilix/schemes/`
 
 ## Applying the Theme
@@ -57,7 +57,7 @@ Copy directories to their respective locations:
 
 ```sh
 gsettings set org.mate.interface gtk-theme 'Synthesis-Dark'
-gsettings set org.mate.interface icon-theme 'MATE-Synthesis-Dark'
+gsettings set org.mate.interface icon-theme 'Synthesis-Dark-Icons'
 gsettings set org.mate.marco.general theme 'Synthesis-Dark'
 ```
 
@@ -65,7 +65,7 @@ gsettings set org.mate.marco.general theme 'Synthesis-Dark'
 
 ```sh
 gsettings set org.gnome.desktop.interface gtk-theme 'Synthesis-Dark'
-gsettings set org.gnome.desktop.interface icon-theme 'MATE-Synthesis-Dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Synthesis-Dark-Icons'
 ```
 
 ### XFCE / Others
@@ -83,7 +83,7 @@ gnome-shell/      GNOME Shell theme (SCSS compiled)
 cinnamon/         Cinnamon theme (SCSS compiled)
 metacity-1/       Marco/Metacity window decorations
 xfwm4/            XFWM4 theme and asset renderer
-icons/            MATE-Synthesis-Dark icons and cursors
+icons/            Synthesis-Dark-Icons icons and cursors
 kde/              KDE Plasma, Aurorae, Kvantum, SDDM, color-scheme files
 extras/           App-specific configs (Tilix, Alacritty, btop, WindowMaker)
 src/              Build tools and canonical color palette

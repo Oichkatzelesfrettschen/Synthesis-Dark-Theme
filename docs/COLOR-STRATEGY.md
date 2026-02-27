@@ -1,4 +1,4 @@
-# MATE-Synthesis-Dark Color Strategy
+# Synthesis-Dark-Icons Color Strategy
 
 ## Design Philosophy
 
@@ -140,7 +140,7 @@ Luminance gaps verified by `python3 src/scripts/accessibility_audit.py` (P5.9):
 
 ## Files Affected
 
-- `icons/MATE-Synthesis-Dark/` (all sizes, repo-relative)
+- `icons/Synthesis-Dark-Icons/` (all sizes, repo-relative)
 - `src/scripts/transform_colors.py` (transformation script)
 - `src/colors.json` (canonical color definitions)
 

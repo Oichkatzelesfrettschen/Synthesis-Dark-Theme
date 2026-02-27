@@ -134,5 +134,35 @@
     "slate": { "hex": "#8e95b8", "role": "Primary folder color (matches indigo_gray accent)" },
     "gray_violet": { "hex": "#7f849c", "role": "Darker folder variant" },
     "muted_slate": { "hex": "#6c7086", "role": "Muted folder / overlay" }
+  },
+
+  "icon_variants": {
+    "_comment": "Accent colors for the icon variant system. Each entry produces a Synthesis-Dark-Icons-<Name> theme via make icon-variants. The tela_source color (#5294e2) is what Tela Circle uses in source SVGs and is substituted during generation.",
+    "tela_source": { "hex": "#5294e2", "role": "Tela Circle source accent color (replaced during variant generation)" },
+    "Default": {
+      "hex": "#8e95b8",
+      "role": "Synthesis-Dark default (indigo-gray, matches indigo_gray accent)",
+      "theme_name": "Synthesis-Dark-Icons"
+    },
+    "Purple": {
+      "hex": "#bd93f9",
+      "role": "Dracula purple; Tela Circle Dracula compat",
+      "theme_name": "Synthesis-Dark-Icons-Purple"
+    },
+    "Teal": {
+      "hex": "#17b169",
+      "role": "CachyOS teal; matches WM button accent",
+      "theme_name": "Synthesis-Dark-Icons-Teal"
+    },
+    "Mauve": {
+      "hex": "#cba6f7",
+      "role": "Catppuccin mauve; soft purple",
+      "theme_name": "Synthesis-Dark-Icons-Mauve"
+    },
+    "Blue": {
+      "hex": "#b4befe",
+      "role": "Lavender blue; matches lavender accent",
+      "theme_name": "Synthesis-Dark-Icons-Blue"
+    }
   }
 }

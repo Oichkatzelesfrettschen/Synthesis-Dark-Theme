@@ -6,6 +6,54 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [2.1.0] - 2026-02-27
+
+### Summary
+
+Icon theme expansion: Tela Circle app icons imported as a git submodule, icon
+directories renamed from MATE-prefixed names to Synthesis-Dark-Icons/Cursors,
+and a five-variant color system (Default, Purple, Teal, Mauve, Blue) added with
+a POSIX sh generation script and full Makefile integration.
+
+### Added
+
+- `upstream/tela-circle/` git submodule (vinceliuice/Tela-circle-icon-theme, GPL-3.0-or-later)
+  providing ~1600 scalable app, mimetype, device, and folder icons
+- `src/scripts/generate_variants.sh`: POSIX sh script to generate icon color variants
+  from Tela Circle source via sed color substitution
+- `Makefile` targets: `icon-variants`, `icon-variant-<NAME>` for variant generation
+- Five icon color variants (generated at build time, not committed):
+  - `Synthesis-Dark-Icons-Purple` (#bd93f9, Dracula purple)
+  - `Synthesis-Dark-Icons-Teal` (#17b169, CachyOS teal)
+  - `Synthesis-Dark-Icons-Mauve` (#cba6f7, Catppuccin mauve)
+  - `Synthesis-Dark-Icons-Blue` (#b4befe, lavender)
+- `src/colors.json` `icon_variants` section with all variant color definitions
+- `docs/ICONS.md`: icon theme structure, variant system, Tela Circle attribution,
+  instructions for adding new variants
+- `tests/test_icon_variants.sh`: POSIX sh test suite for variant generation
+  (structure, index.theme correctness, color presence/absence checks)
+- `PKGBUILD`: new `synthesis-dark-icons-variants` split package
+
+### Changed
+
+- `icons/MATE-Synthesis-Dark/` renamed to `icons/Synthesis-Dark-Icons/`
+- `icons/MATE-Synthesis-Dark-Cursors/` renamed to `icons/Synthesis-Dark-Cursors/`
+- `icons/Synthesis-Dark-Cursors/index.theme` Name field updated
+- `index.theme` (root) IconTheme/CursorTheme fields updated to new names
+- `Makefile` ICON_DIR, CURSOR_DIR, install target, clean target updated
+- `PKGBUILD` icon/cursor install paths updated; pkgver bumped to 2.1.0
+- All docs updated to remove MATE-prefixed icon theme references
+- `synthesis-dark-suite.install` icon path and gsettings command updated
+- `generate_variants.sh` added to shellcheck lint target
+
+### Fixed
+
+- `src/scripts/generate_variants.sh`: POSIX sh subshell variable collision bug --
+  `apply_color` inner variables renamed with `_ac_` prefix to prevent overwriting
+  caller's `dest` variable across loop iterations
+
+---
+
 ## [2.0.0] - 2026-02-26
 
 ### Summary

@@ -4,8 +4,8 @@
 # Documentation: docs/PKGBUILD.md
 
 pkgbase=synthesis-dark-suite
-pkgname=('synthesis-dark-gtk-theme' 'synthesis-dark-marco-theme' 'synthesis-dark-icons' 'synthesis-dark-cursors' 'synthesis-dark-tilix')
-pkgver=2.0.0
+pkgname=('synthesis-dark-gtk-theme' 'synthesis-dark-marco-theme' 'synthesis-dark-icons' 'synthesis-dark-cursors' 'synthesis-dark-tilix' 'synthesis-dark-icons-variants')
+pkgver=2.1.0
 pkgrel=1
 pkgdesc="A unified dark theme suite (GTK2/3/4, Marco/Metacity, Icons, Cursors, Extras)"
 arch=('any')
@@ -31,6 +31,10 @@ build() {
     # Run full build: compile SCSS and harmonize palette.
     # GTK2 SVG rendering is skipped if source files are absent (make warns).
     make build
+    # Generate icon color variants from Tela Circle submodule source.
+    # Requires the submodule to be initialised (included in git clone --recurse-submodules).
+    git submodule update --init upstream/tela-circle
+    make icon-variants
 }
 
 package_synthesis-dark-gtk-theme() {
@@ -117,8 +121,8 @@ package_synthesis-dark-icons() {
     )
 
     cd "${srcdir}/Synthesis-Dark-Theme"
-    install -d "${pkgdir}/usr/share/icons/MATE-Synthesis-Dark"
-    cp -r icons/MATE-Synthesis-Dark/* "${pkgdir}/usr/share/icons/MATE-Synthesis-Dark/"
+    install -d "${pkgdir}/usr/share/icons/Synthesis-Dark-Icons"
+    cp -r icons/Synthesis-Dark-Icons/* "${pkgdir}/usr/share/icons/Synthesis-Dark-Icons/"
 }
 
 package_synthesis-dark-cursors() {
@@ -127,8 +131,8 @@ package_synthesis-dark-cursors() {
     optdepends=('xcursor-themes: X cursor support')
 
     cd "${srcdir}/Synthesis-Dark-Theme"
-    install -d "${pkgdir}/usr/share/icons/MATE-Synthesis-Dark-Cursors"
-    cp -r icons/MATE-Synthesis-Dark-Cursors/* "${pkgdir}/usr/share/icons/MATE-Synthesis-Dark-Cursors/"
+    install -d "${pkgdir}/usr/share/icons/Synthesis-Dark-Cursors"
+    cp -r icons/Synthesis-Dark-Cursors/* "${pkgdir}/usr/share/icons/Synthesis-Dark-Cursors/"
 }
 
 package_synthesis-dark-tilix() {
@@ -139,4 +143,24 @@ package_synthesis-dark-tilix() {
     cd "${srcdir}/Synthesis-Dark-Theme"
     install -d "${pkgdir}/usr/share/tilix/schemes"
     install -m 644 extras/tilix/Synthesis-Dark.json "${pkgdir}/usr/share/tilix/schemes/"
+}
+
+package_synthesis-dark-icons-variants() {
+    pkgdesc="Synthesis-Dark Icon Theme Color Variants (Purple, Teal, Mauve, Blue) -- generated from Tela Circle source"
+
+    # Depends on the base icon theme; variants inherit from it via index.theme
+    depends=('synthesis-dark-icons' 'hicolor-icon-theme')
+    optdepends=(
+        'gtk-update-icon-cache: Icon cache generation'
+        'librsvg: SVG icon rendering'
+    )
+
+    cd "${srcdir}/Synthesis-Dark-Theme"
+    for variant in Purple Teal Mauve Blue; do
+        local _theme="Synthesis-Dark-Icons-${variant}"
+        if [ -d "icons/${_theme}" ]; then
+            install -d "${pkgdir}/usr/share/icons/${_theme}"
+            cp -r "icons/${_theme}/"* "${pkgdir}/usr/share/icons/${_theme}/"
+        fi
+    done
 }

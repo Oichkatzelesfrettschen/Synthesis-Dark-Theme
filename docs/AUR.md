@@ -11,8 +11,8 @@ The base package is `synthesis-dark-suite` which produces five installable packa
 |---------|----------|
 | `synthesis-dark-gtk-theme` | GTK2/3/4, Metacity, GNOME Shell, Cinnamon, XFWM4 |
 | `synthesis-dark-marco-theme` | Marco/Metacity window decorations |
-| `synthesis-dark-icons` | MATE-Synthesis-Dark icon theme |
-| `synthesis-dark-cursors` | MATE-Synthesis-Dark-Cursors cursor theme |
+| `synthesis-dark-icons` | Synthesis-Dark-Icons icon theme |
+| `synthesis-dark-cursors` | Synthesis-Dark-Cursors cursor theme |
 | `synthesis-dark-tilix` | Tilix terminal color scheme |
 
 ## Local Test Build

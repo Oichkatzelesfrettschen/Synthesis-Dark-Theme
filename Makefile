@@ -5,15 +5,15 @@
 #   - GTK2 assets: Rendered from src/assets/gtk2/assets.svg
 #   - GTK3/4 assets: Pre-rendered in ./assets/ (shared by gtk-3.0, gtk-3.20, gtk-4.0)
 #   - SCSS: Compiled via sassc for gtk-3.20, gtk-4.0, gnome-shell, cinnamon
-#   - Icons: MATE-Synthesis-Dark and cursors in icons/
+#   - Icons: Synthesis-Dark-Icons and cursors in icons/
 #   - Color harmonization: src/scripts/transform_colors.py applies Indigo-Gray palette
 
 PREFIX ?= /usr
 DESTDIR ?=
 THEME_NAME = Synthesis-Dark
 THEME_DIR = $(DESTDIR)$(PREFIX)/share/themes/$(THEME_NAME)
-ICON_DIR = $(DESTDIR)$(PREFIX)/share/icons/MATE-$(THEME_NAME)
-CURSOR_DIR = $(DESTDIR)$(PREFIX)/share/icons/MATE-$(THEME_NAME)-Cursors
+ICON_DIR = $(DESTDIR)$(PREFIX)/share/icons/$(THEME_NAME)-Icons
+CURSOR_DIR = $(DESTDIR)$(PREFIX)/share/icons/$(THEME_NAME)-Cursors
 TILIX_DIR = $(DESTDIR)$(PREFIX)/share/tilix/schemes
 
 PYTHON = python3
@@ -26,7 +26,11 @@ XFWM4_SCRIPT = xfwm4/render-assets.sh
 CURSOR_SCRIPT = kde/cursors/build.sh
 
 .PHONY: all build themes scss gtk2 icons harmonize xfwm4 cursors wm-assets \
-	audit lint install clean check-deps help
+	audit lint install clean check-deps help \
+	icon-variants icon-variant-Default icon-variant-Purple icon-variant-Teal \
+	icon-variant-Mauve icon-variant-Blue
+
+ICON_VARIANT_SCRIPT = src/scripts/generate_variants.sh
 
 all: build audit
 
@@ -34,24 +38,44 @@ help:
 	@echo "Synthesis-Dark Build System"
 	@echo ""
 	@echo "Targets:"
-	@echo "  all        - Build everything and run accessibility audit"
-	@echo "  build      - Build themes and harmonize icons"
-	@echo "  themes     - Build GTK2 + compile SCSS"
-	@echo "  scss       - Compile SCSS for gtk-3.20, gtk-4.0, gnome-shell, cinnamon"
-	@echo "  gtk2       - Render GTK2 assets from SVG source"
-	@echo "  xfwm4      - Render XFWM4 window manager assets"
-	@echo "  cursors    - Build cursor theme (requires inkscape, xcursorgen)"
-	@echo "  wm-assets  - Render WM control button PNGs"
-	@echo "  harmonize  - Apply Synthesis palette to all assets"
-	@echo "  audit      - Run WCAG accessibility contrast audit"
-	@echo "  lint       - Run ruff (Python) and shellcheck (shell scripts)"
-	@echo "  install    - Install to system (use DESTDIR for staging)"
-	@echo "  clean      - Remove generated artifacts"
-	@echo "  check-deps - Verify build prerequisites"
+	@echo "  all                - Build everything and run accessibility audit"
+	@echo "  build              - Build themes and harmonize icons"
+	@echo "  themes             - Build GTK2 + compile SCSS"
+	@echo "  scss               - Compile SCSS for gtk-3.20, gtk-4.0, gnome-shell, cinnamon"
+	@echo "  gtk2               - Render GTK2 assets from SVG source"
+	@echo "  xfwm4              - Render XFWM4 window manager assets"
+	@echo "  cursors            - Build cursor theme (requires inkscape, xcursorgen)"
+	@echo "  wm-assets          - Render WM control button PNGs"
+	@echo "  harmonize          - Apply Synthesis palette to all assets"
+	@echo "  icon-variants      - Generate all 5 icon color variants from Tela Circle source"
+	@echo "  icon-variant-NAME  - Generate a single variant (Default/Purple/Teal/Mauve/Blue)"
+	@echo "  audit              - Run WCAG accessibility contrast audit"
+	@echo "  lint               - Run ruff (Python) and shellcheck (shell scripts)"
+	@echo "  install            - Install to system (use DESTDIR for staging)"
+	@echo "  clean              - Remove generated artifacts"
+	@echo "  check-deps         - Verify build prerequisites"
 	@echo ""
 	@echo "Variables:"
 	@echo "  PREFIX=$(PREFIX)"
 	@echo "  DESTDIR=$(DESTDIR)"
+
+# -----------------------------------------------------------------------------
+# Icon Variants (Step 2 of v2.1.0)
+# WHY: Users expect folder/accent color choices (Papirus/Tela Circle precedent).
+#      Our monochromatic Tela Circle source makes this trivially scriptable.
+#      Variants are generated at build time and gitignored (reproducible output).
+# HOW: make icon-variants        -- all 5 variants
+#      make icon-variant-Purple  -- single variant
+# -----------------------------------------------------------------------------
+icon-variants:
+	@echo "--- Generating all icon color variants ---"
+	@git submodule update --init upstream/tela-circle
+	@sh $(ICON_VARIANT_SCRIPT) all
+
+icon-variant-%:
+	@echo "--- Generating icon variant: $* ---"
+	@git submodule update --init upstream/tela-circle
+	@sh $(ICON_VARIANT_SCRIPT) $*
 
 build: themes icons
 
@@ -137,7 +161,8 @@ lint:
 	@ruff check --ignore=E501 src/scripts/
 	@echo "--- Linting Shell Scripts ---"
 	@shellcheck -S error xfwm4/render-assets.sh kde/cursors/build.sh \
-		src/scripts/render_wm_controls.sh
+		src/scripts/render_wm_controls.sh src/scripts/generate_variants.sh \
+		tests/test_icon_variants.sh
 	@echo "--- Lint passed ---"
 
 # -----------------------------------------------------------------------------
@@ -173,13 +198,13 @@ install:
 	install -d $(THEME_DIR)
 	cp -r assets gtk-2.0 gtk-3.0 gtk-3.20 gtk-4.0 metacity-1 cinnamon gnome-shell xfwm4 unity index.theme $(THEME_DIR)/
 
-	# Icons (rename to Synthesis-Dark-Icons)
+	# Icons
 	install -d $(ICON_DIR)
-	cp -r icons/MATE-Synthesis-Dark/* $(ICON_DIR)/
+	cp -r icons/Synthesis-Dark-Icons/* $(ICON_DIR)/
 
-	# Cursors (rename to Synthesis-Dark-Cursors)
+	# Cursors
 	install -d $(CURSOR_DIR)
-	cp -r icons/MATE-Synthesis-Dark-Cursors/* $(CURSOR_DIR)/
+	cp -r icons/Synthesis-Dark-Cursors/* $(CURSOR_DIR)/
 
 	# Extras
 	install -d $(TILIX_DIR)
@@ -204,4 +229,7 @@ clean:
 	rm -rf kde/cursors/build
 	# Icon cache
 	find . -type f -name "icon-theme.cache" -delete 2>/dev/null || true
-	@echo "Note: Pre-rendered assets in ./assets/ and icons/ are preserved"
+	# Icon variants (generated at build time, safe to delete and regenerate)
+	rm -rf icons/Synthesis-Dark-Icons-Purple icons/Synthesis-Dark-Icons-Teal \
+		icons/Synthesis-Dark-Icons-Mauve icons/Synthesis-Dark-Icons-Blue
+	@echo "Note: Pre-rendered assets in ./assets/ and icons/Synthesis-Dark-Icons/ are preserved"

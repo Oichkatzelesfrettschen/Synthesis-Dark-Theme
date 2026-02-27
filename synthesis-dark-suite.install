@@ -3,10 +3,10 @@ post_install() {
     echo "    To apply the GTK theme:"
     echo "      gsettings set org.gnome.desktop.interface gtk-theme 'Synthesis-Dark'"
     echo "    To apply the icon theme:"
-    echo "      gsettings set org.gnome.desktop.interface icon-theme 'MATE-Synthesis-Dark'"
+    echo "      gsettings set org.gnome.desktop.interface icon-theme 'Synthesis-Dark-Icons'"
     echo "    For MATE Desktop:"
     echo "      gsettings set org.mate.interface gtk-theme 'Synthesis-Dark'"
-    echo "      gsettings set org.mate.interface icon-theme 'MATE-Synthesis-Dark'"
+    echo "      gsettings set org.mate.interface icon-theme 'Synthesis-Dark-Icons'"
     echo "    For KDE Plasma: use System Settings > Appearance"
 
     local _gtk_dir="/usr/share/themes/Synthesis-Dark"
@@ -16,7 +16,7 @@ post_install() {
         echo "WARNING: GTK theme directory not found at ${_gtk_dir}"
     fi
 
-    local _icon_dir="/usr/share/icons/MATE-Synthesis-Dark"
+    local _icon_dir="/usr/share/icons/Synthesis-Dark-Icons"
     if [ -d "${_icon_dir}" ]; then
         echo "==> Icon theme installed at ${_icon_dir}"
         if command -v gtk-update-icon-cache >/dev/null 2>&1; then

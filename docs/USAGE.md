@@ -13,8 +13,8 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Synthesis-Dark'
 
 ### **Icon & Cursors**
 ```bash
-gsettings set org.mate.interface icon-theme 'MATE-Synthesis-Dark'
-gsettings set org.mate.interface cursor-theme 'MATE-Synthesis-Dark-Cursors'
+gsettings set org.mate.interface icon-theme 'Synthesis-Dark-Icons'
+gsettings set org.mate.interface cursor-theme 'Synthesis-Dark-Cursors'
 ```
 
 ## 2. Terminal Harmonization

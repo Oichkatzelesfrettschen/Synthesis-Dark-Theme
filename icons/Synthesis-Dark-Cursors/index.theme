@@ -1,0 +1,7 @@
+[Icon Theme]
+Name=Synthesis-Dark-Cursors
+Comment=Synthesis-Dark cursor theme
+Inherits=Adwaita
+
+[Cursor Theme]
+Inherits=Adwaita

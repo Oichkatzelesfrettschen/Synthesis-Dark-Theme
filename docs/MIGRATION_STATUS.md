@@ -15,7 +15,7 @@ All legacy fragments have been unified into `~/Github/Synthesis-Dark-Theme`.
 - **Accent:** Integrated Indigo-Gray (`#8e95b8`) for headers and controls.
 - **GTK4 Fixed:** Deprecated `shade()` and `alpha()` functions replaced with native CSS `hsl()` and `rgba()`.
 
-### **Icons (MATE-Synthesis-Dark)**
+### **Icons (Synthesis-Dark-Icons)**
 - **Transformations:** 7,000+ assets processed.
 - **Standard:** Folders transitioned from Teal to **Indigo-Gray** for visual longevity.
 
