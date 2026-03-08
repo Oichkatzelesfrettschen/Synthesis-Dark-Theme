@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/zen-icon",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/zen-icon.svg",
+  "source_authority": "src/icons_backend/geometry/apps/zen-icon.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/zen-icon.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/zen-icon.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/zen-icon.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/zen-icon.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/zen-icon.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/zen-icon.png"
+  ]
+}

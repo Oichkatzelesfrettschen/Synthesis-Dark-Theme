@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/folder_open",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/folder_open.svg",
+  "source_authority": "src/icons_backend/geometry/status/folder_open.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/folder_open.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/folder_open.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/folder_open.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/folder_open.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/folder_open.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/folder_open.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/object-rotate-left",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/object-rotate-left.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/object-rotate-left-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/object-rotate-left.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/object-rotate-left.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/object-rotate-left.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/object-rotate-left.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/object-rotate-left.png"
+  ]
+}

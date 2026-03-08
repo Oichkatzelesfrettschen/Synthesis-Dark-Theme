@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/appointment-soon",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/appointment-soon.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/appointment-soon-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/appointment-soon.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/appointment-soon.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/appointment-soon.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/appointment-soon.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/appointment-soon.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/appointment-soon.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/input_devices_settings",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/input_devices_settings.svg",
+  "source_authority": "src/icons_backend/geometry/categories/input_devices_settings.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/input_devices_settings.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/input_devices_settings.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/input_devices_settings.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/input_devices_settings.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/input_devices_settings.png"
+  ]
+}

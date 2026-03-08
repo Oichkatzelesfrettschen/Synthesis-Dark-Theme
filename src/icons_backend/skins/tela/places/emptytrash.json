@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/places/emptytrash",
+  "style_skin": "tela",
+  "category": "places",
+  "geometry_svg": "geometry/places/emptytrash.svg",
+  "source_authority": "src/icons_backend/geometry/places/emptytrash.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/places/emptytrash.png",
+    "icons/Synthesis-Dark-Icons/22x22/places/emptytrash.png",
+    "icons/Synthesis-Dark-Icons/24x24/places/emptytrash.png",
+    "icons/Synthesis-Dark-Icons/256x256/places/emptytrash.png",
+    "icons/Synthesis-Dark-Icons/32x32/places/emptytrash.png",
+    "icons/Synthesis-Dark-Icons/48x48/places/emptytrash.png"
+  ]
+}

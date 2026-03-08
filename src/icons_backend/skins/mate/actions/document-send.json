@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/document-send",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/document-send.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/document-send-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/document-send.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/document-send.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/document-send.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/document-send.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/document-send.png"
+  ]
+}

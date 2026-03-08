@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/preferences-desktop-theme",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/preferences-desktop-theme.svg",
+  "source_authority": "src/icons_backend/geometry/apps/preferences-desktop-theme.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/preferences-desktop-theme.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/preferences-desktop-theme.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/preferences-desktop-theme.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/preferences-desktop-theme.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/preferences-desktop-theme.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/preferences-desktop-theme.png"
+  ]
+}

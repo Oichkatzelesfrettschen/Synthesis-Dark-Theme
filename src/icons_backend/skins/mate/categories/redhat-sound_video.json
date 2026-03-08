@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/redhat-sound_video",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/redhat-sound_video.svg",
+  "source_authority": "src/icons_backend/geometry/categories/redhat-sound_video.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/redhat-sound_video.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/redhat-sound_video.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/redhat-sound_video.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/redhat-sound_video.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/redhat-sound_video.png"
+  ]
+}

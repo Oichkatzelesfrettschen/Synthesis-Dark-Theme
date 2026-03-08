@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/places/network-workgroup",
+  "style_skin": "tela",
+  "category": "places",
+  "geometry_svg": "geometry/places/network-workgroup.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/places/network-workgroup-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/places/network-workgroup.png",
+    "icons/Synthesis-Dark-Icons/22x22/places/network-workgroup.png",
+    "icons/Synthesis-Dark-Icons/24x24/places/network-workgroup.png",
+    "icons/Synthesis-Dark-Icons/256x256/places/network-workgroup.png",
+    "icons/Synthesis-Dark-Icons/32x32/places/network-workgroup.png",
+    "icons/Synthesis-Dark-Icons/48x48/places/network-workgroup.png"
+  ]
+}

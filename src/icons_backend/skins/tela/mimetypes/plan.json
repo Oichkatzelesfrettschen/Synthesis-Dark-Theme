@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/mimetypes/plan",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/plan.svg",
+  "source_authority": "src/icons_backend/geometry/mimetypes/plan.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/plan.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/plan.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/plan.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/plan.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/plan.png"
+  ]
+}

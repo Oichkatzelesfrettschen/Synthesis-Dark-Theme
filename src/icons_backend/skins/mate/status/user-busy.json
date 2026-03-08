@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/user-busy",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/user-busy.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/user-busy-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/user-busy.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/user-busy.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/user-busy.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/user-busy.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/user-busy.png"
+  ]
+}

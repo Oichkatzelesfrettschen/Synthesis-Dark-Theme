@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/forward",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/forward.svg",
+  "source_authority": "upstream/tela-circle/src/symbolic/actions/forward-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/forward.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/forward.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/forward.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/forward.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/forward.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/forward.png"
+  ]
+}

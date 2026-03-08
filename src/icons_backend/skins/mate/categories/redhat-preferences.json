@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/redhat-preferences",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/redhat-preferences.svg",
+  "source_authority": "src/icons_backend/geometry/categories/redhat-preferences.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/redhat-preferences.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/redhat-preferences.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/redhat-preferences.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/redhat-preferences.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/redhat-preferences.png"
+  ]
+}

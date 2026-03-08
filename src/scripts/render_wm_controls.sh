@@ -13,6 +13,7 @@ set -eu
 ASSETS_DIR="${1:-assets}"
 INKSCAPE="${INKSCAPE:-inkscape}"
 OPTIPNG="${OPTIPNG:-optipng}"
+RASTER_EXT=".png"
 
 WM_CONTROLS="close close_prelight close_unfocused min min_prelight maximize maximize_prelight"
 
@@ -28,7 +29,7 @@ fi
 
 for item in $WM_CONTROLS; do
     src="${ASSETS_DIR}/${item}.svg"
-    dst="${ASSETS_DIR}/${item}@2.png"
+    dst="${ASSETS_DIR}/${item}@2${RASTER_EXT}"
     if [ ! -f "$src" ]; then
         echo "WARNING: source not found, skipping: $src" >&2
         continue

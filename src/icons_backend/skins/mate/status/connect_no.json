@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/connect_no",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/connect_no.svg",
+  "source_authority": "src/icons_backend/geometry/status/connect_no.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/connect_no.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/connect_no.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/connect_no.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/connect_no.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/connect_no.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/connect_no.png"
+  ]
+}

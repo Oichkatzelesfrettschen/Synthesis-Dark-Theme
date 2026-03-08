@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/emblems/emblem-system",
+  "style_skin": "mate",
+  "category": "emblems",
+  "geometry_svg": "geometry/emblems/emblem-system.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/emblems/emblem-system-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/emblems/emblem-system.png",
+    "icons/Synthesis-Dark-Icons/22x22/emblems/emblem-system.png",
+    "icons/Synthesis-Dark-Icons/24x24/emblems/emblem-system.png",
+    "icons/Synthesis-Dark-Icons/32x32/emblems/emblem-system.png",
+    "icons/Synthesis-Dark-Icons/48x48/emblems/emblem-system.png"
+  ]
+}

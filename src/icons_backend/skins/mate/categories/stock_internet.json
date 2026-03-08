@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/categories/stock_internet",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/stock_internet.svg",
+  "source_authority": "src/icons_backend/geometry/categories/stock_internet.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/stock_internet.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/stock_internet.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/stock_internet.png",
+    "icons/Synthesis-Dark-Icons/256x256/categories/stock_internet.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/stock_internet.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/stock_internet.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/player_play",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/player_play.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/media-playback-start-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/player_play.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/player_play.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/player_play.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/player_play.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/player_play.png"
+  ]
+}

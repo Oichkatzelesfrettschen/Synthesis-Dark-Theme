@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/categories/xfce-office",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/xfce-office.svg",
+  "source_authority": "src/icons_backend/geometry/categories/xfce-office.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/xfce-office.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/xfce-office.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/xfce-office.png",
+    "icons/Synthesis-Dark-Icons/256x256/categories/xfce-office.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/xfce-office.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/xfce-office.png"
+  ]
+}

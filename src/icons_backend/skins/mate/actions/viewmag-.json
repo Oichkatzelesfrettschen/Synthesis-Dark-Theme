@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/viewmag-",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/viewmag-.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/zoom-out-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/viewmag-.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/viewmag-.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/viewmag-.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/viewmag-.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/viewmag-.png"
+  ]
+}

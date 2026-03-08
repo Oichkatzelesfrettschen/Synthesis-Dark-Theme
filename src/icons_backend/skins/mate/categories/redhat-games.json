@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/redhat-games",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/redhat-games.svg",
+  "source_authority": "src/icons_backend/geometry/categories/redhat-games.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/redhat-games.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/redhat-games.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/redhat-games.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/redhat-games.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/redhat-games.png"
+  ]
+}

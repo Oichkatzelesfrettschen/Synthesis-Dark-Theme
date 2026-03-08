@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/mail-reply-all",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/mail-reply-all.svg",
+  "source_authority": "upstream/tela-circle/src/symbolic/actions/mail-reply-all-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/mail-reply-all.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/mail-reply-all.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/mail-reply-all.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/mail-reply-all.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/mail-reply-all.png"
+  ]
+}

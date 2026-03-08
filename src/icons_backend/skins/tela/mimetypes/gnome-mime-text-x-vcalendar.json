@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/mimetypes/gnome-mime-text-x-vcalendar",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/gnome-mime-text-x-vcalendar.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/mimetypes/x-office-calendar.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/gnome-mime-text-x-vcalendar.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/gnome-mime-text-x-vcalendar.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/gnome-mime-text-x-vcalendar.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/gnome-mime-text-x-vcalendar.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/gnome-mime-text-x-vcalendar.png"
+  ]
+}

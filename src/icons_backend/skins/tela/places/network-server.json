@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/places/network-server",
+  "style_skin": "tela",
+  "category": "places",
+  "geometry_svg": "geometry/places/network-server.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/places/network-server-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/places/network-server.png",
+    "icons/Synthesis-Dark-Icons/22x22/places/network-server.png",
+    "icons/Synthesis-Dark-Icons/24x24/places/network-server.png",
+    "icons/Synthesis-Dark-Icons/256x256/places/network-server.png",
+    "icons/Synthesis-Dark-Icons/32x32/places/network-server.png",
+    "icons/Synthesis-Dark-Icons/48x48/places/network-server.png"
+  ]
+}

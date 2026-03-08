@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/system-help",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/system-help.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/categories/system-help-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/system-help.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/system-help.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/system-help.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/system-help.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/system-help.png"
+  ]
+}

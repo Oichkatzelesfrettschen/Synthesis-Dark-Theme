@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/arts",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/arts.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/categories/applications-multimedia-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/arts.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/arts.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/arts.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/arts.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/arts.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/arts.png"
+  ]
+}

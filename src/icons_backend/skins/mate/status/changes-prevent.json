@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/changes-prevent",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/changes-prevent.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/changes-prevent-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/changes-prevent.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/changes-prevent.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/changes-prevent.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/changes-prevent.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/changes-prevent.png"
+  ]
+}

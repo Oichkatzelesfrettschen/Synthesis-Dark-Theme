@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/nm-device-wired-secure",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/nm-device-wired-secure.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/nm-device-wired-secure.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/nm-device-wired-secure.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/nm-device-wired-secure.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/nm-device-wired-secure.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/nm-device-wired-secure.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/nm-device-wired-secure.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/openterm",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/openterm.svg",
+  "source_authority": "src/icons_backend/geometry/apps/openterm.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/openterm.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/openterm.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/openterm.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/openterm.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/openterm.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/openterm.png"
+  ]
+}

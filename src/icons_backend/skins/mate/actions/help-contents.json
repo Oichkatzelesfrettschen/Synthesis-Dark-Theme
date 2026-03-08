@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/help-contents",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/help-contents.svg",
+  "source_authority": "upstream/tela-circle/src/16/actions/help-contents.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/help-contents.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/help-contents.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/help-contents.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/help-contents.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/help-contents.png"
+  ]
+}

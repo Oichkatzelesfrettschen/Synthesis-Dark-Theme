@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/gnome-stock-mail-rpl",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/gnome-stock-mail-rpl.svg",
+  "source_authority": "src/icons_backend/geometry/actions/gnome-stock-mail-rpl.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/gnome-stock-mail-rpl.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/gnome-stock-mail-rpl.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/gnome-stock-mail-rpl.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/gnome-stock-mail-rpl.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/gnome-stock-mail-rpl.png"
+  ]
+}

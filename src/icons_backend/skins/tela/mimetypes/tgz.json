@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/mimetypes/tgz",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/tgz.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/mimetypes/application-x-compressed-tar.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/tgz.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/tgz.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/tgz.png",
+    "icons/Synthesis-Dark-Icons/256x256/mimetypes/tgz.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/tgz.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/tgz.png"
+  ]
+}

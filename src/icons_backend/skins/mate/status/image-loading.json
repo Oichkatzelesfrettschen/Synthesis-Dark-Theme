@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/image-loading",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/image-loading.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/image-loading-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/image-loading.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/image-loading.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/image-loading.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/image-loading.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/image-loading.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/image-loading.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/gnome-logout",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/gnome-logout.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/application-exit-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/gnome-logout.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/gnome-logout.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/gnome-logout.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/gnome-logout.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/gnome-logout.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/gnome-logout.png"
+  ]
+}

@@ -13,6 +13,7 @@ cd "$( dirname "${BASH_SOURCE[0]}" )"
 RAWSVG="src/cursors.svg"
 INDEX="src/index.theme"
 ALIASES="src/cursorList"
+OUTPUT_EXT=".png"
 
 
 echo -ne "Checking Requirements...\\r"
@@ -37,6 +38,10 @@ if  ! type "xcursorgen" > /dev/null ; then
 fi
 echo -e "Checking Requirements... DONE"
 
+png_output_path() {
+	printf '%s/%s%s' "$1" "$2" "$OUTPUT_EXT"
+}
+
 
 
 echo -ne "Making Folders... $BASENAME\\r"
@@ -57,19 +62,22 @@ for CUR in src/config/*.cursor; do
 	BASENAME=$CUR
 	BASENAME=${BASENAME##*/}
 	BASENAME=${BASENAME%.*}
+	DIR1X_OUTPUT=$(png_output_path "$DIR1X" "$BASENAME")
+	DIR1_5X_OUTPUT=$(png_output_path "$DIR1_5X" "$BASENAME")
+	DIR2X_OUTPUT=$(png_output_path "$DIR2X" "$BASENAME")
 
 	echo -ne "\033[0KGenerating simple cursor pixmaps... $BASENAME\\r"
 
-	if [ "$DIR1X/$BASENAME.png" -ot $RAWSVG ] ; then
-		inkscape -i $BASENAME -d 90 $RAWSVG --export-background-opacity=0  --export-filename="$DIR1X/$BASENAME.png" > /dev/null
+	if [ "$DIR1X_OUTPUT" -ot $RAWSVG ] ; then
+		inkscape -i $BASENAME -d 90 $RAWSVG --export-background-opacity=0  --export-filename="$DIR1X_OUTPUT" > /dev/null
 	fi
 
-	if [ "$DIR1_5X/$BASENAME.png" -ot $RAWSVG ] ; then
-		inkscape -i $BASENAME -d 135 $RAWSVG --export-background-opacity=0  --export-filename="$DIR1_5X/$BASENAME.png" > /dev/null
+	if [ "$DIR1_5X_OUTPUT" -ot $RAWSVG ] ; then
+		inkscape -i $BASENAME -d 135 $RAWSVG --export-background-opacity=0  --export-filename="$DIR1_5X_OUTPUT" > /dev/null
 	fi
 
-	if [ "$DIR2X/$BASENAME.png" -ot $RAWSVG ] ; then
-		inkscape -i $BASENAME -d 180 $RAWSVG --export-background-opacity=0  --export-filename="$DIR2X/$BASENAME.png" > /dev/null
+	if [ "$DIR2X_OUTPUT" -ot $RAWSVG ] ; then
+		inkscape -i $BASENAME -d 180 $RAWSVG --export-background-opacity=0  --export-filename="$DIR2X_OUTPUT" > /dev/null
 	fi
 done
 echo -e "\033[0KGenerating simple cursor pixmaps... DONE"
@@ -79,29 +87,35 @@ echo -e "\033[0KGenerating simple cursor pixmaps... DONE"
 for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23
 do
 	echo -ne "\033[0KGenerating animated cursor pixmaps... $i / 23 \\r"
+	DIR1X_PROGRESS=$(png_output_path "$DIR1X" "progress-$i")
+	DIR1_5X_PROGRESS=$(png_output_path "$DIR1_5X" "progress-$i")
+	DIR2X_PROGRESS=$(png_output_path "$DIR2X" "progress-$i")
+	DIR1X_WAIT=$(png_output_path "$DIR1X" "wait-$i")
+	DIR1_5X_WAIT=$(png_output_path "$DIR1_5X" "wait-$i")
+	DIR2X_WAIT=$(png_output_path "$DIR2X" "wait-$i")
 
-	if [ "$DIR1X/progress-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i progress-$i -d 90 $RAWSVG --export-background-opacity=0  --export-filename="$DIR1X/progress-$i.png" > /dev/null
+	if [ "$DIR1X_PROGRESS" -ot $RAWSVG ] ; then
+		inkscape -i progress-$i -d 90 $RAWSVG --export-background-opacity=0  --export-filename="$DIR1X_PROGRESS" > /dev/null
 	fi
 
-    if [ "$DIR1_5X/progress-$i.png" -ot $RAWSVG ] ; then
-        inkscape -i progress-$i -d 135 $RAWSVG --export-background-opacity=0  --export-filename="$DIR1_5X/progress-$i.png" > /dev/null
+    if [ "$DIR1_5X_PROGRESS" -ot $RAWSVG ] ; then
+        inkscape -i progress-$i -d 135 $RAWSVG --export-background-opacity=0  --export-filename="$DIR1_5X_PROGRESS" > /dev/null
 	fi
 
-	if [ "$DIR2X/progress-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i progress-$i -d 180 $RAWSVG --export-background-opacity=0  --export-filename="$DIR2X/progress-$i.png" > /dev/null
+	if [ "$DIR2X_PROGRESS" -ot $RAWSVG ] ; then
+		inkscape -i progress-$i -d 180 $RAWSVG --export-background-opacity=0  --export-filename="$DIR2X_PROGRESS" > /dev/null
 	fi
 
-	if [ "$DIR1X/wait-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i wait-$i -d 90  $RAWSVG --export-background-opacity=0  --export-filename="$DIR1X/wait-$i.png" > /dev/null
+	if [ "$DIR1X_WAIT" -ot $RAWSVG ] ; then
+		inkscape -i wait-$i -d 90  $RAWSVG --export-background-opacity=0  --export-filename="$DIR1X_WAIT" > /dev/null
 	fi
 
-	if [ "$DIR1_5X/wait-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i wait-$i -d 135  $RAWSVG --export-background-opacity=0  --export-filename="$DIR1_5X/wait-$i.png" > /dev/null
+	if [ "$DIR1_5X_WAIT" -ot $RAWSVG ] ; then
+		inkscape -i wait-$i -d 135  $RAWSVG --export-background-opacity=0  --export-filename="$DIR1_5X_WAIT" > /dev/null
 	fi
 
-	if [ "$DIR2X/wait-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i wait-$i -d 180 $RAWSVG --export-background-opacity=0  --export-filename="$DIR2X/wait-$i.png" > /dev/null
+	if [ "$DIR2X_WAIT" -ot $RAWSVG ] ; then
+		inkscape -i wait-$i -d 180 $RAWSVG --export-background-opacity=0  --export-filename="$DIR2X_WAIT" > /dev/null
 	fi
 done
 echo -e "\033[0KGenerating animated cursor pixmaps... DONE"

@@ -2,29 +2,34 @@
 
 INKSCAPE="/usr/bin/inkscape"
 OPTIPNG="/usr/bin/optipng"
+OUTPUT_EXT=".png"
 
-LINK_NAMES=("bottom-inactive.png"
-            "bottom-left-inactive.png"
-            "bottom-right-active.png"
-            "left-active.png"
-            "left-inactive.png"
-            "menu-inactive.png"
-            "menu-prelight.png"
-            "menu-pressed.png"
-            "right-inactive.png")
+LINK_NAMES=("bottom-inactive"
+            "bottom-left-inactive"
+            "bottom-right-active"
+            "left-active"
+            "left-inactive"
+            "menu-inactive"
+            "menu-prelight"
+            "menu-pressed"
+            "right-inactive")
 
-LINK_TARGETS=("bottom-active.png"
-            "bottom-left-active.png"
-            "bottom-right-inactive.png"
-            "right-active.png"
-            "right-active.png"
-            "menu-active.png"
-            "menu-active.png"
-            "menu-active.png"
-            "right-active.png")
+LINK_TARGETS=("bottom-active"
+            "bottom-left-active"
+            "bottom-right-inactive"
+            "right-active"
+            "right-active"
+            "menu-active"
+            "menu-active"
+            "menu-active"
+            "right-active")
 
 
 THEME_NAME="Synthesis-Dark"
+
+rendered_asset_path() {
+    printf '%s/%s%s' "$1" "$2" "$OUTPUT_EXT"
+}
 
 for  screen in '' '-hdpi' '-xhdpi'; do
 
@@ -45,20 +50,21 @@ for  screen in '' '-hdpi' '-xhdpi'; do
 
     for i in assets/*; do
         BASE_FILE_NAME=$(basename -s .svg "${i}")
+        OUTPUT_PATH=$(rendered_asset_path "${ASSETS_DIR}" "${BASE_FILE_NAME}")
 
-        if [ -f "${ASSETS_DIR}/${BASE_FILE_NAME}.png" ]; then
-            echo "${ASSETS_DIR}/${BASE_FILE_NAME}.png exists."
+        if [ -f "${OUTPUT_PATH}" ]; then
+            echo "${OUTPUT_PATH} exists."
         else
             echo
-            echo "Rendering ${ASSETS_DIR}/${BASE_FILE_NAME}.png"
+            echo "Rendering ${OUTPUT_PATH}"
             "${INKSCAPE}" --export-dpi="${DPI}" \
-                    --export-filename="${ASSETS_DIR}/${BASE_FILE_NAME}.png" "${i}" \
-            && "${OPTIPNG}" -o7 --quiet "${ASSETS_DIR}/${BASE_FILE_NAME}.png"
+                    --export-filename="${OUTPUT_PATH}" "${i}" \
+            && "${OPTIPNG}" -o7 --quiet "${OUTPUT_PATH}"
         fi
     done
 
     for i in "${!LINK_NAMES[@]}"; do
-        ln -sf "${LINK_TARGETS[$i]}" "${ASSETS_DIR}/${LINK_NAMES[$i]}"
+        ln -sf "${LINK_TARGETS[$i]}${OUTPUT_EXT}" "$(rendered_asset_path "${ASSETS_DIR}" "${LINK_NAMES[$i]}")"
     done
     cp themerc "${ASSETS_DIR}/"
 done

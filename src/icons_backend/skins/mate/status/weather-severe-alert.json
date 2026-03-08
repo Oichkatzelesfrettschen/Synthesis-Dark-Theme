@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/weather-severe-alert",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/weather-severe-alert.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/weather-severe-alert-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/weather-severe-alert.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/weather-severe-alert.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/weather-severe-alert.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/weather-severe-alert.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/weather-severe-alert.png"
+  ]
+}

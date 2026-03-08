@@ -22,6 +22,7 @@ import os
 import re
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+from concurrent.futures.process import BrokenProcessPool
 from pathlib import Path
 from typing import Optional, Tuple
 
@@ -437,6 +438,40 @@ def collect_files(directories: list) -> Tuple[list, list]:
     return pngs, svgs
 
 
+def _record_png_result(
+    counts: list,
+    index: int,
+    total: int,
+    filepath: str,
+    success: bool,
+    message: str,
+    verbose: bool,
+) -> None:
+    """Apply a single PNG processing result to counters and progress output."""
+    if verbose:
+        print(f"  [{index}/{total}] {filepath}: {message}")
+    elif index % 100 == 0:
+        print(f"  Processed {index}/{total} PNG files...")
+
+    if success:
+        counts[0] += (message == "transformed")
+        counts[1] += (message != "transformed")
+        return
+
+    counts[2] += 1
+    if not verbose:
+        print(f"  ERROR: {filepath}: {message}", file=sys.stderr)
+
+
+def process_pngs_sequential(pngs: list, verbose: bool) -> Tuple[int, int, int]:
+    """Process PNG files without multiprocessing as a compatibility fallback."""
+    counts = [0, 0, 0]
+    for i, png_path in enumerate(pngs, 1):
+        filepath, success, message = process_png(png_path)
+        _record_png_result(counts, i, len(pngs), filepath, success, message, verbose)
+    return tuple(counts)
+
+
 # =============================================================================
 # PROCESSING PIPELINE
 # =============================================================================
@@ -465,24 +500,33 @@ def run_pipeline(pngs: list, svgs: list, workers: int, verbose: bool, dry_run: b
 
     # PNG (parallel)
     if HAS_PIL and pngs:
-        print(f"Processing {len(pngs)} PNG files with {workers} workers...")
-        png_transformed = png_unchanged = png_errors = 0
-        with ProcessPoolExecutor(max_workers=workers) as executor:
-            futures = {executor.submit(process_png, p): p for p in pngs}
-            for i, future in enumerate(as_completed(futures), 1):
-                filepath, success, message = future.result()
-                if verbose:
-                    print(f"  [{i}/{len(pngs)}] {filepath}: {message}")
-                elif i % 100 == 0:
-                    print(f"  Processed {i}/{len(pngs)} PNG files...")
-                if success:
-                    png_transformed += (message == "transformed")
-                    png_unchanged += (message != "transformed")
-                else:
-                    png_errors += 1
-                    if not verbose:
-                        print(f"  ERROR: {filepath}: {message}", file=sys.stderr)
-        print(f"PNG: {png_transformed} transformed, {png_unchanged} unchanged, {png_errors} errors")
+        counts = [0, 0, 0]
+        if workers <= 1:
+            print(f"Processing {len(pngs)} PNG files sequentially...")
+            counts = list(process_pngs_sequential(pngs, verbose))
+        else:
+            print(f"Processing {len(pngs)} PNG files with {workers} workers...")
+            remaining_pngs = dict.fromkeys(pngs)
+            try:
+                with ProcessPoolExecutor(max_workers=workers) as executor:
+                    futures = {executor.submit(process_png, p) for p in pngs}
+                    for i, future in enumerate(as_completed(futures), 1):
+                        filepath, success, message = future.result()
+                        remaining_pngs.pop(Path(filepath), None)
+                        _record_png_result(
+                            counts, i, len(pngs), filepath, success, message, verbose
+                        )
+            except (BrokenProcessPool, PermissionError, OSError) as exc:
+                print(
+                    f"WARNING: PNG multiprocessing unavailable ({exc}). "
+                    "Falling back to sequential processing for remaining files.",
+                    file=sys.stderr,
+                )
+                remaining = list(remaining_pngs)
+                if remaining:
+                    fallback_counts = process_pngs_sequential(remaining, verbose)
+                    counts = [left + right for left, right in zip(counts, fallback_counts)]
+        print(f"PNG: {counts[0]} transformed, {counts[1]} unchanged, {counts[2]} errors")
     elif not HAS_PIL:
         print("Skipping PNG processing (PIL not available). Install: pip install Pillow")
 

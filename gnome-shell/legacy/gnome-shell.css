@@ -107,6 +107,7 @@ StEntry {
 /* Scrollbars */
 StScrollView.vfade {
   -st-vfade-offset: 68px; }
+
 StScrollView.hfade {
   -st-hfade-offset: 68px; }
 
@@ -135,32 +136,36 @@ StScrollBar {
   -slider-height: 0.1em;
   -slider-background-color: #373a4b;
   -slider-border-color: black;
-  -slider-active-background-color: #bd93f9;
+  -slider-active-background-color: #72BFD0;
   -slider-active-border-color: #50fa7a;
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
   -barlevel-height: 0.1em;
   -barlevel-background-color: #373a4b;
   -barlevel-border-color: black;
-  -barlevel-active-background-color: #bd93f9;
+  -barlevel-active-background-color: #72BFD0;
   -barlevel-active-border-color: #50fa7a;
   -barlevel-border-width: 0;
   -barlevel-handle-radius: 6px;
-  -barlevel-overdrive-color: #bd93f9;
+  -barlevel-overdrive-color: #72BFD0;
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 0px; }
 
 /* Check Boxes */
 .check-box StBoxLayout {
   spacing: .8em; }
+
 .check-box StBin {
   width: 24px;
   height: 22px;
   background-image: url("assets/checkbox-off.svg"); }
+
 .check-box:focus, .check-box:hover StBin {
   background-image: url("assets/checkbox-off-focused.svg"); }
+
 .check-box:checked StBin {
   background-image: url("assets/checkbox.svg"); }
+
 .check-box:focus:checked StBin {
   background-image: url("assets/checkbox-focused.svg"); }
 
@@ -360,6 +365,7 @@ StScrollBar {
 
 .mount-dialog-app-list-item-icon:ltr {
   padding-right: 17px; }
+
 .mount-dialog-app-list-item-icon:rtl {
   padding-left: 17px; }
 
@@ -459,6 +465,7 @@ StScrollBar {
 .extension-dialog .message-dialog-main-layout {
   spacing: 24px;
   padding: 10px; }
+
 .extension-dialog .message-dialog-title {
   color: #7b849a; }
 
@@ -660,10 +667,10 @@ StScrollBar {
   border-radius: 8px; }
 
 .ws-switcher-active-up {
-  background-image: url("assets/ws-switch-arrow-up.png"); }
+  background-image: url("assets/ws-switch-arrow-up.svg"); }
 
 .ws-switcher-active-down {
-  background-image: url("assets/ws-switch-arrow-down.png"); }
+  background-image: url("assets/ws-switch-arrow-down.svg"); }
 
 .ws-switcher-box {
   height: 50px;
@@ -836,6 +843,7 @@ StScrollBar {
 .events-button:hover,
 .events-button:focus {
   background-color: #333545; }
+
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .weather-button:active,
@@ -991,6 +999,7 @@ StScrollBar {
   padding: 8px;
   color: #C3C7D1;
   background-color: transparent; }
+
 .message-list-section-close:hover > StIcon, .message-list-section-close:focus > StIcon
 .message-list-section-close:active > StIcon {
   color: #ff5555;
@@ -1003,7 +1012,7 @@ StScrollBar {
   box-shadow: none; }
   .message:hover, .message:focus {
     background-color: #21232d;
-    box-shadow: 2px 0px 0px 0px #bd93f9 inset;
+    box-shadow: 2px 0px 0px 0px #72BFD0 inset;
     border-radius: 1px 5px 5px 1px; }
 
 .message-close-button {
@@ -1025,7 +1034,7 @@ StScrollBar {
   color: #989fb0;
   font-size: 0.7em;
   /* HACK: the label should be baseline-aligned with a 1em label,
-           fake this with some bottom padding */
+                     fake this with some bottom padding */
   padding-bottom: 0.13em; }
 
 .message-secondary-bin > StIcon {
@@ -1063,11 +1072,13 @@ StScrollBar {
 .world-clocks-button .world-clocks-city {
   color: #C3C7D1;
   font-weight: normal; }
+
 .world-clocks-button .world-clocks-time {
   font-weight: bold;
   color: #C3C7D1;
   font-feature-settings: "lnum";
   text-align: right; }
+
 .world-clocks-button .world-clocks-timezone {
   color: #8991a5;
   font-feature-settings: "tnum"; }
@@ -1078,12 +1089,14 @@ StScrollBar {
   font-weight: bold; }
   .weather-button .weather-header.location {
     font-weight: normal; }
+
 .weather-button .weather-forecast-time {
   color: #a6acbb;
   font-feature-settings: "tnum";
   font-weight: normal;
   padding-top: 0.2em;
   padding-bottom: 0.4em; }
+
 .weather-button .weather-forecast-temp {
   font-weight: bold; }
 
@@ -1127,11 +1140,11 @@ StScrollBar {
 .ripple-box {
   width: 52px;
   height: 52px;
-  background-image: url("assets/corner-ripple-ltr.png");
+  background-image: url("assets/corner-ripple-ltr.svg");
   background-size: contain; }
 
 .ripple-box:rtl {
-  background-image: url("assets/corner-ripple-rtl.png"); }
+  background-image: url("assets/corner-ripple-rtl.svg"); }
 
 .popup-menu-arrow {
   width: 16px;
@@ -1372,6 +1385,7 @@ StScrollBar {
 .list-search-result:active,
 .list-search-result:checked {
   background-color: rgba(18, 19, 25, 0.85); }
+
 .search-provider-icon:focus, .search-provider-icon:selected, .search-provider-icon:hover,
 .list-search-result:focus,
 .list-search-result:selected,
@@ -1847,6 +1861,7 @@ StScrollBar {
 
 .user-widget-label:ltr {
   padding-left: 18px; }
+
 .user-widget-label:rtl {
   padding-right: 18px; }
 
@@ -1928,7 +1943,7 @@ StScrollBar {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); }
 
 #lockDialogGroup {
-  background: #2e3436 url(resource:///org/gnome/shell/theme/noise-texture.png);
+  background: #2e3436 url(resource:///org/gnome/shell/theme/noise-texture.svg);
   background-repeat: repeat; }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
@@ -1974,6 +1989,7 @@ StScrollBar {
 .lg-dialog StEntry {
   selection-background-color: #bbbbbb;
   selected-color: #333333; }
+
 .lg-dialog .shell-link {
   color: #999999; }
   .lg-dialog .shell-link:hover {
@@ -2066,5 +2082,3 @@ StScrollBar {
 
 .cosmic-dock .app-well-app:hover .overview-icon, .cosmic-dock .app-well-app:focus .overview-icon, .cosmic-dock .app-well-app:selected .overview-icon {
   border-radius: 11px; }
-
-/*# sourceMappingURL=gnome-shell.css.map */

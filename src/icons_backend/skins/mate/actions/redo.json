@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/redo",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/redo.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/edit-redo-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/redo.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/redo.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/redo.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/redo.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/redo.png"
+  ]
+}

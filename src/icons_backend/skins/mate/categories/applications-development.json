@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/applications-development",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/applications-development.svg",
+  "source_authority": "upstream/tela-circle/src/symbolic/categories/applications-development-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/applications-development.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/applications-development.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/applications-development.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/applications-development.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/applications-development.png"
+  ]
+}

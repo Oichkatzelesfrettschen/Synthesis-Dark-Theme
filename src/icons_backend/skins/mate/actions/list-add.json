@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/list-add",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/list-add.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/list-add-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/list-add.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/list-add.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/list-add.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/list-add.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/list-add.png"
+  ]
+}

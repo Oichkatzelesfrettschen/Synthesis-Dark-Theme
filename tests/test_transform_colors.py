@@ -205,3 +205,94 @@ class TestRepoScanTargets:
         expected = {'icons', 'metacity-1', 'gtk-2.0', 'gtk-3.0',
                     'gtk-3.20', 'gtk-4.0', 'xfwm4', 'cinnamon'}
         assert expected.issubset(set(tc.REPO_SCAN_TARGETS))
+
+
+class FakeFuture:
+    def __init__(self, result=None, exc=None):
+        self._result = result
+        self._exc = exc
+
+    def result(self):
+        if self._exc is not None:
+            raise self._exc
+        return self._result
+
+
+class FakeExecutor:
+    def __init__(self, futures_by_path, submit_exc=None, max_workers=None):
+        self.futures_by_path = futures_by_path
+        self.submit_exc = submit_exc
+        self.max_workers = max_workers
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        return False
+
+    def submit(self, func, path):
+        if self.submit_exc is not None:
+            raise self.submit_exc
+        return self.futures_by_path[path]
+
+
+class TestPngFallbackResume:
+    def test_partial_pool_failure_only_retries_remaining_files(self, monkeypatch, tmp_path):
+        png_a = tmp_path / "a.png"
+        png_b = tmp_path / "b.png"
+        png_c = tmp_path / "c.png"
+        pngs = [png_a, png_b, png_c]
+
+        future_a = FakeFuture((str(png_a), True, "transformed"))
+        future_b = FakeFuture(exc=OSError("pool failed"))
+        future_c = FakeFuture((str(png_c), True, "unchanged"))
+        futures = {
+            png_a: future_a,
+            png_b: future_b,
+            png_c: future_c,
+        }
+        fallback_calls = []
+
+        monkeypatch.setattr(tc, "HAS_PIL", True)
+        monkeypatch.setattr(
+            tc,
+            "ProcessPoolExecutor",
+            lambda max_workers: FakeExecutor(futures, max_workers=max_workers),
+        )
+        monkeypatch.setattr(tc, "as_completed", lambda submitted: [future_a, future_b])
+        monkeypatch.setattr(tc, "process_svg", lambda path: (str(path), True, "unchanged"))
+
+        def fake_process_png(path):
+            fallback_calls.append(path)
+            return (str(path), True, "unchanged")
+
+        monkeypatch.setattr(tc, "process_png", fake_process_png)
+
+        tc.run_pipeline(pngs, [], workers=2, verbose=False, dry_run=False)
+
+        assert fallback_calls == [png_b, png_c]
+
+    def test_pool_startup_failure_falls_back_to_full_sequential_list(self, monkeypatch, tmp_path):
+        png_a = tmp_path / "a.png"
+        png_b = tmp_path / "b.png"
+        pngs = [png_a, png_b]
+        fallback_calls = []
+
+        monkeypatch.setattr(tc, "HAS_PIL", True)
+        monkeypatch.setattr(
+            tc,
+            "ProcessPoolExecutor",
+            lambda max_workers: FakeExecutor({}, submit_exc=PermissionError("denied")),
+        )
+        monkeypatch.setattr(tc, "as_completed", lambda submitted: [])
+        monkeypatch.setattr(tc, "process_svg", lambda path: (str(path), True, "unchanged"))
+
+        def fake_process_png(path):
+            fallback_calls.append(path)
+            return (str(path), True, "unchanged")
+
+        monkeypatch.setattr(tc, "process_png", fake_process_png)
+
+        tc.run_pipeline(pngs, [], workers=2, verbose=False, dry_run=False)
+
+        assert fallback_calls == pngs

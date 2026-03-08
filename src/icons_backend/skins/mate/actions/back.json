@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/back",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/back.svg",
+  "source_authority": "src/icons_backend/geometry/actions/back.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/back.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/back.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/back.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/back.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/back.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/back.png"
+  ]
+}

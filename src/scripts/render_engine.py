@@ -7,6 +7,7 @@ from pathlib import Path
 
 INKSCAPE = os.environ.get('INKSCAPE', '/usr/bin/inkscape')
 OPTIPNG = os.environ.get('OPTIPNG', '/usr/bin/optipng')
+RASTER_EXT = '.png'
 
 def render_svg_asset(svg_source, asset_id, output_path):
     print(f"  Rendering: {output_path.name}")
@@ -41,7 +42,7 @@ def main():
             asset_ids = [line.strip() for line in f if line.strip() and not line.startswith('#')]
 
         for aid in asset_ids:
-            render_svg_asset(source, aid, outdir / f"{aid}.png")
+            render_svg_asset(source, aid, outdir / f"{aid}{RASTER_EXT}")
     else:
         print(
             "Error: --index is required. Provide a text file listing SVG element IDs "

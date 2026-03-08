@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/apps/xfwm4",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/xfwm4.svg",
+  "source_authority": "src/icons_backend/geometry/apps/xfwm4.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/xfwm4.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/xfwm4.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/xfwm4.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/xfwm4.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/xfwm4.png"
+  ]
+}

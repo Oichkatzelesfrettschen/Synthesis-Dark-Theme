@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/bookmark_add",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/bookmark_add.svg",
+  "source_authority": "src/icons_backend/geometry/actions/bookmark_add.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/bookmark_add.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/bookmark_add.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/bookmark_add.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/bookmark_add.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/bookmark_add.png"
+  ]
+}

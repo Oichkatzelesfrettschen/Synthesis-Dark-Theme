@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/xfce4-mixer",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/xfce4-mixer.svg",
+  "source_authority": "src/icons_backend/geometry/apps/xfce4-mixer.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/xfce4-mixer.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/xfce4-mixer.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/xfce4-mixer.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/xfce4-mixer.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/xfce4-mixer.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/xfce4-mixer.png"
+  ]
+}

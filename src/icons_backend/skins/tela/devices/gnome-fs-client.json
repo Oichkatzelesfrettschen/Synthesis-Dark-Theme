@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/devices/gnome-fs-client",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/gnome-fs-client.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/devices/computer.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/gnome-fs-client.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/gnome-fs-client.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/gnome-fs-client.png",
+    "icons/Synthesis-Dark-Icons/256x256/devices/gnome-fs-client.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/gnome-fs-client.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/gnome-fs-client.png"
+  ]
+}

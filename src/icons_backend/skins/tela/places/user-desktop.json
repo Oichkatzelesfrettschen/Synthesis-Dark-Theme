@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/places/user-desktop",
+  "style_skin": "tela",
+  "category": "places",
+  "geometry_svg": "geometry/places/user-desktop.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/places/user-desktop-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/places/user-desktop.png",
+    "icons/Synthesis-Dark-Icons/22x22/places/user-desktop.png",
+    "icons/Synthesis-Dark-Icons/24x24/places/user-desktop.png",
+    "icons/Synthesis-Dark-Icons/256x256/places/user-desktop.png",
+    "icons/Synthesis-Dark-Icons/32x32/places/user-desktop.png",
+    "icons/Synthesis-Dark-Icons/48x48/places/user-desktop.png"
+  ]
+}

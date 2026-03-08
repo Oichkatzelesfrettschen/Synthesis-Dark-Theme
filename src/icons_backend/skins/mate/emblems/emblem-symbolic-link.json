@@ -1,0 +1,17 @@
+{
+  "semantic_id": "icon/emblems/emblem-symbolic-link",
+  "style_skin": "mate",
+  "category": "emblems",
+  "geometry_svg": "geometry/emblems/emblem-symbolic-link.svg",
+  "source_authority": "upstream/tela-circle/src/22/emblems/emblem-symbolic-link.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/emblems/emblem-symbolic-link.png",
+    "icons/Synthesis-Dark-Icons/22x22/emblems/emblem-symbolic-link.png",
+    "icons/Synthesis-Dark-Icons/24x24/emblems/emblem-symbolic-link.png",
+    "icons/Synthesis-Dark-Icons/256x256/emblems/emblem-symbolic-link.png",
+    "icons/Synthesis-Dark-Icons/32x32/emblems/emblem-symbolic-link.png",
+    "icons/Synthesis-Dark-Icons/48x48/emblems/emblem-symbolic-link.png",
+    "icons/Synthesis-Dark-Icons/8x8/emblems/emblem-symbolic-link.png"
+  ]
+}

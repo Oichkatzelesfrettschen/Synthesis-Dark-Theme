@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/devices/ipod_mount",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/ipod_mount.svg",
+  "source_authority": "src/icons_backend/geometry/devices/ipod_mount.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/ipod_mount.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/ipod_mount.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/ipod_mount.png",
+    "icons/Synthesis-Dark-Icons/256x256/devices/ipod_mount.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/ipod_mount.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/ipod_mount.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/apps/gcolor2",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/gcolor2.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/color-select-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/gcolor2.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/gcolor2.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/gcolor2.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/gcolor2.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/gcolor2.png"
+  ]
+}

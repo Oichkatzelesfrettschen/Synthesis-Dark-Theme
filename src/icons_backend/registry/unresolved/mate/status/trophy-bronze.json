@@ -1,0 +1,18 @@
+{
+  "semantic_id": "icon/status/trophy-bronze",
+  "style_skin": "mate",
+  "category": "status",
+  "status": "needs-authoritative-geometry",
+  "suggested_geometry_svg": "geometry/status/trophy-bronze.svg",
+  "suggested_skin_metadata": "skins/mate/status/trophy-bronze.json",
+  "installed_output_count": 6,
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/trophy-bronze.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/trophy-bronze.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/trophy-bronze.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/trophy-bronze.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/trophy-bronze.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/trophy-bronze.png"
+  ],
+  "authoritative_svg_candidates": []
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/mimetypes/gnome-mime-application-x-shellscript",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/gnome-mime-application-x-shellscript.svg",
+  "source_authority": "src/icons_backend/geometry/mimetypes/gnome-mime-application-x-shellscript.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/gnome-mime-application-x-shellscript.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/gnome-mime-application-x-shellscript.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/gnome-mime-application-x-shellscript.png",
+    "icons/Synthesis-Dark-Icons/256x256/mimetypes/gnome-mime-application-x-shellscript.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/gnome-mime-application-x-shellscript.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/gnome-mime-application-x-shellscript.png"
+  ]
+}

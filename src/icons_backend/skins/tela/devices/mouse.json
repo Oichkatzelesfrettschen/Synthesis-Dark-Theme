@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/devices/mouse",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/mouse.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/devices/input-mouse.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/mouse.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/mouse.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/mouse.png",
+    "icons/Synthesis-Dark-Icons/256x256/devices/mouse.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/mouse.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/mouse.png"
+  ]
+}

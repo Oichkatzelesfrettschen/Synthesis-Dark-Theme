@@ -1,0 +1,14 @@
+{
+  "semantic_id": "icon/animations/gnome-spinner",
+  "style_skin": "mate",
+  "category": "animations",
+  "geometry_svg": "geometry/animations/gnome-spinner.svg",
+  "source_authority": "upstream/tela-circle/src/symbolic/status/process-working-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/animations/gnome-spinner.png",
+    "icons/Synthesis-Dark-Icons/22x22/animations/gnome-spinner.png",
+    "icons/Synthesis-Dark-Icons/32x32/animations/gnome-spinner.png",
+    "icons/Synthesis-Dark-Icons/48x48/animations/gnome-spinner.png"
+  ]
+}

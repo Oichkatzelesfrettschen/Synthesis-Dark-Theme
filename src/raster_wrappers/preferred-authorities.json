@@ -1,0 +1,11 @@
+{
+  "assets/close_unfocused.png": "src/raster_wrappers/assets/close_unfocused.svg",
+  "assets/maximize_unfocused.png": "src/raster_wrappers/assets/maximize_unfocused.svg",
+  "assets/min_unfocused.png": "src/raster_wrappers/assets/min_unfocused.svg",
+  "cinnamon/common-assets/misc/overview-hover.png": "src/raster_wrappers/cinnamon/common-assets/misc/overview-hover.svg",
+  "cinnamon/common-assets/misc/overview.png": "src/raster_wrappers/cinnamon/common-assets/misc/overview.svg",
+  "gnome-shell/assets/corner-ripple-ltr.png": "src/raster_wrappers/gnome-shell/assets/corner-ripple-ltr.svg",
+  "gnome-shell/assets/corner-ripple-rtl.png": "src/raster_wrappers/gnome-shell/assets/corner-ripple-rtl.svg",
+  "gnome-shell/assets/ws-switch-arrow-down.png": "src/raster_wrappers/gnome-shell/assets/ws-switch-arrow-down.svg",
+  "gnome-shell/assets/ws-switch-arrow-up.png": "src/raster_wrappers/gnome-shell/assets/ws-switch-arrow-up.svg"
+}

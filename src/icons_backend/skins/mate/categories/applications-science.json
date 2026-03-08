@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/applications-science",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/applications-science.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/categories/applications-science-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/applications-science.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/applications-science.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/applications-science.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/applications-science.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/applications-science.png"
+  ]
+}

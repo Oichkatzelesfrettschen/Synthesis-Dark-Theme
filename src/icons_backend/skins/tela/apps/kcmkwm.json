@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/apps/kcmkwm",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/kcmkwm.svg",
+  "source_authority": "src/icons_backend/geometry/apps/kcmkwm.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/kcmkwm.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/kcmkwm.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/kcmkwm.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/kcmkwm.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/kcmkwm.png"
+  ]
+}

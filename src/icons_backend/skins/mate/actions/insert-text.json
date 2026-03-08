@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/insert-text",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/insert-text.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/insert-text-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/insert-text.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/insert-text.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/insert-text.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/insert-text.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/insert-text.png"
+  ]
+}

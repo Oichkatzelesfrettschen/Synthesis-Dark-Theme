@@ -20,7 +20,6 @@ makedepends=(
     'optipng'        # PNG optimization
     'python-pillow'  # Image processing (color transformation)
     'sassc'          # SCSS compilation (gtk-3.20, gtk-4.0, gnome-shell, cinnamon)
-    'xcursorgen'     # Cursor theme building (optional: only needed for 'make cursors')
 )
 
 source=("git+file://${HOME}/Github/Synthesis-Dark-Theme")

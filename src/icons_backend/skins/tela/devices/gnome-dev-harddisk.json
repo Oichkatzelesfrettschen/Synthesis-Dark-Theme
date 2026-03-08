@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/devices/gnome-dev-harddisk",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/gnome-dev-harddisk.svg",
+  "source_authority": "src/icons_backend/geometry/devices/gnome-dev-harddisk.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/gnome-dev-harddisk.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/gnome-dev-harddisk.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/gnome-dev-harddisk.png",
+    "icons/Synthesis-Dark-Icons/256x256/devices/gnome-dev-harddisk.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/gnome-dev-harddisk.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/gnome-dev-harddisk.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/edit-clear-rtl",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/edit-clear-rtl.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/edit-clear-rtl-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/edit-clear-rtl.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/edit-clear-rtl.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/edit-clear-rtl.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/edit-clear-rtl.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/edit-clear-rtl.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/wallpaper",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/wallpaper.svg",
+  "source_authority": "src/icons_backend/geometry/apps/wallpaper.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/wallpaper.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/wallpaper.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/wallpaper.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/wallpaper.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/wallpaper.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/wallpaper.png"
+  ]
+}

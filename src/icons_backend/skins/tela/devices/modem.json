@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/devices/modem",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/modem.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/devices/modem-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/modem.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/modem.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/modem.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/modem.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/modem.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/open-menu",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/open-menu.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/open-menu.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/open-menu.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/open-menu.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/open-menu.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/open-menu.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/open-menu.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/open-menu.png"
+  ]
+}

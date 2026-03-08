@@ -1,0 +1,18 @@
+{
+  "semantic_id": "icon/status/trophy-silver",
+  "style_skin": "mate",
+  "category": "status",
+  "status": "needs-authoritative-geometry",
+  "suggested_geometry_svg": "geometry/status/trophy-silver.svg",
+  "suggested_skin_metadata": "skins/mate/status/trophy-silver.json",
+  "installed_output_count": 6,
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/trophy-silver.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/trophy-silver.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/trophy-silver.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/trophy-silver.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/trophy-silver.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/trophy-silver.png"
+  ],
+  "authoritative_svg_candidates": []
+}

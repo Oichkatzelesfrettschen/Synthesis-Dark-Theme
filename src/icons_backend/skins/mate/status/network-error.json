@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/network-error",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/network-error.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/network-error.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/network-error.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/network-error.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/network-error.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/network-error.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/network-error.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/network-error.png"
+  ]
+}

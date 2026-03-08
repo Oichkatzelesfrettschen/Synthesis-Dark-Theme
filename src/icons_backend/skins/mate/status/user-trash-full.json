@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/user-trash-full",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/user-trash-full.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/user-trash-full-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/user-trash-full.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/user-trash-full.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/user-trash-full.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/user-trash-full.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/user-trash-full.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/user-trash-full.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/gnome-control-center",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/gnome-control-center.svg",
+  "source_authority": "src/icons_backend/geometry/categories/gnome-control-center.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/gnome-control-center.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/gnome-control-center.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/gnome-control-center.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/gnome-control-center.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/gnome-control-center.png"
+  ]
+}

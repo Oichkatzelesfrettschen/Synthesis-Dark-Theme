@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/mimetypes/image-x-compressed-xcf",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/image-x-compressed-xcf.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/mimetypes/image-x-compressed-xcf.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/image-x-compressed-xcf.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/image-x-compressed-xcf.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/image-x-compressed-xcf.png",
+    "icons/Synthesis-Dark-Icons/256x256/mimetypes/image-x-compressed-xcf.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/image-x-compressed-xcf.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/image-x-compressed-xcf.png"
+  ]
+}

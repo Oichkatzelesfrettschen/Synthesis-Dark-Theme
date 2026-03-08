@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/mimetypes/deb",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/deb.svg",
+  "source_authority": "src/icons_backend/geometry/mimetypes/deb.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/deb.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/deb.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/deb.png",
+    "icons/Synthesis-Dark-Icons/256x256/mimetypes/deb.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/deb.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/deb.png"
+  ]
+}

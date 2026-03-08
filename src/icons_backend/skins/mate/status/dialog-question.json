@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/dialog-question",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/dialog-question.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/dialog-question-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/dialog-question.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/dialog-question.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/dialog-question.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/dialog-question.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/dialog-question.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/dialog-question.png"
+  ]
+}

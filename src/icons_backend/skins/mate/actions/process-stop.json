@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/process-stop",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/process-stop.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/process-stop-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/process-stop.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/process-stop.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/process-stop.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/process-stop.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/process-stop.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/process-stop.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/next",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/next.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/go-next-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/next.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/next.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/next.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/next.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/next.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/next.png"
+  ]
+}

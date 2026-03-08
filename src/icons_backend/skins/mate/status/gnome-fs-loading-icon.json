@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/gnome-fs-loading-icon",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/gnome-fs-loading-icon.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/folder-visiting-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/gnome-fs-loading-icon.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/gnome-fs-loading-icon.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/gnome-fs-loading-icon.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/gnome-fs-loading-icon.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/gnome-fs-loading-icon.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/gnome-fs-loading-icon.png"
+  ]
+}

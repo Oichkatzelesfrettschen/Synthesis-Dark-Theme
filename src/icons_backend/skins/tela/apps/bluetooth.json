@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/apps/bluetooth",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/bluetooth.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/bluetooth.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/bluetooth.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/bluetooth.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/bluetooth.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/bluetooth.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/bluetooth.png"
+  ]
+}

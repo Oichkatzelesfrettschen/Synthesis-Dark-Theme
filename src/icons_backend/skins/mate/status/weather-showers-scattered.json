@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/weather-showers-scattered",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/weather-showers-scattered.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/weather-showers-scattered-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/weather-showers-scattered.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/weather-showers-scattered.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/weather-showers-scattered.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/weather-showers-scattered.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/weather-showers-scattered.png"
+  ]
+}

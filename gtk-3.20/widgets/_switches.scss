@@ -28,7 +28,7 @@
   &:checked {
     background-image: -gtk-scaled(url("../assets/switch-on.svg"),url("../assets/switch-on.svg"));
     slider {
-      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"),url("../assets/switch-slider-on@2.png"));
+      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"),url("../assets/switch-slider-on.svg"));
     }
   }
 
@@ -39,6 +39,6 @@
     background-repeat: no-repeat;
     background-position: left center;
     background-color: transparent;
-    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"),url("../assets/switch-slider-off@2.png"));
+    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"),url("../assets/switch-slider-off.svg"));
   }
 }

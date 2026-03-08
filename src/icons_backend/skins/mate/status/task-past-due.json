@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/task-past-due",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/task-past-due.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/task-past-due-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/task-past-due.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/task-past-due.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/task-past-due.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/task-past-due.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/task-past-due.png"
+  ]
+}

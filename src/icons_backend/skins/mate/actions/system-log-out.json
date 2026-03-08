@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/system-log-out",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/system-log-out.svg",
+  "source_authority": "upstream/tela-circle/src/symbolic/actions/system-log-out-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/system-log-out.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/system-log-out.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/system-log-out.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/system-log-out.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/system-log-out.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/system-log-out.png"
+  ]
+}

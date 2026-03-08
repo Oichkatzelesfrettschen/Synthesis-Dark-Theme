@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/mimetypes/folder_tar",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/folder_tar.svg",
+  "source_authority": "src/icons_backend/geometry/mimetypes/folder_tar.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/folder_tar.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/folder_tar.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/folder_tar.png",
+    "icons/Synthesis-Dark-Icons/256x256/mimetypes/folder_tar.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/folder_tar.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/folder_tar.png"
+  ]
+}

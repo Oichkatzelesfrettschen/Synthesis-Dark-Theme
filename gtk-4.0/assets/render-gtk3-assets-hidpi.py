@@ -11,6 +11,7 @@ INKSCAPE = '/usr/bin/inkscape'
 OPTIPNG = '/usr/bin/optipng'
 MAINDIR = '../../'
 SRC = os.path.join('.', '')
+OUTPUT_EXT = '.png'
 
 inkscape_process = None
 
@@ -136,7 +137,7 @@ class ContentHandler(xml.sax.ContentHandler):
                 id = rect['id']
 
                 dir = os.path.join(MAINDIR, self.context)
-                outfile = os.path.join(dir, self.icon_name+'@2'+'.png')
+                outfile = os.path.join(dir, self.icon_name + '@2' + OUTPUT_EXT)
                 if not os.path.exists(dir):
                     os.makedirs(dir)
                 # Do a time based check!

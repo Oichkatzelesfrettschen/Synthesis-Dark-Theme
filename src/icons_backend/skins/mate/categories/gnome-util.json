@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/gnome-util",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/gnome-util.svg",
+  "source_authority": "src/icons_backend/geometry/categories/gnome-util.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/gnome-util.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/gnome-util.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/gnome-util.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/gnome-util.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/gnome-util.png"
+  ]
+}

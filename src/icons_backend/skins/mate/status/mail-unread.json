@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/mail-unread",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/mail-unread.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/mail-unread-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/mail-unread.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/mail-unread.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/mail-unread.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/mail-unread.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/mail-unread.png"
+  ]
+}

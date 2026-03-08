@@ -739,10 +739,10 @@ StScrollBar {
     border-radius: 8px;
   }
   .ws-switcher-active-up {
-    background-image: url("assets/ws-switch-arrow-up.png"); }
+    background-image: url("assets/ws-switch-arrow-up.svg"); }
 
   .ws-switcher-active-down {
-    background-image: url("assets/ws-switch-arrow-down.png"); }
+    background-image: url("assets/ws-switch-arrow-down.svg"); }
 
   .ws-switcher-box {
     height: 50px;
@@ -1315,12 +1315,12 @@ StScrollBar {
 .ripple-box {
   width: 52px;
   height: 52px;
-  background-image: url("assets/corner-ripple-ltr.png");
+  background-image: url("assets/corner-ripple-ltr.svg");
   background-size: contain;
 }
 
 .ripple-box:rtl {
-  background-image: url("assets/corner-ripple-rtl.png");
+  background-image: url("assets/corner-ripple-rtl.svg");
 }
 
 // not really top bar only
@@ -2095,7 +2095,7 @@ StScrollBar {
 }
 
 #lockDialogGroup {
-  background: #2e3436 url(resource:///org/gnome/shell/theme/noise-texture.png);
+  background: #2e3436 url(resource:///org/gnome/shell/theme/noise-texture.svg);
   background-repeat: repeat;
 }
 

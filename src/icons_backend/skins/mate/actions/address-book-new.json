@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/address-book-new",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/address-book-new.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/address-book-new-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/address-book-new.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/address-book-new.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/address-book-new.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/address-book-new.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/address-book-new.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/address-book-new.png"
+  ]
+}

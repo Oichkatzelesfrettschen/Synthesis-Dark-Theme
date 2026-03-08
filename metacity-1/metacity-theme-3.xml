@@ -370,41 +370,41 @@
 </draw_ops>
 
 <draw_ops name="shade_focused">
-	<image filename="shade_focused_normal.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="shade_focused_normal.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="shade_focused_prelight">
-	<image filename="shade_focused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="shade_focused_prelight.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="shade_focused_pressed">
-	<image filename="shade_focused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="shade_focused_pressed.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="shade_unfocused">
-	<image filename="shade_unfocused.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="shade_unfocused.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="shade_unfocused_prelight">
-	<image filename="shade_unfocused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="shade_unfocused_prelight.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="shade_unfocused_pressed">
-	<image filename="shade_unfocused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="shade_unfocused_pressed.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="unshade_focused">
-	<image filename="unshade_focused_normal.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unshade_focused_normal.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="unshade_focused_prelight">
-	<image filename="unshade_focused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unshade_focused_prelight.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="unshade_focused_pressed">
-	<image filename="unshade_focused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unshade_focused_pressed.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="unshade_unfocused">
-	<image filename="unshade_unfocused.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unshade_unfocused.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="unshade_unfocused_prelight">
-	<image filename="unshade_unfocused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unshade_unfocused_prelight.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="unshade_unfocused_pressed">
-	<image filename="unshade_unfocused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unshade_unfocused_pressed.svg" x="0" y="2" width="object_width" height="object_height" />
 </draw_ops>
 
 

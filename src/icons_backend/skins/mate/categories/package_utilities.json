@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/package_utilities",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/package_utilities.svg",
+  "source_authority": "src/icons_backend/geometry/categories/package_utilities.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/package_utilities.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/package_utilities.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/package_utilities.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/package_utilities.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/package_utilities.png"
+  ]
+}

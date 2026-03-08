@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/mimetypes/text-csv",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/text-csv.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/mimetypes/x-office-spreadsheet.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/text-csv.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/text-csv.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/text-csv.png",
+    "icons/Synthesis-Dark-Icons/256x256/mimetypes/text-csv.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/text-csv.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/text-csv.png"
+  ]
+}

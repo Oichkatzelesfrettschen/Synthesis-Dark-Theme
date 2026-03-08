@@ -1,0 +1,11 @@
+{
+  "semantic_id": "icon/emblems/emblem-desktop",
+  "style_skin": "mate",
+  "category": "emblems",
+  "geometry_svg": "geometry/emblems/emblem-desktop.svg",
+  "source_authority": "src/icons_backend/geometry/emblems/emblem-desktop.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/48x48/emblems/emblem-desktop.png"
+  ]
+}

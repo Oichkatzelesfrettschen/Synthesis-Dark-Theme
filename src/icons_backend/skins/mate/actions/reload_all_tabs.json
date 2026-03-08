@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/reload_all_tabs",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/reload_all_tabs.svg",
+  "source_authority": "src/icons_backend/geometry/actions/reload_all_tabs.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/reload_all_tabs.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/reload_all_tabs.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/reload_all_tabs.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/reload_all_tabs.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/reload_all_tabs.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/reload_all_tabs.png"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "semantic_id": "icon/status/gnome-dev-wavelan-encrypted",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/gnome-dev-wavelan-encrypted.svg",
+  "source_authority": "src/icons_backend/geometry/status/gnome-dev-wavelan-encrypted.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/gnome-dev-wavelan-encrypted.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/gnome-dev-wavelan-encrypted.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/gnome-dev-wavelan-encrypted.png"
+  ]
+}

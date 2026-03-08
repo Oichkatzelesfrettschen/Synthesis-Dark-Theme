@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/mimetypes/application-certificate",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/application-certificate.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/mimetypes/application-certificate.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/application-certificate.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/application-certificate.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/application-certificate.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/application-certificate.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/application-certificate.png"
+  ]
+}

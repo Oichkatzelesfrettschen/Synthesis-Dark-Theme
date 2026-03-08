@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/mimetypes/vcard",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/vcard.svg",
+  "source_authority": "src/icons_backend/geometry/mimetypes/vcard.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/vcard.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/vcard.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/vcard.png",
+    "icons/Synthesis-Dark-Icons/256x256/mimetypes/vcard.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/vcard.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/vcard.png"
+  ]
+}

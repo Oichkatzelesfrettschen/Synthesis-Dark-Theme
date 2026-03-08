@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/mail-attachment",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/mail-attachment.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/mail-attachment-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/mail-attachment.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/mail-attachment.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/mail-attachment.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/mail-attachment.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/mail-attachment.png"
+  ]
+}

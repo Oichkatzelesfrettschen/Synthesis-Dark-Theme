@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/devices/audio-card",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/audio-card.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/devices/audio-card.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/audio-card.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/audio-card.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/audio-card.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/audio-card.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/audio-card.png"
+  ]
+}

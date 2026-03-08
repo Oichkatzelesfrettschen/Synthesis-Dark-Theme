@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/apps/mate-desktop",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/mate-desktop.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/mate-desktop.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/mate-desktop.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/mate-desktop.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/mate-desktop.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/mate-desktop.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/mate-desktop.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/edittrash",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/edittrash.svg",
+  "source_authority": "src/icons_backend/geometry/status/edittrash.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/edittrash.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/edittrash.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/edittrash.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/edittrash.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/edittrash.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/edittrash.png"
+  ]
+}

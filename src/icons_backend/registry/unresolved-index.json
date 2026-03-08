@@ -1,0 +1,104 @@
+[
+  {
+    "semantic_id": "icon/emotes/stock_smiley-1",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-1.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-10",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-10.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-11",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-11.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-13",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-13.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-15",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-15.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-18",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-18.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-2",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-2.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-22",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-22.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-3",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-3.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-4",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-4.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-5",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-5.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-6",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-6.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-7",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-7.json"
+  },
+  {
+    "semantic_id": "icon/emotes/stock_smiley-8",
+    "style_skin": "mate",
+    "category": "emotes",
+    "registry_work_item": "registry/unresolved/mate/emotes/stock_smiley-8.json"
+  },
+  {
+    "semantic_id": "icon/status/trophy-bronze",
+    "style_skin": "mate",
+    "category": "status",
+    "registry_work_item": "registry/unresolved/mate/status/trophy-bronze.json"
+  },
+  {
+    "semantic_id": "icon/status/trophy-gold",
+    "style_skin": "mate",
+    "category": "status",
+    "registry_work_item": "registry/unresolved/mate/status/trophy-gold.json"
+  },
+  {
+    "semantic_id": "icon/status/trophy-silver",
+    "style_skin": "mate",
+    "category": "status",
+    "registry_work_item": "registry/unresolved/mate/status/trophy-silver.json"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/places/gnome-fs-share",
+  "style_skin": "tela",
+  "category": "places",
+  "geometry_svg": "geometry/places/gnome-fs-share.svg",
+  "source_authority": "src/icons_backend/geometry/places/gnome-fs-share.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/places/gnome-fs-share.png",
+    "icons/Synthesis-Dark-Icons/22x22/places/gnome-fs-share.png",
+    "icons/Synthesis-Dark-Icons/24x24/places/gnome-fs-share.png",
+    "icons/Synthesis-Dark-Icons/256x256/places/gnome-fs-share.png",
+    "icons/Synthesis-Dark-Icons/32x32/places/gnome-fs-share.png",
+    "icons/Synthesis-Dark-Icons/48x48/places/gnome-fs-share.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/battery-caution",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/battery-caution.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/battery-caution-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/battery-caution.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/battery-caution.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/battery-caution.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/battery-caution.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/battery-caution.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/battery-caution.png"
+  ]
+}

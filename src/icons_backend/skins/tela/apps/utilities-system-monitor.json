@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/utilities-system-monitor",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/utilities-system-monitor.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/utilities-system-monitor.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/utilities-system-monitor.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/utilities-system-monitor.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/utilities-system-monitor.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/utilities-system-monitor.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/utilities-system-monitor.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/utilities-system-monitor.png"
+  ]
+}

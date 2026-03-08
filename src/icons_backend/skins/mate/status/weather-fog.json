@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/weather-fog",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/weather-fog.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/weather-fog-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/weather-fog.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/weather-fog.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/weather-fog.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/weather-fog.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/weather-fog.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/user-info",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/user-info.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/user-info-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/user-info.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/user-info.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/user-info.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/user-info.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/user-info.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/user-info.png"
+  ]
+}

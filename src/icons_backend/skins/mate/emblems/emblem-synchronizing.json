@@ -1,0 +1,17 @@
+{
+  "semantic_id": "icon/emblems/emblem-synchronizing",
+  "style_skin": "mate",
+  "category": "emblems",
+  "geometry_svg": "geometry/emblems/emblem-synchronizing.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/emblems/emblem-synchronizing-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/emblems/emblem-synchronizing.png",
+    "icons/Synthesis-Dark-Icons/22x22/emblems/emblem-synchronizing.png",
+    "icons/Synthesis-Dark-Icons/24x24/emblems/emblem-synchronizing.png",
+    "icons/Synthesis-Dark-Icons/256x256/emblems/emblem-synchronizing.png",
+    "icons/Synthesis-Dark-Icons/32x32/emblems/emblem-synchronizing.png",
+    "icons/Synthesis-Dark-Icons/48x48/emblems/emblem-synchronizing.png",
+    "icons/Synthesis-Dark-Icons/8x8/emblems/emblem-synchronizing.png"
+  ]
+}

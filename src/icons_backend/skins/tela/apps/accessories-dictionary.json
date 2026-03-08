@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/accessories-dictionary",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/accessories-dictionary.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/accessories-dictionary.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/accessories-dictionary.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/accessories-dictionary.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/accessories-dictionary.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/accessories-dictionary.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/accessories-dictionary.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/accessories-dictionary.png"
+  ]
+}

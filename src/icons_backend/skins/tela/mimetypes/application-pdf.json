@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/mimetypes/application-pdf",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/application-pdf.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/mimetypes/application-pdf.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/application-pdf.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/application-pdf.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/application-pdf.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/application-pdf.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/application-pdf.png"
+  ]
+}

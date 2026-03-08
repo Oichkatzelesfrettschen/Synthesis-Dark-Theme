@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/mimetypes/application-x-vnc",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/application-x-vnc.svg",
+  "source_authority": "src/icons_backend/geometry/mimetypes/application-x-vnc.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/application-x-vnc.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/application-x-vnc.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/application-x-vnc.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/application-x-vnc.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/application-x-vnc.png"
+  ]
+}

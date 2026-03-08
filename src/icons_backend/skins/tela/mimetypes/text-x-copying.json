@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/mimetypes/text-x-copying",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/text-x-copying.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/mimetypes/text-x-copying.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/text-x-copying.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/text-x-copying.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/text-x-copying.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/text-x-copying.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/text-x-copying.png"
+  ]
+}

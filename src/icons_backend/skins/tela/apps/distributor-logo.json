@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/distributor-logo",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/distributor-logo.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/distributor-logo.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/distributor-logo.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/distributor-logo.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/distributor-logo.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/distributor-logo.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/distributor-logo.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/distributor-logo.png"
+  ]
+}

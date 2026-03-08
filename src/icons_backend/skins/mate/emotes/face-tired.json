@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/emotes/face-tired",
+  "style_skin": "mate",
+  "category": "emotes",
+  "geometry_svg": "geometry/emotes/face-tired.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/emotes/face-tired-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/emotes/face-tired.png",
+    "icons/Synthesis-Dark-Icons/22x22/emotes/face-tired.png",
+    "icons/Synthesis-Dark-Icons/24x24/emotes/face-tired.png",
+    "icons/Synthesis-Dark-Icons/256x256/emotes/face-tired.png",
+    "icons/Synthesis-Dark-Icons/32x32/emotes/face-tired.png",
+    "icons/Synthesis-Dark-Icons/48x48/emotes/face-tired.png"
+  ]
+}

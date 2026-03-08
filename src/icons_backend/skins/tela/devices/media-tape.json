@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/devices/media-tape",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/media-tape.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/devices/media-tape.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/media-tape.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/media-tape.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/media-tape.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/media-tape.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/media-tape.png"
+  ]
+}

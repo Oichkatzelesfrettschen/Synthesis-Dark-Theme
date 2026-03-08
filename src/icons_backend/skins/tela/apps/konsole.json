@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/konsole",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/konsole.svg",
+  "source_authority": "src/icons_backend/geometry/apps/konsole.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/konsole.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/konsole.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/konsole.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/konsole.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/konsole.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/konsole.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/devices/usbpendrive_unmount",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/usbpendrive_unmount.svg",
+  "source_authority": "src/icons_backend/geometry/devices/usbpendrive_unmount.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/usbpendrive_unmount.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/usbpendrive_unmount.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/usbpendrive_unmount.png",
+    "icons/Synthesis-Dark-Icons/256x256/devices/usbpendrive_unmount.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/usbpendrive_unmount.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/usbpendrive_unmount.png"
+  ]
+}

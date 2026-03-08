@@ -13,11 +13,11 @@
                   (':disabled', '-unchecked'),
                   (':disabled:backdrop', '-unchecked') {
   check#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$un}.png"),url("../assets/checkbox#{$un}@2.png")), -gtk-scaled(url("../assets/checkbox#{$un}.png"),url("../assets/checkbox#{$un}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$un}.svg"),url("../assets/checkbox#{$un}.svg")), -gtk-scaled(url("../assets/checkbox#{$un}.svg"),url("../assets/checkbox#{$un}.svg")));
     -gtk-icon-shadow: none;
   }
   radio#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/radio#{$un}.png"),url("../assets/radio#{$un}@2.png")), -gtk-scaled(url("../assets/radio#{$un}.png"),url("../assets/radio#{$un}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/radio#{$un}.svg"),url("../assets/radio#{$un}.svg")), -gtk-scaled(url("../assets/radio#{$un}.svg"),url("../assets/radio#{$un}.svg")));
     -gtk-icon-shadow: none;
   }
 }
@@ -30,11 +30,11 @@
                   (':checked:disabled', '-checked'),
                   (':checked:disabled:backdrop', '-checked') {
   check#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$ch}.png"),url("../assets/checkbox#{$ch}@2.png")), -gtk-scaled(url("../assets/checkbox#{$ch}.png"),url("../assets/checkbox#{$ch}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$ch}.svg"),url("../assets/checkbox#{$ch}.svg")), -gtk-scaled(url("../assets/checkbox#{$ch}.svg"),url("../assets/checkbox#{$ch}.svg")));
     -gtk-icon-shadow: none;
   }
   radio#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/radio#{$ch}.png"),url("../assets/radio#{$ch}@2.png")), -gtk-scaled(url("../assets/radio#{$ch}.png"),url("../assets/radio#{$ch}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/radio#{$ch}.svg"),url("../assets/radio#{$ch}.svg")), -gtk-scaled(url("../assets/radio#{$ch}.svg"),url("../assets/radio#{$ch}.svg")));
     -gtk-icon-shadow: none;
   }
 }
@@ -47,11 +47,11 @@
                   (':indeterminate:disabled', '-mixed-insensitive'),
                   (':indeterminate:disabled:backdrop', '-mixed-insensitive') {
   check#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$mx}.png"),url("../assets/checkbox#{$mx}@2.png")), -gtk-scaled(url("../assets/checkbox#{$mx}.png"),url("../assets/checkbox#{$mx}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$mx}.svg"),url("../assets/checkbox#{$mx}.svg")), -gtk-scaled(url("../assets/checkbox#{$mx}.svg"),url("../assets/checkbox#{$mx}.svg")));
     -gtk-icon-shadow: none;
   }
   radio#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/radio#{$mx}.png"),url("../assets/radio#{$mx}@2.png")), -gtk-scaled(url("../assets/radio#{$mx}.png"),url("../assets/radio#{$mx}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/radio#{$mx}.svg"),url("../assets/radio#{$mx}.svg")), -gtk-scaled(url("../assets/radio#{$mx}.svg"),url("../assets/radio#{$mx}.svg")));
     -gtk-icon-shadow: none;
   }
 }
@@ -64,11 +64,11 @@
                   (':disabled:selected', '-unchecked'),
                   (':disabled:backdrop:selected', '-unchecked') {
   check#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$un}.png"),url("../assets/checkbox#{$un}@2.png")), -gtk-scaled(url("../assets/checkbox#{$un}.png"),url("../assets/checkbox#{$un}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$un}.svg"),url("../assets/checkbox#{$un}.svg")), -gtk-scaled(url("../assets/checkbox#{$un}.svg"),url("../assets/checkbox#{$un}.svg")));
     -gtk-icon-shadow: none;
   }
   radio#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/selected-radio#{$un}.png"),url("../assets/selected-radio#{$un}@2.png")), -gtk-scaled(url("../assets/selected-radio#{$un}.png"),url("../assets/selected-radio#{$un}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/selected-radio#{$un}.svg"),url("../assets/selected-radio#{$un}.svg")), -gtk-scaled(url("../assets/selected-radio#{$un}.svg"),url("../assets/selected-radio#{$un}.svg")));
     -gtk-icon-shadow: none;
   }
 }
@@ -81,11 +81,11 @@
                   (':checked:disabled:selected', '-checked'),
                   (':checked:disabled:backdrop:selected', '-checked') {
   check#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$ch}.png"),url("../assets/checkbox#{$ch}@2.png")), -gtk-scaled(url("../assets/checkbox#{$ch}.png"),url("../assets/checkbox#{$ch}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$ch}.svg"),url("../assets/checkbox#{$ch}.svg")), -gtk-scaled(url("../assets/checkbox#{$ch}.svg"),url("../assets/checkbox#{$ch}.svg")));
     -gtk-icon-shadow: none;
   }
   radio#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/selected-radio#{$ch}.png"),url("../assets/selected-radio#{$ch}@2.png")), -gtk-scaled(url("../assets/selected-radio#{$ch}.png"),url("../assets/selected-radio#{$ch}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/selected-radio#{$ch}.svg"),url("../assets/selected-radio#{$ch}.svg")), -gtk-scaled(url("../assets/selected-radio#{$ch}.svg"),url("../assets/selected-radio#{$ch}.svg")));
     -gtk-icon-shadow: none;
   }
 }
@@ -99,11 +99,11 @@
                   (':indeterminate:disabled:selected', '-mixed'),
                   (':indeterminate:disabled:backdrop:selected', '-mixed') {
   check#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/selected-checkbox#{$mx}.png"),url("../assets/selected-checkbox#{$mx}@2.png")), -gtk-scaled(url("../assets/selected-checkbox#{$mx}.png"),url("../assets/selected-checkbox#{$mx}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/selected-checkbox#{$mx}.svg"),url("../assets/selected-checkbox#{$mx}.svg")), -gtk-scaled(url("../assets/selected-checkbox#{$mx}.svg"),url("../assets/selected-checkbox#{$mx}.svg")));
     -gtk-icon-shadow: none;
   }
   radio#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/selected-radio#{$mx}.png"),url("../assets/selected-radio#{$mx}@2.png")), -gtk-scaled(url("../assets/selected-radio#{$mx}.png"),url("../assets/selected-radio#{$mx}@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/selected-radio#{$mx}.svg"),url("../assets/selected-radio#{$mx}.svg")), -gtk-scaled(url("../assets/selected-radio#{$mx}.svg"),url("../assets/selected-radio#{$mx}.svg")));
     -gtk-icon-shadow: none;
   }
 }
@@ -118,12 +118,12 @@
                   (':disabled:backdrop', '-unchecked-backdrop-insensitive') {
   .view.content-view check#{$s},
   .view.content-view.check#{$s}{
-    -gtk-icon-source: -gtk-scaled(url("../assets/selection-mode-checkbox#{$un}.png"),url("../assets/checkbox#{$un}@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("../assets/selection-mode-checkbox#{$un}.svg"),url("../assets/selection-mode-checkbox#{$un}.svg"));
     -gtk-icon-shadow: none;
   }
   .view.content-view radio#{$s},
   .view.content-view.radio#{$s}{
-    -gtk-icon-source: -gtk-scaled(url("../assets/selection-mode-radio#{$un}.png"),url("../assets/radio#{$un}@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("../assets/selection-mode-radio#{$un}.svg"),url("../assets/selection-mode-radio#{$un}.svg"));
     -gtk-icon-shadow: none;
   }
 }

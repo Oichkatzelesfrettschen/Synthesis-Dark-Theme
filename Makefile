@@ -24,9 +24,22 @@ ACCESSIBILITY_AUDIT = src/scripts/accessibility_audit.py
 WM_CONTROLS_SCRIPT = src/scripts/render_wm_controls.sh
 XFWM4_SCRIPT = xfwm4/render-assets.sh
 CURSOR_SCRIPT = kde/cursors/build.sh
+VECTORIZER = src/scripts/vectorize_assets.py
+ICON_BACKEND_PROMOTER = src/scripts/promote_icon_backend.py
+SVG_PARITY_AUDITOR = src/scripts/verify_svg_parity.py
+PNG_WRAPPER_PROMOTER = src/scripts/promote_png_wrappers.py
+RUNTIME_ASSET_SVG_MATERIALIZER = src/scripts/materialize_runtime_asset_svgs.py
+SVG_FIDELITY_RECONCILER = src/scripts/reconcile_svg_fidelity.py
+SVG_MIGRATION_REPORT = docs/SVG_MIGRATION_REPORT.md
+ICON_RECONCILIATION_REPORT = docs/ICON_RECONCILIATION_REPORT.md
+PNG_SVG_PARITY_REPORT = docs/PNG_SVG_PARITY_AUDIT.md
+PNG_WRAPPER_REPORT = docs/PNG_WRAPPER_PROMOTION_REPORT.md
+SVG_FIDELITY_REPORT = docs/SVG_FIDELITY_RECONCILIATION.md
 
-.PHONY: all build themes scss gtk2 icons harmonize xfwm4 cursors wm-assets \
-	audit lint install clean check-deps help \
+.PHONY: all build themes scss gtk2 marco mate legacy-surfaces icons harmonize xfwm4 cursors wm-assets \
+	audit lint install clean check-deps help svg-migration-report icon-reconciliation-report \
+	promote-icon-backend vectorize-nonicon-sources svg-parity-audit promote-png-wrappers \
+	materialize-runtime-asset-svgs reconcile-svg-fidelity \
 	icon-variants icon-variant-Default icon-variant-Purple icon-variant-Teal \
 	icon-variant-Mauve icon-variant-Blue
 
@@ -41,8 +54,11 @@ help:
 	@echo "  all                - Build everything and run accessibility audit"
 	@echo "  build              - Build themes and harmonize icons"
 	@echo "  themes             - Build GTK2 + compile SCSS"
-	@echo "  scss               - Compile SCSS for gtk-3.20, gtk-4.0, gnome-shell, cinnamon"
+	@echo "  scss               - Compile SCSS for gtk-3.20, gtk-4.0, gnome-shell, gnome-shell/legacy, cinnamon"
 	@echo "  gtk2               - Render GTK2 assets from SVG source"
+	@echo "  marco              - Materialize SVG runtime assets for the Marco/Metacity theme surface"
+	@echo "  mate               - Refresh GTK2 plus Marco/Metacity assets for the MATE theme surface"
+	@echo "  legacy-surfaces    - Refresh GTK2 and Marco/Metacity assets together"
 	@echo "  xfwm4              - Render XFWM4 window manager assets"
 	@echo "  cursors            - Build cursor theme (requires inkscape, xcursorgen)"
 	@echo "  wm-assets          - Render WM control button PNGs"
@@ -50,6 +66,14 @@ help:
 	@echo "  icon-variants      - Generate all 5 icon color variants from Tela Circle source"
 	@echo "  icon-variant-NAME  - Generate a single variant (Default/Purple/Teal/Mauve/Blue)"
 	@echo "  audit              - Run WCAG accessibility contrast audit"
+	@echo "  svg-migration-report - Generate the repo-wide SVG migration report"
+	@echo "  icon-reconciliation-report - Generate the icon backend dedupe/reconciliation report"
+	@echo "  promote-icon-backend - Promote scalable-backed icon semantic IDs into src/icons_backend"
+	@echo "  vectorize-nonicon-sources - Convert the safe non-icon source tranche into canonical SVGs"
+	@echo "  svg-parity-audit   - Compare SVG-backed PNGs against rendered SVG output before any PNG removal"
+	@echo "  promote-png-wrappers - Promote mismatched PNGs into self-contained SVG wrapper authorities"
+	@echo "  materialize-runtime-asset-svgs - Sync assets/*.svg siblings into the runtime asset directory"
+	@echo "  reconcile-svg-fidelity - Prefer raster-wrapper SVGs only where native SVGs still drift"
 	@echo "  lint               - Run ruff (Python) and shellcheck (shell scripts)"
 	@echo "  install            - Install to system (use DESTDIR for staging)"
 	@echo "  clean              - Remove generated artifacts"
@@ -82,6 +106,15 @@ build: themes icons
 themes: gtk2 scss
 	@echo "--- Themes built ---"
 
+marco: materialize-runtime-asset-svgs
+	@echo "--- Marco/Metacity assets prepared ---"
+
+mate: gtk2 marco
+	@echo "--- MATE legacy surfaces prepared ---"
+
+legacy-surfaces: gtk2 marco
+	@echo "--- Legacy GTK2 + Marco surfaces prepared ---"
+
 # -----------------------------------------------------------------------------
 # SCSS Compilation (P2.1)
 # WHY: Replaces dead Gulp pipeline. sassc is lightweight with no runtime deps.
@@ -93,6 +126,7 @@ scss:
 	@$(SASSC) gtk-4.0/gtk.scss gtk-4.0/gtk.css
 	@$(SASSC) gtk-4.0/gtk-dark.scss gtk-4.0/gtk-dark.css
 	@$(SASSC) gnome-shell/gnome-shell.scss gnome-shell/gnome-shell.css
+	@$(SASSC) -I gnome-shell gnome-shell/legacy/gnome-shell.scss gnome-shell/legacy/gnome-shell.css
 	@$(SASSC) cinnamon/cinnamon.scss cinnamon/cinnamon.css
 	@$(SASSC) cinnamon/cinnamon-dark.scss cinnamon/cinnamon-dark.css
 	@echo "--- SCSS compilation done ---"
@@ -151,6 +185,78 @@ harmonize:
 audit:
 	@echo "--- WCAG 2.1 Accessibility Audit (enforcing AA >= 4.5:1) ---"
 	@$(PYTHON) $(ACCESSIBILITY_AUDIT) --fail-below 4.5 --palette src/colors.json
+
+svg-migration-report:
+	@echo "--- Generating SVG Migration Report ---"
+	@$(PYTHON) $(VECTORIZER) \
+		--input . \
+		--output /tmp/synthesis-dark-svg-migration \
+		--recursive \
+		--dry-run \
+		--manifest /tmp/synthesis-dark-svg-migration.json \
+		--report-markdown $(SVG_MIGRATION_REPORT)
+
+icon-reconciliation-report:
+	@echo "--- Generating Icon Reconciliation Report ---"
+	@$(PYTHON) $(VECTORIZER) \
+		--input . \
+		--output /tmp/synthesis-dark-svg-migration \
+		--recursive \
+		--dry-run \
+		--icon-registry-json /tmp/synthesis-dark-icon-registry.json \
+		--icon-report-markdown $(ICON_RECONCILIATION_REPORT)
+
+promote-icon-backend:
+	@echo "--- Promoting SVG-backed icon semantic IDs into src/icons_backend ---"
+	@$(PYTHON) $(ICON_BACKEND_PROMOTER)
+
+vectorize-nonicon-sources:
+	@echo "--- Vectorizing safe non-icon sources into canonical SVG authority paths ---"
+	@$(PYTHON) $(VECTORIZER) \
+		--input . \
+		--output . \
+		--recursive \
+		--manifest /tmp/synthesis-dark-svg-execution.json
+
+svg-parity-audit:
+	@echo "--- Auditing PNG/SVG render parity ---"
+	@$(PYTHON) $(SVG_PARITY_AUDITOR) \
+		--input . \
+		--output /tmp/synthesis-dark-svg-parity \
+		--recursive \
+		--manifest-json /tmp/synthesis-dark-svg-migration.json \
+		--report-json /tmp/synthesis-dark-svg-parity.json \
+		--report-markdown $(PNG_SVG_PARITY_REPORT)
+
+promote-png-wrappers:
+	@echo "--- Promoting mismatched PNGs into SVG wrapper authorities ---"
+	@$(PYTHON) $(PNG_WRAPPER_PROMOTER) \
+		--repo-root . \
+		--parity-json /tmp/synthesis-dark-svg-parity.json \
+		--output-root src/raster_wrappers \
+		--report-json /tmp/synthesis-dark-png-wrapper-promotion.json \
+		--report-markdown $(PNG_WRAPPER_REPORT)
+
+materialize-runtime-asset-svgs:
+	@echo "--- Materializing runtime SVG siblings in assets/ ---"
+	@if [ ! -f /tmp/synthesis-dark-svg-migration.json ]; then \
+		$(MAKE) svg-migration-report >/dev/null; \
+	fi
+	@$(PYTHON) $(RUNTIME_ASSET_SVG_MATERIALIZER) \
+		--repo-root . \
+		--manifest-json /tmp/synthesis-dark-svg-migration.json \
+		--report-json /tmp/synthesis-dark-runtime-asset-svgs.json
+
+reconcile-svg-fidelity:
+	@echo "--- Reconciling native SVG drift with wrapper authority overrides ---"
+	@if [ ! -f /tmp/synthesis-dark-svg-parity.json ]; then \
+		$(MAKE) svg-parity-audit >/dev/null; \
+	fi
+	@$(PYTHON) $(SVG_FIDELITY_RECONCILER) \
+		--repo-root . \
+		--parity-json /tmp/synthesis-dark-svg-parity.json \
+		--output-json src/raster_wrappers/preferred-authorities.json \
+		--report-markdown $(SVG_FIDELITY_REPORT)
 
 # -----------------------------------------------------------------------------
 # Lint (P2 / P7.2)
@@ -217,7 +323,7 @@ install:
 clean:
 	@echo "--- Cleaning Generated Artifacts ---"
 	# GTK2 rendered PNGs
-	find gtk-2.0/assets -type f -name "*.png" -delete 2>/dev/null || true
+	find gtk-2.0/assets -type f \( -name '*.[Pp][Nn][Gg]' \) -delete 2>/dev/null || true
 	# SCSS-compiled CSS (regenerated by 'make scss')
 	rm -f gtk-3.20/gtk.css gtk-3.20/gtk-dark.css
 	rm -f gtk-4.0/gtk.css gtk-4.0/gtk-dark.css

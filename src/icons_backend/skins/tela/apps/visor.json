@@ -1,0 +1,11 @@
+{
+  "semantic_id": "icon/apps/visor",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/visor.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/utilities-terminal-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/48x48/apps/visor.png"
+  ]
+}

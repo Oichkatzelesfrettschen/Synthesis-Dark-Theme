@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/messagebox_info",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/messagebox_info.svg",
+  "source_authority": "src/icons_backend/geometry/status/messagebox_info.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/messagebox_info.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/messagebox_info.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/messagebox_info.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/messagebox_info.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/messagebox_info.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/messagebox_info.png"
+  ]
+}

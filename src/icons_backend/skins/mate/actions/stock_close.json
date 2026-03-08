@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/stock_close",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/stock_close.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/window-close-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/stock_close.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/stock_close.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/stock_close.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/stock_close.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/stock_close.png"
+  ]
+}

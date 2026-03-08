@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/devices/hdd_unmount",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/hdd_unmount.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/devices/drive-harddisk.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/hdd_unmount.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/hdd_unmount.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/hdd_unmount.png",
+    "icons/Synthesis-Dark-Icons/256x256/devices/hdd_unmount.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/hdd_unmount.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/hdd_unmount.png"
+  ]
+}

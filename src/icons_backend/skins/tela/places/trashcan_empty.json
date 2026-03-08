@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/places/trashcan_empty",
+  "style_skin": "tela",
+  "category": "places",
+  "geometry_svg": "geometry/places/trashcan_empty.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/places/user-trash.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/places/trashcan_empty.png",
+    "icons/Synthesis-Dark-Icons/22x22/places/trashcan_empty.png",
+    "icons/Synthesis-Dark-Icons/24x24/places/trashcan_empty.png",
+    "icons/Synthesis-Dark-Icons/256x256/places/trashcan_empty.png",
+    "icons/Synthesis-Dark-Icons/32x32/places/trashcan_empty.png",
+    "icons/Synthesis-Dark-Icons/48x48/places/trashcan_empty.png"
+  ]
+}

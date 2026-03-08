@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/accessories-calculator",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/accessories-calculator.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/accessories-calculator-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/accessories-calculator.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/accessories-calculator.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/accessories-calculator.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/accessories-calculator.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/accessories-calculator.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/accessories-calculator.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/gtk-home",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/gtk-home.svg",
+  "source_authority": "src/icons_backend/geometry/actions/gtk-home.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/gtk-home.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/gtk-home.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/gtk-home.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/gtk-home.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/gtk-home.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/devices/gnome-stock-mic",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/gnome-stock-mic.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/devices/audio-input-microphone.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/gnome-stock-mic.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/gnome-stock-mic.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/gnome-stock-mic.png",
+    "icons/Synthesis-Dark-Icons/256x256/devices/gnome-stock-mic.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/gnome-stock-mic.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/gnome-stock-mic.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/battery-low-charging",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/battery-low-charging.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/battery-low-charging-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/battery-low-charging.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/battery-low-charging.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/battery-low-charging.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/battery-low-charging.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/battery-low-charging.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/battery-low-charging.png"
+  ]
+}

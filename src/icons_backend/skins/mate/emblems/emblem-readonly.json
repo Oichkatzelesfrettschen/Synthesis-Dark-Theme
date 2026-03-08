@@ -1,0 +1,17 @@
+{
+  "semantic_id": "icon/emblems/emblem-readonly",
+  "style_skin": "mate",
+  "category": "emblems",
+  "geometry_svg": "geometry/emblems/emblem-readonly.svg",
+  "source_authority": "upstream/tela-circle/src/22/emblems/emblem-readonly.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/emblems/emblem-readonly.png",
+    "icons/Synthesis-Dark-Icons/22x22/emblems/emblem-readonly.png",
+    "icons/Synthesis-Dark-Icons/24x24/emblems/emblem-readonly.png",
+    "icons/Synthesis-Dark-Icons/256x256/emblems/emblem-readonly.png",
+    "icons/Synthesis-Dark-Icons/32x32/emblems/emblem-readonly.png",
+    "icons/Synthesis-Dark-Icons/48x48/emblems/emblem-readonly.png",
+    "icons/Synthesis-Dark-Icons/8x8/emblems/emblem-readonly.png"
+  ]
+}

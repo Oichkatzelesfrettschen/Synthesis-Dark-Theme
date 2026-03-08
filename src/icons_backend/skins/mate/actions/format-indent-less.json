@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/format-indent-less",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/format-indent-less.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/format-indent-less-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/format-indent-less.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/format-indent-less.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/format-indent-less.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/format-indent-less.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/format-indent-less.png"
+  ]
+}

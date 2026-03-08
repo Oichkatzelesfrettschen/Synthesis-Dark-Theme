@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/dconf-editor",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/dconf-editor.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/dconf-editor.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/dconf-editor.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/dconf-editor.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/dconf-editor.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/dconf-editor.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/dconf-editor.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/dconf-editor.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/reload3",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/reload3.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/view-refresh-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/reload3.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/reload3.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/reload3.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/reload3.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/reload3.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/reload3.png"
+  ]
+}

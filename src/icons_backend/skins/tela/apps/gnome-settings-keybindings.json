@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/gnome-settings-keybindings",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/gnome-settings-keybindings.svg",
+  "source_authority": "src/icons_backend/geometry/apps/gnome-settings-keybindings.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/gnome-settings-keybindings.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/gnome-settings-keybindings.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/gnome-settings-keybindings.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/gnome-settings-keybindings.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/gnome-settings-keybindings.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/gnome-settings-keybindings.png"
+  ]
+}

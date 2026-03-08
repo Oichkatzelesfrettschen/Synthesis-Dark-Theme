@@ -1,0 +1,14 @@
+{
+  "semantic_id": "icon/emotes/emote-love",
+  "style_skin": "mate",
+  "category": "emotes",
+  "geometry_svg": "geometry/emotes/emote-love.svg",
+  "source_authority": "src/icons_backend/geometry/emotes/emote-love.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/emotes/emote-love.png",
+    "icons/Synthesis-Dark-Icons/22x22/emotes/emote-love.png",
+    "icons/Synthesis-Dark-Icons/32x32/emotes/emote-love.png",
+    "icons/Synthesis-Dark-Icons/48x48/emotes/emote-love.png"
+  ]
+}

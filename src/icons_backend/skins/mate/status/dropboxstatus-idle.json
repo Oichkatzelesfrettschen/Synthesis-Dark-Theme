@@ -1,0 +1,14 @@
+{
+  "semantic_id": "icon/status/dropboxstatus-idle",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/dropboxstatus-idle.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/dropboxstatus-idle.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/dropboxstatus-idle.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/dropboxstatus-idle.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/dropboxstatus-idle.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/dropboxstatus-idle.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/mimetypes/x-office-spreadsheet-template",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/x-office-spreadsheet-template.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/mimetypes/x-office-spreadsheet.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/x-office-spreadsheet-template.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/x-office-spreadsheet-template.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/x-office-spreadsheet-template.png",
+    "icons/Synthesis-Dark-Icons/256x256/mimetypes/x-office-spreadsheet-template.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/x-office-spreadsheet-template.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/x-office-spreadsheet-template.png"
+  ]
+}

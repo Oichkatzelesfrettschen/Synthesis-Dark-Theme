@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/mimetypes/wordprocessing",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/wordprocessing.svg",
+  "source_authority": "src/icons_backend/geometry/mimetypes/wordprocessing.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/wordprocessing.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/wordprocessing.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/wordprocessing.png",
+    "icons/Synthesis-Dark-Icons/256x256/mimetypes/wordprocessing.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/wordprocessing.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/wordprocessing.png"
+  ]
+}

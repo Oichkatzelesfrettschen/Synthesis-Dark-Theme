@@ -2,7 +2,7 @@ import QtQuick 2.5
 
 Image {
     id: root
-    source: "images/background.png"
+    source: "images/background.svg"
 
     property int stage
 
@@ -28,7 +28,7 @@ Image {
             id: logo
             property real size: units.gridUnit * 12
             anchors.centerIn: parent
-            source: "images/logo.png"
+            source: "images/logo.svg"
             sourceSize.width: 150
             sourceSize.height: 150
 

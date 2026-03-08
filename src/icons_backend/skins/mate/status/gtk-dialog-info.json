@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/gtk-dialog-info",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/gtk-dialog-info.svg",
+  "source_authority": "src/icons_backend/geometry/status/gtk-dialog-info.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/gtk-dialog-info.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/gtk-dialog-info.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/gtk-dialog-info.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/gtk-dialog-info.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/gtk-dialog-info.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/gtk-dialog-info.png"
+  ]
+}

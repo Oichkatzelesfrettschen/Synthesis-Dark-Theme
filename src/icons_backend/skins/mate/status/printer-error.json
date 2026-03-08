@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/printer-error",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/printer-error.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/printer-error-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/printer-error.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/printer-error.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/printer-error.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/printer-error.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/printer-error.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/printer-error.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/mimetypes/stock_script",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/stock_script.svg",
+  "source_authority": "src/icons_backend/geometry/mimetypes/stock_script.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/stock_script.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/stock_script.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/stock_script.png",
+    "icons/Synthesis-Dark-Icons/256x256/mimetypes/stock_script.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/stock_script.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/stock_script.png"
+  ]
+}

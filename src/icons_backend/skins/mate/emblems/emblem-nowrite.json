@@ -1,0 +1,17 @@
+{
+  "semantic_id": "icon/emblems/emblem-nowrite",
+  "style_skin": "mate",
+  "category": "emblems",
+  "geometry_svg": "geometry/emblems/emblem-nowrite.svg",
+  "source_authority": "src/icons_backend/geometry/emblems/emblem-nowrite.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/emblems/emblem-nowrite.png",
+    "icons/Synthesis-Dark-Icons/22x22/emblems/emblem-nowrite.png",
+    "icons/Synthesis-Dark-Icons/24x24/emblems/emblem-nowrite.png",
+    "icons/Synthesis-Dark-Icons/256x256/emblems/emblem-nowrite.png",
+    "icons/Synthesis-Dark-Icons/32x32/emblems/emblem-nowrite.png",
+    "icons/Synthesis-Dark-Icons/48x48/emblems/emblem-nowrite.png",
+    "icons/Synthesis-Dark-Icons/8x8/emblems/emblem-nowrite.png"
+  ]
+}

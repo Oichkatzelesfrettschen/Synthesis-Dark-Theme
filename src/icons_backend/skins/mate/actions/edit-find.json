@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/edit-find",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/edit-find.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/edit-find-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/edit-find.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/edit-find.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/edit-find.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/edit-find.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/edit-find.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/edit-find.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/media-seek-forward-rtl",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/media-seek-forward-rtl.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/media-seek-forward-rtl-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/media-seek-forward-rtl.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/media-seek-forward-rtl.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/media-seek-forward-rtl.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/media-seek-forward-rtl.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/media-seek-forward-rtl.png"
+  ]
+}

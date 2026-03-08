@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/places/gnome-main-menu",
+  "style_skin": "tela",
+  "category": "places",
+  "geometry_svg": "geometry/places/gnome-main-menu.svg",
+  "source_authority": "src/icons_backend/geometry/places/gnome-main-menu.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/places/gnome-main-menu.png",
+    "icons/Synthesis-Dark-Icons/22x22/places/gnome-main-menu.png",
+    "icons/Synthesis-Dark-Icons/24x24/places/gnome-main-menu.png",
+    "icons/Synthesis-Dark-Icons/32x32/places/gnome-main-menu.png",
+    "icons/Synthesis-Dark-Icons/48x48/places/gnome-main-menu.png"
+  ]
+}

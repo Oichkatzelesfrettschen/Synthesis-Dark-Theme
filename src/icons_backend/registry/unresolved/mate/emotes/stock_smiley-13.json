@@ -1,0 +1,17 @@
+{
+  "semantic_id": "icon/emotes/stock_smiley-13",
+  "style_skin": "mate",
+  "category": "emotes",
+  "status": "needs-authoritative-geometry",
+  "suggested_geometry_svg": "geometry/emotes/stock_smiley-13.svg",
+  "suggested_skin_metadata": "skins/mate/emotes/stock_smiley-13.json",
+  "installed_output_count": 5,
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/emotes/stock_smiley-13.png",
+    "icons/Synthesis-Dark-Icons/22x22/emotes/stock_smiley-13.png",
+    "icons/Synthesis-Dark-Icons/24x24/emotes/stock_smiley-13.png",
+    "icons/Synthesis-Dark-Icons/32x32/emotes/stock_smiley-13.png",
+    "icons/Synthesis-Dark-Icons/48x48/emotes/stock_smiley-13.png"
+  ],
+  "authoritative_svg_candidates": []
+}

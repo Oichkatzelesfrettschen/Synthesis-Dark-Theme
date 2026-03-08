@@ -1,0 +1,14 @@
+{
+  "semantic_id": "icon/actions/gtk-dnd-multiple",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/gtk-dnd-multiple.svg",
+  "source_authority": "src/icons_backend/geometry/actions/gtk-dnd-multiple.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/gtk-dnd-multiple.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/gtk-dnd-multiple.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/gtk-dnd-multiple.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/gtk-dnd-multiple.png"
+  ]
+}

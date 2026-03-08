@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/devices/battery",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/battery.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/devices/battery.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/battery.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/battery.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/battery.png",
+    "icons/Synthesis-Dark-Icons/256x256/devices/battery.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/battery.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/battery.png"
+  ]
+}

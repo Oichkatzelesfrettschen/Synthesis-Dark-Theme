@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/places/gnome-mime-x-directory-smb-workgroup",
+  "style_skin": "tela",
+  "category": "places",
+  "geometry_svg": "geometry/places/gnome-mime-x-directory-smb-workgroup.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/places/network-workgroup-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/places/gnome-mime-x-directory-smb-workgroup.png",
+    "icons/Synthesis-Dark-Icons/22x22/places/gnome-mime-x-directory-smb-workgroup.png",
+    "icons/Synthesis-Dark-Icons/24x24/places/gnome-mime-x-directory-smb-workgroup.png",
+    "icons/Synthesis-Dark-Icons/256x256/places/gnome-mime-x-directory-smb-workgroup.png",
+    "icons/Synthesis-Dark-Icons/32x32/places/gnome-mime-x-directory-smb-workgroup.png",
+    "icons/Synthesis-Dark-Icons/48x48/places/gnome-mime-x-directory-smb-workgroup.png"
+  ]
+}

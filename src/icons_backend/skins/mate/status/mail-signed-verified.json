@@ -1,0 +1,13 @@
+{
+  "semantic_id": "icon/status/mail-signed-verified",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/mail-signed-verified.svg",
+  "source_authority": "src/icons_backend/geometry/status/mail-signed-verified.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/mail-signed-verified.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/mail-signed-verified.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/mail-signed-verified.png"
+  ]
+}

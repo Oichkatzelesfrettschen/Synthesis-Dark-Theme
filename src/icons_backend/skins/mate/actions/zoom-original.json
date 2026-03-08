@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/zoom-original",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/zoom-original.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/zoom-original-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/zoom-original.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/zoom-original.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/zoom-original.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/zoom-original.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/zoom-original.png"
+  ]
+}

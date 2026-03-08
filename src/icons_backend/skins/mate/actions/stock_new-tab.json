@@ -1,0 +1,13 @@
+{
+  "semantic_id": "icon/actions/stock_new-tab",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/stock_new-tab.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/tab-new-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/stock_new-tab.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/stock_new-tab.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/stock_new-tab.png"
+  ]
+}

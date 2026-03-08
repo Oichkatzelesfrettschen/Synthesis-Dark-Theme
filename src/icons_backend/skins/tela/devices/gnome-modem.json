@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/devices/gnome-modem",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/gnome-modem.svg",
+  "source_authority": "src/icons_backend/geometry/devices/gnome-modem.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/gnome-modem.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/gnome-modem.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/gnome-modem.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/gnome-modem.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/gnome-modem.png"
+  ]
+}

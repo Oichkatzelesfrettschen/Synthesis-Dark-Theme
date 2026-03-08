@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/up",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/up.svg",
+  "source_authority": "src/icons_backend/geometry/actions/up.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/up.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/up.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/up.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/up.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/up.png"
+  ]
+}

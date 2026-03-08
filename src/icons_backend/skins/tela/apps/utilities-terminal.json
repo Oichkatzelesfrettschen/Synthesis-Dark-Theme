@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/utilities-terminal",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/utilities-terminal.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/utilities-terminal-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/utilities-terminal.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/utilities-terminal.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/utilities-terminal.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/utilities-terminal.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/utilities-terminal.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/utilities-terminal.png"
+  ]
+}

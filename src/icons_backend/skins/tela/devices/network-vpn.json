@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/devices/network-vpn",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/network-vpn.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/devices/network-vpn.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/network-vpn.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/network-vpn.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/network-vpn.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/network-vpn.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/network-vpn.png"
+  ]
+}

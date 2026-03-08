@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/touchpad-enabled",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/touchpad-enabled.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/touchpad-enabled.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/touchpad-enabled.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/touchpad-enabled.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/touchpad-enabled.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/touchpad-enabled.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/touchpad-enabled.png"
+  ]
+}

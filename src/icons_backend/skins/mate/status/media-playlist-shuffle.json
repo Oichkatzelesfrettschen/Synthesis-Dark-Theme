@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/status/media-playlist-shuffle",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/media-playlist-shuffle.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/media-playlist-shuffle-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/media-playlist-shuffle.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/media-playlist-shuffle.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/media-playlist-shuffle.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/media-playlist-shuffle.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/media-playlist-shuffle.png"
+  ]
+}

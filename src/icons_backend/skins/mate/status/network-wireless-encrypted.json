@@ -1,0 +1,13 @@
+{
+  "semantic_id": "icon/status/network-wireless-encrypted",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/network-wireless-encrypted.svg",
+  "source_authority": "src/icons_backend/geometry/status/network-wireless-encrypted.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/network-wireless-encrypted.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/network-wireless-encrypted.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/network-wireless-encrypted.png"
+  ]
+}

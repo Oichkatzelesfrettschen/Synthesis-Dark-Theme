@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/actions/view-sort-descending",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/view-sort-descending.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/actions/view-sort-descending-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/view-sort-descending.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/view-sort-descending.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/view-sort-descending.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/view-sort-descending.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/view-sort-descending.png"
+  ]
+}

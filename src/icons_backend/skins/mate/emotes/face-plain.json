@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/emotes/face-plain",
+  "style_skin": "mate",
+  "category": "emotes",
+  "geometry_svg": "geometry/emotes/face-plain.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/emotes/face-plain-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/emotes/face-plain.png",
+    "icons/Synthesis-Dark-Icons/22x22/emotes/face-plain.png",
+    "icons/Synthesis-Dark-Icons/24x24/emotes/face-plain.png",
+    "icons/Synthesis-Dark-Icons/256x256/emotes/face-plain.png",
+    "icons/Synthesis-Dark-Icons/32x32/emotes/face-plain.png",
+    "icons/Synthesis-Dark-Icons/48x48/emotes/face-plain.png"
+  ]
+}

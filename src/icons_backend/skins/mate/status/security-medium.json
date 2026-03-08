@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/security-medium",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/security-medium.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/security-medium-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/security-medium.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/security-medium.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/security-medium.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/security-medium.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/security-medium.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/security-medium.png"
+  ]
+}

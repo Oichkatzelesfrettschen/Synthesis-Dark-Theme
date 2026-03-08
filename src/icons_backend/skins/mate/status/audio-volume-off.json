@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/audio-volume-off",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/audio-volume-off.svg",
+  "source_authority": "src/icons_backend/geometry/status/audio-volume-off.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/audio-volume-off.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/audio-volume-off.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/audio-volume-off.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/audio-volume-off.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/audio-volume-off.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/audio-volume-off.png"
+  ]
+}

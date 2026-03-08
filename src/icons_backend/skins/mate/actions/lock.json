@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/actions/lock",
+  "style_skin": "mate",
+  "category": "actions",
+  "geometry_svg": "geometry/actions/lock.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/system-lock-screen-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/actions/lock.png",
+    "icons/Synthesis-Dark-Icons/22x22/actions/lock.png",
+    "icons/Synthesis-Dark-Icons/24x24/actions/lock.png",
+    "icons/Synthesis-Dark-Icons/256x256/actions/lock.png",
+    "icons/Synthesis-Dark-Icons/32x32/actions/lock.png",
+    "icons/Synthesis-Dark-Icons/48x48/actions/lock.png"
+  ]
+}

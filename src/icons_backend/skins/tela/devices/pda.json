@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/devices/pda",
+  "style_skin": "tela",
+  "category": "devices",
+  "geometry_svg": "geometry/devices/pda.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/devices/pda.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/devices/pda.png",
+    "icons/Synthesis-Dark-Icons/22x22/devices/pda.png",
+    "icons/Synthesis-Dark-Icons/24x24/devices/pda.png",
+    "icons/Synthesis-Dark-Icons/32x32/devices/pda.png",
+    "icons/Synthesis-Dark-Icons/48x48/devices/pda.png"
+  ]
+}

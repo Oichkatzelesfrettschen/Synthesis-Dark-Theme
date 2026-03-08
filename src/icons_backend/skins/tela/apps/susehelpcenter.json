@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/apps/susehelpcenter",
+  "style_skin": "tela",
+  "category": "apps",
+  "geometry_svg": "geometry/apps/susehelpcenter.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/apps/help-browser.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/apps/susehelpcenter.png",
+    "icons/Synthesis-Dark-Icons/22x22/apps/susehelpcenter.png",
+    "icons/Synthesis-Dark-Icons/24x24/apps/susehelpcenter.png",
+    "icons/Synthesis-Dark-Icons/256x256/apps/susehelpcenter.png",
+    "icons/Synthesis-Dark-Icons/32x32/apps/susehelpcenter.png",
+    "icons/Synthesis-Dark-Icons/48x48/apps/susehelpcenter.png"
+  ]
+}

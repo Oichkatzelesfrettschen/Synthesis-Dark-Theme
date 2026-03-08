@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/places/gtk-directory",
+  "style_skin": "tela",
+  "category": "places",
+  "geometry_svg": "geometry/places/gtk-directory.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/places/folder-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/places/gtk-directory.png",
+    "icons/Synthesis-Dark-Icons/22x22/places/gtk-directory.png",
+    "icons/Synthesis-Dark-Icons/24x24/places/gtk-directory.png",
+    "icons/Synthesis-Dark-Icons/256x256/places/gtk-directory.png",
+    "icons/Synthesis-Dark-Icons/32x32/places/gtk-directory.png",
+    "icons/Synthesis-Dark-Icons/48x48/places/gtk-directory.png"
+  ]
+}

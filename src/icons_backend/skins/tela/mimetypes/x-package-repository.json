@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/mimetypes/x-package-repository",
+  "style_skin": "tela",
+  "category": "mimetypes",
+  "geometry_svg": "geometry/mimetypes/x-package-repository.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/mimetypes/application-x-archive.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/mimetypes/x-package-repository.png",
+    "icons/Synthesis-Dark-Icons/22x22/mimetypes/x-package-repository.png",
+    "icons/Synthesis-Dark-Icons/24x24/mimetypes/x-package-repository.png",
+    "icons/Synthesis-Dark-Icons/32x32/mimetypes/x-package-repository.png",
+    "icons/Synthesis-Dark-Icons/48x48/mimetypes/x-package-repository.png"
+  ]
+}

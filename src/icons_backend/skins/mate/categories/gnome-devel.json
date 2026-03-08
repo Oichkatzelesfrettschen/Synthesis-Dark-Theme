@@ -1,0 +1,15 @@
+{
+  "semantic_id": "icon/categories/gnome-devel",
+  "style_skin": "mate",
+  "category": "categories",
+  "geometry_svg": "geometry/categories/gnome-devel.svg",
+  "source_authority": "src/icons_backend/geometry/categories/gnome-devel.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/categories/gnome-devel.png",
+    "icons/Synthesis-Dark-Icons/22x22/categories/gnome-devel.png",
+    "icons/Synthesis-Dark-Icons/24x24/categories/gnome-devel.png",
+    "icons/Synthesis-Dark-Icons/32x32/categories/gnome-devel.png",
+    "icons/Synthesis-Dark-Icons/48x48/categories/gnome-devel.png"
+  ]
+}

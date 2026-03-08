@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/folder-drag-accept",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/folder-drag-accept.svg",
+  "source_authority": "icons/Synthesis-Dark-Icons/scalable/status/folder-drag-accept-symbolic.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/folder-drag-accept.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/folder-drag-accept.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/folder-drag-accept.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/folder-drag-accept.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/folder-drag-accept.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/folder-drag-accept.png"
+  ]
+}

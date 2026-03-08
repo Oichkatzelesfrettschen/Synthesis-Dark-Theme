@@ -1,0 +1,16 @@
+{
+  "semantic_id": "icon/status/gnome-netstatus-rx",
+  "style_skin": "mate",
+  "category": "status",
+  "geometry_svg": "geometry/status/gnome-netstatus-rx.svg",
+  "source_authority": "src/icons_backend/geometry/status/gnome-netstatus-rx.svg",
+  "source_kind": "authoritative-svg",
+  "installed_outputs": [
+    "icons/Synthesis-Dark-Icons/16x16/status/gnome-netstatus-rx.png",
+    "icons/Synthesis-Dark-Icons/22x22/status/gnome-netstatus-rx.png",
+    "icons/Synthesis-Dark-Icons/24x24/status/gnome-netstatus-rx.png",
+    "icons/Synthesis-Dark-Icons/256x256/status/gnome-netstatus-rx.png",
+    "icons/Synthesis-Dark-Icons/32x32/status/gnome-netstatus-rx.png",
+    "icons/Synthesis-Dark-Icons/48x48/status/gnome-netstatus-rx.png"
+  ]
+}
